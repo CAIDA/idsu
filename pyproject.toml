@@ -1,0 +1,23 @@
+[project]
+name = "idsu"
+version = "0.1.0"
+description = "LLM extraction of the datasets and software a paper uses, restricted to a target list"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "json-repair>=0.57.1",
+    "langchain-community>=0.4.1",
+    "langchain-text-splitters>=1.1.0",
+    "openai>=2.21.0",
+    "pypdf>=6.7.0",
+    "python-dotenv>=1.2.1",
+    "pyyaml>=6.0.3",
+    "thefuzz[speedup]>=0.22.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.11,<0.12"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""

@@ -1,0 +1,18 @@
+# Secrets
+.env
+
+# Papers are fetched by bin/fetch_papers.py and never committed
+data/**/*.pdf
+
+# Run output (bin/extract.py, bin/evaluate.py, bin/benchmark_models.py)
+runs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.python-version
+
+# Editors and OS
+.DS_Store
+*.swp

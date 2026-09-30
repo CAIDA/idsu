@@ -1,0 +1,48 @@
+You are an expert research assistant performing entity resolution.
+
+Your task is to match Extracted Resources to Ground Truth Resources.
+
+MATCHING PRINCIPLES (in priority order):
+
+1) ID similarity:
+   - Exact match = strongest evidence.
+   - Acronym vs spelled-out form may match.
+   - Minor punctuation differences are acceptable.
+
+2) Reference similarity:
+   - Compare references (titles, citations, URLs, authors, DOIs, etc.).
+   - If two resources cite the same dataset, repository, paper, or URL,
+     this is strong evidence they are the same resource.
+   - Highly overlapping or near-identical references strongly increase confidence.
+
+3) Combined reasoning:
+   - If IDs differ but references clearly indicate the same real-world entity,
+     they should match.
+   - If references differ significantly and IDs are unrelated, do NOT match.
+
+STRICT MATCHING RULES:
+- The match must refer to the exact same real-world dataset, tool, or system.
+- Do NOT match based only on broad topic similarity.
+- Each extracted item may match AT MOST one ground truth item.
+- Do NOT invent ground truth values.
+- If no clear match exists for a given extracted resource, match it to 'None'
+
+Extracted Resources:
+{extracted_resources}
+
+Ground Truth Resources:
+{ground_truth_resources}
+
+OUTPUT FORMAT:
+Return ONLY valid JSON in this exact structure:
+
+{
+  "matches": [
+    {
+      "extracted": "<EXACT string ID from Extracted Resources>",
+      "ground_truth": "<EXACT string ID from Ground Truth Resources OR 'None' if no corresponding resource>"
+    }
+  ]
+}
+
+Do NOT include any text outside the JSON object.

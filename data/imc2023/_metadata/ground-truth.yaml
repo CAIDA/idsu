@@ -1,0 +1,2132 @@
+filename: 2023-sander-quic-ecn.pdf
+resources:
+- id: CAIDA|AS2Org
+  name: CAIDA|AS2Org
+  quotes:
+  - quote: The AS organizations are inferred via CAIDA's as2org dataset [25] to fuse
+      different ASs operated by the same provider2 together.
+    used_in_paper: true
+  references:
+  - '[25] CAIDA. 2023. The CAIDA UCSD AS to Organization Mapping Dataset, April 2023.
+    https://www.caida.org/data/as_organizations/.'
+  type: dataset
+  urls:
+  - https://www.caida.org/catalog/datasets/as-organizations/
+- id: ICANN|CZDS
+  name: Centralized Zone Data Service (CZDS)
+  quotes:
+  - quote: Here, we use the com/net/org zone files available at the ICANN Centralized
+      Zone Data Service (CZDS) [7], which we download every Wednesday starting with
+      our measurements.
+    used_in_paper: true
+  references:
+  - '[7] 2023. Centralized Zone Data Service. https://czds.icann.org/home.'
+  type: dataset
+  urls:
+  - https://czds.icann.org/home
+- id: RWTH|quic-ecn-measurements
+  name: QUIC ECN Measurements Tools
+  quotes:
+  - quote: Our tools and our toplist data are available via [47] and https://github.com/COMSYS/quic-ecn-measurements
+    used_in_paper: true
+  references:
+  - '[47] Constantin Sander, Ike Kunze, Leo Blöcher, Mike Kosek, and Klaus Wehrle.
+    2023. Dataset to paper "ECN with QUIC: Challenges in the Wild". https://doi.org/10.5281/zenodo.8338470'
+  type: tool
+  urls:
+  - https://github.com/COMSYS/quic-ecn-measurements
+- id: RIPE NCC|RIPE RIS
+  name: RIPE NCC|RIPE RIS
+  quotes:
+  - quote: The respective ASs are mapped from our contacted IPs via BGP data of RIPE's
+      RIS archive [45].
+    used_in_paper: true
+  references:
+  - '[45] RIPE. 2023. RIPE - Route Collection Raw Data / Routing Information Service
+    (RIS). https://data.ris.ripe.net/rrc00/.'
+  type: dataset
+  urls:
+  - https://data.ris.ripe.net/rrc00/
+  - http://ris.ripe.net/
+- id: ZMap|ZGrab2
+  name: ZMap|ZGrab2
+  quotes:
+  - quote: For this, we utilize zgrab2 [10], a golang-based banner grabber, which
+      we adapt to additionally (1) support HTTP/3, and (2) log connection information.
+    used_in_paper: true
+  references:
+  - '[10] 2023. GitHub - zmap/zgrab2: Fast Go Application Scanner. https://github.com/zmap/zgrab2.'
+  type: tool
+  urls:
+  - https://github.com/zmap/zgrab2
+---
+filename: A First Look at the Privacy Harms of the Public Suffix List.pdf
+resources:
+- id: StAndrews|PSL-Privacy-Dataset
+  name: PSL Privacy Harms Analysis Code and Data
+  quotes:
+  - quote: 'We make available our code for gathering, processing, and analyzing the
+      data discussed in this paper. This, and our full labelled dataset of repositories
+      that we identify as using the public suffix list, is available from https://doi.org/10.17630/50e596c3-7537-4f74-b503-e9bcc5c8b95a.
+
+      '
+    used_in_paper: true
+  - quote: This work was supported in part by the UK Engineering and Physical Sciences
+      Research Council under grant EP/S036075/1.
+    used_in_paper: true
+  references:
+  - Reproducibility and data access. We make available our code for gathering, processing,
+    and analyzing the data discussed in this paper. This, and our full labelled dataset
+    of repositories that we identify as using the public suffix list, is available
+    from https://doi.org/10.17630/50e596c3-7537-4f74-b503-e9bcc5c8b95a.
+  type: dataset
+  urls:
+  - https://doi.org/10.17630/50e596c3-7537-4f74-b503-e9bcc5c8b95a
+---
+filename: A Longitudinal Study of Vulnerable Client-side Resources and Web Developers'
+  Updating Behaviors.pdf
+resources:
+- id: MITRE|CVE
+  name: MITRE|CVE
+  quotes:
+  - quote: We also collect the vulnerability information of affected resources' versions
+      from multiple third-party websites for crossreference, such as the National
+      Vulnerability Database (NVD) [45], CVE MITRE Corporation [40], cvedetails.com
+      [41], and SNYK Vul. DB [50].
+    used_in_paper: true
+  - quote: Since there is no centralized database for vulnerabilities, we manually
+      search each client-side resource with its versions and collect information on
+      vulnerabilities6 from National Vulnerability Database (NVD) [45], CVE MITRE
+      Corporation [40], cvedetails.com [41], and SNYK Vul. DB [50].
+    used_in_paper: true
+  references:
+  - '[40] 2022. CVE - CVE. https://cve.mitre.org/index.html. (Accessed on 05/26/2023).'
+  type: dataset
+  urls:
+  - https://cve.mitre.org/index.html
+- id: cvedetails|CVE-Details
+  name: CVE Details
+  quotes:
+  - quote: We also collect the vulnerability information of affected resources' versions
+      from multiple third-party websites for crossreference, such as the National
+      Vulnerability Database (NVD) [45], CVE MITRE Corporation [40], cvedetails.com
+      [41], and SNYK Vul. DB [50].
+    used_in_paper: true
+  - quote: Since there is no centralized database for vulnerabilities, we manually
+      search each client-side resource with its versions and collect information on
+      vulnerabilities6 from National Vulnerability Database (NVD) [45], CVE MITRE
+      Corporation [40], cvedetails.com [41], and SNYK Vul. DB [50].
+    used_in_paper: true
+  references:
+  - '[41] 2022. CVE security vulnerability database. Security vulnerabilities, exploits,
+    references and more. https://www.cvedetails.com/index.php. (Accessed on 05/26/2023).'
+  type: dataset
+  urls:
+  - https://www.cvedetails.com/index.php
+---
+filename: An LLM-based Framework for Fingerprinting Internet-connected Devices.pdf
+resources:
+- id: Censys|Universal Internet Dataset
+  name: Censys Universal Internet Dataset
+  quotes:
+  - quote: We use 6 different snapshots from the Censys Universal Internet Dataset
+      [8], corresponding to the first Tuesday in each month between July and December
+      2023.
+    used_in_paper: true
+  - quote: Projects and entities such as Censys [13] and Shodan [1] perform regular
+      Internet-wide scans and record snapshots of visible devices on the Internet
+      across many ports.
+    used_in_paper: false
+  references:
+  - '[8] Censys. [n. d.]. Universal Internet BigQuery Dataset. https://support.censys.io/hc/en-us/articles/360056063151-Universal-Internet-BigQuery-Dataset.'
+  - '[13] Zakir Durumeric, David Adrian, Ariana Mirian, Michael Bailey, and J Alex
+    Halderman. 2015. A search engine backed by Internet-wide scanning. In ACM Conference
+    on Computer and Communications Security. ACM, 542–553.'
+  type: dataset
+  urls:
+  - https://docs.censys.com/docs/ls-download-censys-universal-internet-dataset
+- id: UMich|LLM-Device-Fingerprints
+  name: LLM Device Fingerprints Code
+  quotes:
+  - quote: Our code is available at https://github.com/arsarabi/llm-device-fingerprints.
+    used_in_paper: true
+  type: tool
+  urls:
+  - https://github.com/arsarabi/llm-device-fingerprints
+---
+filename: BehavIoT- Measuring Smart Home IoT Behavior Using Network-Inferred Behavior
+  Models.pdf
+resources:
+- id: Northeastern|BehavIoT Dataset
+  name: BehavIoT Dataset
+  quotes:
+  - quote: To facilitate follow-up research, we publicly released our dataset from
+      controlled experiments and software [38].
+    used_in_paper: true
+  - quote: This section presents our IoT testbed and the datasets produced by our
+      experiments (available for download [38]).
+    used_in_paper: true
+  references:
+  - '[38] Tianrui Hu, Daniel J. Dubois, and David Choffnes. 2023. BehavIoT Dataset
+    and Software. https://moniotrlab.khoury.northeastern.edu/publications/behaviotimc23.'
+  type: dataset
+  urls:
+  - https://moniotrlab.khoury.northeastern.edu/publications/behaviotimc23
+- id: Northeastern|BehavIoT Software
+  name: BehavIoT Software
+  quotes:
+  - quote: To facilitate follow-up research, we publicly released our dataset from
+      controlled experiments and software [38].
+    used_in_paper: true
+  references:
+  - '[38] Tianrui Hu, Daniel J. Dubois, and David Choffnes. 2023. BehavIoT Dataset
+    and Software. https://moniotrlab.khoury.northeastern.edu/publications/behaviotimc23.'
+  type: tool
+  urls:
+  - https://moniotrlab.khoury.northeastern.edu/publications/behaviotimc23
+- id: IoTInspector
+  name: IoTInspector
+  quotes:
+  - quote: We consider the size of our subset sufficiently representative since the
+      average number of IoT devices per home is 7 according to crowdsourced data from
+      IoT Inspector [39].
+    used_in_paper: false
+  references:
+  - '[39] Danny Yuxing Huang, Noah Apthorpe, Frank Li, Gunes Acar, and Nick Feamster.
+    2020. IoT Inspector: Crowdsourcing labeled network traffic from smart home devices
+    at scale. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous
+    Technologies 4, 2 (2020), 1–21.'
+  type: tool
+  urls:
+  - https://github.com/nyu-mlab/iot-inspector-client
+---
+filename: Behind the Scenes- Uncovering TLS and Server Certificate Practice of IoT
+  Device Vendors in the Wild.pdf
+resources:
+- id: IoTInspector
+  name: IoTInspector
+  quotes:
+  - quote: To this end, we utilize a crowdsourced dataset of IoT TLS traffic collected
+      by IoT Inspector [23],
+    used_in_paper: true
+  - quote: To characterize how real-world IoT devices use TLS and PKI, we use a dataset
+      of ClientHello packets collected from IoT Inspector from April 29, 2019 to August
+      1, 2020 [23].
+    used_in_paper: true
+  - quote: IoT Inspector is an open-source tool that crowdsourced the network traffic
+      from 54,094 devices across 5,404 users worldwide [23].
+    used_in_paper: false
+  references:
+  - '[23] Danny Yuxing Huang, Noah Apthorpe, Frank Li, Gunes Acar, and Nick Feamster.2020.
+    Iot inspector: Crowdsourcing labeled network traffic from smart homedevices at
+    scale.Proceedings of the ACM on Interactive, Mobile, Wearable andUbiquitous Technologies
+    (2020).'
+  type: tool
+  urls:
+  - https://github.com/nyu-mlab/iot-inspector-client
+- id: UVA|IoT-TLS-Certificate-Dataset
+  name: IoT TLS and Server Certificate Dataset
+  quotes:
+  - quote: 'In support of the community, we make available both an anonymized version
+      of our IoT Inspector dataset and server certificate dataset at: https://github.com/hyingdon/acmimc23_iot.'
+    used_in_paper: true
+  type: dataset
+  urls:
+  - https://github.com/hyingdon/acmimc23_iot
+---
+filename: Characterizing and Modeling Session-Level Mobile Traffic Demands from Large-Scale
+  Measurements.pdf
+resources: []
+---
+filename: Cloud Watching- Understanding Attacks Against Cloud-Hosted Services.pdf
+resources:
+- id: Censys|Universal Internet Dataset
+  name: Censys Universal Internet Dataset
+  quotes:
+  - quote: Operators should monitor unexpected ports/protocols, since attacker traffic
+      may be unanticipated; and continue to monitor IP reputation, since scanners
+      send an order of magnitude more traffic to IPs found on Shodan or Censys.
+    used_in_paper: false
+  - quote: 'Past ownership also affects observed behavior: IP addresses that previously
+      hosted services that were indexed by Shodan [69] or Censys [32] attract a significantly
+      different set of scanners and are targeted by 7 times more exploits than IP
+      addresses that have never hosted search engine indexed services.'
+    used_in_paper: true
+  - quote: When comparing who is scanning, we often identify scanning actors by their
+      autonomous system, as opposed to IP address, to account for scanning campaigns
+      that rely on multiple source IP addresses (e.g., Censys [28]).
+    used_in_paper: false
+  - quote: Researchers can use search engines (e.g., Censys [32] and Shodan [69])
+      to obtain a history of an IP address.
+    used_in_paper: false
+  references:
+  - '[32] Z. Durumeric, D. Adrian, A. Mirian, M. Bailey, and J. A. Halderman. A search
+    engine backed by Internet-wide scanning. In CCS, 2015.'
+  type: dataset
+  urls:
+  - https://docs.censys.com/docs/ls-download-censys-universal-internet-dataset
+- id: Stanford|Cloud Watching Dataset
+  name: Cloud Watching Dataset
+  quotes:
+  - quote: We release our dataset of scanning traffic targeting the cloud to enable
+      future research.
+    used_in_paper: true
+  - quote: We publicly release our data at https://scans.io/study/cloud_watching.
+    used_in_paper: true
+  type: dataset
+  urls:
+  - https://scans.io/study/cloud_watching
+- id: Stanford|LZR
+  name: LZR
+  quotes:
+  - quote: We use the open-source scanner LZR [45] to fingerprint unexpected services
+      for 13 of the most popular TCP scanning protocols.
+    used_in_paper: true
+  references:
+  - '[45] L. Izhikevich, R. Teixeira, and Z. Durumeric. LZR: Identifying unexpected
+    Internet services. In USENIX Security Symposium, 2021.'
+  type: tool
+- id: Merit|Orion Network Telescope
+  name: Orion Network Telescope
+  quotes:
+  - quote: To obtain a diverse set of vantage points, we use existing honeypots from
+      GreyNoise, deploy our own honeypots, and use the Orion Network Telescope.
+    used_in_paper: true
+  - quote: To compare the scanning activity of a telescope with scanning activity
+      targeting networks that host real services (e.g., educational networks or cloud
+      providers), we use the Orion Network Telescope, which spans 475K IPv4 addresses
+      (i.e., 1,856 /24 networks).
+    used_in_paper: true
+  type: tool
+- id: UMich|ZMap
+  name: UMich|ZMap
+  quotes:
+  - quote: 'Not all network scanning is malicious. Multiple motivations exist behind
+      unsolicited network scans: organizations collecting datasets [32, 69], academic
+      groups conducting research [35] or performing vulnerability notifications [34,
+      52],'
+    used_in_paper: false
+  references:
+  - '[35] Z. Durumeric, E. Wustrow, and J. A. Halderman. ZMap: Fast Internet-wide
+    scanning and its security applications. In USENIX Security Symposium, 2013'
+  type: tool
+  urls:
+  - https://zmap.io/
+---
+filename: Coarse-grained Inference of BGP Community Intent.pdf
+resources:
+- id: CAIDA|AS Relationships
+  name: CAIDA|AS Relationships
+  quotes:
+  - quote: We also used CAIDA's AS relationship [4] and organization [5] inferences
+      for this week to provide context to our method.
+    used_in_paper: true
+  references:
+  - '[4] CAIDA. 2022. AS Relationships. https://www.caida.org/catalog/datasets/as-relationships/.'
+  type: dataset
+  urls:
+  - https://www.caida.org/catalog/datasets/as-relationships/
+- id: CAIDA|AS2Org
+  name: CAIDA|AS2Org
+  quotes:
+  - quote: We also used CAIDA's AS relationship [4] and organization [5] inferences
+      for this week to provide context to our method.
+    used_in_paper: true
+  references:
+  - '[5] CAIDA. 2022. CAIDA. Mapping Autonomous Systems to Organizations. https://www.caida.org/research/topology/as2org/.'
+  type: dataset
+  urls:
+  - https://www.caida.org/catalog/datasets/as-organizations/
+- id: UCL|BGP Communities Classification
+  name: BGP Communities Classification
+  quotes:
+  - quote: To understand the degree to which network operators change their community
+      assignments, we compared our dictionary against one published in 2007 [11, 12]
+      which we did not use to assemble our dictionary.
+    used_in_paper: true
+  references:
+  - '[11] Benoit Donnet. 2007. BGP Communities Classification. https://web.archive.org/web/20080423050836/http://inl.info.ucl.ac.be:80/communities.'
+  type: dataset
+  urls:
+  - https://web.archive.org/web/20080423050836/http://inl.info.ucl.ac.be:80/communities
+- id: TopoMapping|BGP Communities Supplemental Material
+  name: BGP Communities – Supplemental Material
+  quotes:
+  - quote: Using the location community inferences and ground truth dataset that they
+      publicly released [29], we examined the benefit of filtering out communities
+      that our method inferred to be action communities from their December 2020 inferences.
+    used_in_paper: true
+  references:
+  - '[29] Brivaldo A. Da Silva Junior, Paulo Mol, Osvaldo Fonseca, Ítalo Cunha, Ronaldo
+    A. Ferreira, and Ethan Katz-Bassett. 2021. BGP Communities – Supplemental Material.
+    https://github.com/TopoMapping/bgp-communities.'
+  type: dataset
+  urls:
+  - https://github.com/TopoMapping/bgp-communities
+- id: CAIDA|BGP Community Intent Data Supplement
+  name: BGP Community Intent Data Supplement
+  quotes:
+  - quote: We publicly share our code, dictionaries, inferences, and datasets [33].
+    used_in_paper: true
+  references:
+  - '[33] Thomas Krenc, Matthew Luckie, Alexander Marder, and kc claffy. 2023. Data
+    supplement for "Coarse-grained Inference of BGP Community Intent". https://publicdata.caida.org/datasets/supplement/2023-imc-bgpcomms/.'
+  type: dataset
+  urls:
+  - https://publicdata.caida.org/datasets/supplement/2023-imc-bgpcomms/
+- id: RIPE NCC|RIPE RIS
+  name: RIPE NCC|RIPE RIS
+  quotes:
+  - quote: We extracted unique AS path and BGP Community tuples observed in RIBs and
+      updates collected by RouteViews [43] and RIPE RIS [42].
+    used_in_paper: true
+  references:
+  - '[42] RIPE. 2021. RIS - RIPE Network Coordination Centre. http://ris.ripe.net/.'
+  type: dataset
+  urls:
+  - https://data.ris.ripe.net/rrc00/
+  - http://ris.ripe.net/
+- id: U.Oregon|Routeviews
+  name: RouteViews
+  quotes:
+  - quote: We extracted unique AS path and BGP Community tuples observed in RIBs and
+      updates collected by RouteViews [43]
+    used_in_paper: true
+  references:
+  - '[43] RouteViews. 2021. University of Oregon RouteViews project. http://www.routeviews.org/.'
+  type: dataset
+  urls:
+  - http://www.routeviews.org/
+---
+filename: Containing the Cambrian Explosion in QUIC Congestion Control.pdf
+resources:
+- id: QUICBench
+  name: QUICBench
+  quotes:
+  - quote: The traces and source code for all our experiments is available at [34].
+    used_in_paper: true
+  - quote: Our source code is available at [34] and our experiments are fully reproducible.
+    used_in_paper: true
+  - quote: We used a modified version of our open-source tool QUIC Bench [34]
+    used_in_paper: true
+  - quote: Our measurement study significantly advances the state of the art in our
+      understanding of speciation [32, 34] and raises new research questions on the
+      evolution of CCAs for QUIC.
+    used_in_paper: false
+  references:
+  - '[34] Ayush Mishra and Sherman Lim. 2022. QUICBench. https://github.com/NUS-SNL/QUICbench'
+  type: tool
+  urls:
+  - https://github.com/NUS-SNL/QUICbench
+- id: ESnet|iperf3
+  name: iperf3
+  quotes:
+  - quote: To generate the TCP flows, we used the iperf3 [2] tool.
+    used_in_paper: true
+  references:
+  - '[2] 2021. iPerf, the Speed Test Tool for TCP. https://iperf.fr/iperf-doc.php'
+  type: tool
+  urls:
+  - https://iperf.fr/iperf-download.php
+---
+filename: Demystifying Web-based Mobile Extended Reality Accelerated by WebAssembly.pdf
+resources:
+- id: Thingi10K
+  name: Thingi10K Dataset
+  quotes:
+  - quote: The complexity of these models, particularly the large one, exceeds that
+      of many models in large datasets such as Thingi10K [59] and ShapeNetCore [29].
+    used_in_paper: false
+  references:
+  - '[59] Alec Jacobson Qingnan Zhou. 2016. Thingi10k: A Dataset of 10,000 3D-Printing
+    Models. https://arxiv.org/abs/1605.04797'
+  type: dataset
+  urls:
+  - https://arxiv.org/abs/1605.04797
+---
+filename: Dial N for NXDomain- The Scale, Origin, and Security Implications of DNS
+  Queries to Non-Existent Domains.pdf
+resources:
+- id: CIRCL.lu
+  name: CIRCL Passive DNS
+  quotes:
+  - quote: In addition to the Farsight DNS database, other popular DNS databases CIRCL.lu
+      [3], DNSIQ [19], and Mnemonic [14] can also be analyzed to further enhance our
+      experiments.
+    used_in_paper: false
+  references:
+  - '[3] CIRCL.lu. https://www.circl.lu/.'
+  type: dataset
+  urls:
+  - https://www.circl.lu/
+---
+filename: Does It Spin- On the Adoption and Use of QUICs Spin Bit.pdf
+resources:
+- id: CAIDA|AS2Org
+  name: CAIDA|AS2Org
+  quotes:
+  - quote: Analyzing the affiliation of all connections, we first map each IP to its
+      corresponding ASN using BGP data of RIPE’s RIS archive [23] and then lookup
+      the corresponding organizations using CAIDA’s as2org dataset [7].
+    used_in_paper: true
+  references:
+  - '[7] CAIDA. 2023. The CAIDA UCSD AS to Organization Mapping Dataset, 2022-2023.
+    https://www.caida.org/catalog/datasets/as-organizations/'
+  type: dataset
+  urls:
+  - https://www.caida.org/catalog/datasets/as-organizations/
+- id: ICANN|CZDS
+  name: Centralized Zone Data Service (CZDS)
+  quotes:
+  - quote: For a broader assessment and to also include less popular domains, we enrich
+      our target population with domains from zone files accessible via the ICANN
+      Centralized Zone Data Service (CZDS).
+    used_in_paper: true
+  type: dataset
+  urls:
+  - https://czds.icann.org/home
+- id: RIPE NCC|RIPE RIS
+  name: RIPE NCC|RIPE RIS
+  quotes:
+  - quote: Analyzing the affiliation of all connections, we first map each IP to its
+      corresponding ASN using BGP data of RIPE’s RIS archive [23] and then lookup
+      the corresponding organizations using CAIDA’s as2org dataset [7].
+    used_in_paper: true
+  references:
+  - '[23] RIPE. 2023. RIPE - Route Collection Raw Data / Routing Information Service
+    (RIS). https://data.ris.ripe.net/rrc00/'
+  type: dataset
+  urls:
+  - https://data.ris.ripe.net/rrc00/
+  - http://ris.ripe.net/
+- id: KU Leuven|Tranco
+  name: KU Leuven|Tranco
+  quotes:
+  - quote: 'Relying on different toplists, we first gather a target set that focuses
+      on popular domains: (i) Alexa Top 1M1 [13], (ii) Cisco Umbrella [31], (iii)
+      Majestic Million [21], and (iv) the Tranco Research List [20].'
+    used_in_paper: true
+  references:
+  - '[20] Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczynski,
+    and Joosen Wouter. 2019. TRANCO: A Research-Oriented Top Sites Ranking Hardened
+    Against Manipulation. In Proceedings of the 2019 Network and Distributed Systems
+    Security Symposium (NDSS). https://doi.org/10.14722/ndss.2019.23386'
+  type: dataset
+  urls:
+  - https://tranco-list.eu/
+- id: ZMap|ZGrab2
+  name: ZMap|ZGrab2
+  quotes:
+  - quote: We use an adapted version of zgrab2 [3], a golang-based banner grabber,
+      as the general framework for our measurements.
+    used_in_paper: true
+  references:
+  - '[3] 2023. Zmap/Zgrab2: Fast Go Application Scanner. https://github.com/zmap/zgrab2'
+  type: tool
+  urls:
+  - https://github.com/zmap/zgrab2
+---
+filename: Estimating WebRTC Video QoE Metrics Without Using Application Headers.pdf
+resources: []
+---
+filename: Ethereum's Proposer-Builder Separation- Promises and Realities.pdf
+resources: []
+---
+filename: Evolving Bots- The New Generation of Comment Bots and their Underlying Scam
+  Campaigns in YouTube.pdf
+resources: []
+---
+filename: Extended DNS Errors- Unlocking the Full Potential of DNS Troubleshooting.pdf
+resources:
+- id: ICANN|CZDS
+  name: Centralized Zone Data Service (CZDS)
+  quotes:
+  - quote: Our input list of domain names contains 488M entries gathered from different
+      sources, including the Centralized Zone Data Service (CZDS) [41], the Tranco
+      list [58], passive DNS data from SIE Europe [66]
+    used_in_paper: true
+  references:
+  - '[41] ICANN. 2022. Centralized Zone Data Service. (March 2022). https://czds.icann.org.'
+  type: dataset
+  urls:
+  - https://czds.icann.org/home
+- id: DNSViz
+  name: DNSViz
+  quotes:
+  - quote: Methods for formal verification and online tools like DNSViz, DNSSEC Analyzer,
+      and DNS Checker help in the analysis [25, 26, 45, 46, 55, 72].
+    used_in_paper: false
+  references:
+  - '[26] DNSViz. 2023. A DNS visualization tool. https://dnsviz.net. (Feb. 2023).'
+  type: tool
+  urls:
+  - https://dnsviz.net
+- id: KU Leuven|Tranco
+  name: KU Leuven|Tranco
+  quotes:
+  - quote: Our input list of domain names contains 488M entries gathered from different
+      sources, including the Centralized Zone Data Service (CZDS) [41], the Tranco
+      list [58]
+    used_in_paper: true
+  references:
+  - '[58] Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczyński,
+    and Wouter Joosen. 2019. Tranco: A Research-Oriented Top Sites Ranking Hardened
+    Against Manipulation. In NDSS.'
+  type: dataset
+  urls:
+  - https://tranco-list.eu/
+- id: UMich|ZDNS
+  name: UMich|ZDNS
+  quotes:
+  - quote: We used zdns [43] scanner to generate A requests at scale and queried Cloudflare
+      DNS in May 2023.
+    used_in_paper: true
+  references:
+  - '[43] Liz Izhikevich, Gautam Akiwate, Briana Berger, Spencer Drakontaidis, Anna
+    Ascheman, Paul Pearce, David Adrian, and Zakir Durumeric. 2022. ZDNS: A Fast DNS
+    Toolkit for Internet Measurement. In IMC.'
+  type: tool
+  urls:
+  - https://github.com/zmap/zdns
+---
+filename: Fifteen Months in the Life of a Honeyfarm.pdf
+resources:
+- id: UCSD|Network Telescope
+  name: UCSD Network Telescope
+  quotes:
+  - quote: 'Network Telescopes: These network infrastructures monitor traffic reaching
+      Internet address space that is not assigned to hosts but is advertised to the
+      global routing system [32].'
+    used_in_paper: false
+  references:
+  - '[32] David Moore, Colleen Shannon, Geoffrey M Voelker, and Stefan Savage. 2004.
+    Network Telescopes: Technical Report. Technical Report. Cooperative Association
+    for Internet Data Analysis (CAIDA).'
+  type: tool
+  urls:
+  - https://www.caida.org/projects/network_telescope/
+---
+filename: Flocking to Mastodon- Tracking the Great Twitter Migration.pdf
+resources: []
+---
+filename: How to Operate a Meta-Telescope in your Spare Time.pdf
+resources:
+- id: CAIDA|AS2Org
+  name: CAIDA|AS2Org
+  quotes:
+  - quote: We also use CAIDA's AS to Organization mapping data set [10] (published
+      every few months) from April 11, 2023. This data set is generated using WHOIS
+      information available from Regional and National Internet Registries to infer
+      a mapping from AS numbers to the organizational entities that operate them.
+    used_in_paper: true
+  references:
+  - '[10] CAIDA. 2023. The CAIDA UCSD AS to Organization Mapping Dataset, 2023-04-11.
+    https://www.caida.org/data/as_organizations/. (2023).'
+  type: dataset
+  urls:
+  - https://www.caida.org/data/as_organizations/
+- id: Censys|Universal Internet Dataset
+  name: Censys Universal Internet Dataset
+  quotes:
+  - quote: 'To partially validate our results and, afterwards, as a supplemental source
+      of information, we use data from three measurement projects that confirms "liveness"
+      of individual IP addresses: M-Lab''s Network Diagnosis Tool (NDT), Censys, and
+      ISI''s Internet Address History'
+    used_in_paper: true
+  - quote: 'The indications of activity we use are: (a) hosts replying on any transport
+      port upon contacting as reported by Censys [23], (b) end-users performing speed
+      tests of their Internet connectivity as reported by NDT [33], and (c) hosts
+      replying to ICMP echo requests as reported by ISI [47].'
+    used_in_paper: true
+  references:
+  - '[23] Zakir Durumeric, David Adrian, Ariana Mirian, Michael Bailey, and J. Alex
+    Halderman. 2015. A Search Engine Backed by Internet-Wide Scanning.'
+  type: dataset
+  urls:
+  - https://docs.censys.com/docs/ls-download-censys-universal-internet-dataset
+- id: ISI|Internet Address History
+  name: Internet Address History
+  quotes:
+  - quote: 'To partially validate our results and, afterwards, as a supplemental source
+      of information, we use data from three measurement projects that confirms "liveness"
+      of individual IP addresses: M-Lab''s Network Diagnosis Tool (NDT), Censys, and
+      ISI''s Internet Address History'
+    used_in_paper: true
+  references:
+  - '[47] USC/LANDER project. 2023. Internet Addresses IPv4 Response History Dataset.
+    https://ant.isi.edu/datasets/index.html. (2023).'
+  type: dataset
+  urls:
+  - https://ant.isi.edu/datasets/index.html
+- id: MLab|NDT
+  name: M-Lab NDT (Network Diagnostic Tool)
+  quotes:
+  - quote: The NDT Speed Test is a single-stream performance measurement, initiated
+      by users, of a connection's capacity for "bulk transport". We extract from the
+      NDT "Unified Views" data the list of IPv4 addresses that perform speed tests
+      and mark their /24 IPv4 prefixes as "used" on a daily basis for the week of
+      April 24 – 30, 2023.
+    used_in_paper: true
+  - quote: 'The indications of activity we use are: (a) hosts replying on any transport
+      port upon contacting as reported by Censys [23], (b) end-users performing speed
+      tests of their Internet connectivity as reported by NDT [33], and (c) hosts
+      replying to ICMP echo requests as reported by ISI [47].'
+    used_in_paper: true
+  references:
+  - '[33] Measurement Lab. (2023-04-24 – 2023-04-30). The M-Lab NDT Data Set. https://measurementlab.net/tests/ndt.
+    ((2023-04-24 – 2023-04-30)).'
+  type: data
+  urls:
+  - https://measurementlab.net/tests/ndt
+- id: CAIDA|Prefix2AS
+  name: Prefix2AS Dataset
+  quotes:
+  - quote: To this end, we use CAIDA's prefix-to-AS mapping data set (published daily)
+      from April 24, 2023 [9], which is based on Route Views RIB dumps.
+    used_in_paper: true
+  references:
+  - '[9] CAIDA. 2023. Routeviews Prefix to AS mappings Dataset for IPv4 and IPv6.
+    https://www.caida.org/catalog/datasets/routeviews-prefix2as/. (2023).'
+  type: dataset
+  urls:
+  - https://www.caida.org/catalog/datasets/routeviews-prefix2as/
+- id: U.Oregon|Routeviews
+  name: RouteViews
+  quotes:
+  - quote: To obtain a complete list of prefixes announced in the global routing system,
+      we use routing table (RIB) dumps from a large Route Views collector (route-views4).
+    used_in_paper: true
+  - quote: Here, we rely on daily snapshots from Route Views [1] and remove any /24
+      subnet that is not inside an announced prefix as seen by Route Views.
+    used_in_paper: true
+  references:
+  - '[1] 2023. Routeviews Project – University of Oregon. http://www.routeviews.org/.
+    (2023).'
+  type: dataset
+  urls:
+  - http://www.routeviews.org/
+- id: UCSD|Network Telescope
+  name: UCSD Network Telescope
+  quotes:
+  - quote: 'For an intuitive sketch of these key concepts see Figure 1: Operational
+      telescopes [11, 34] such as the ones shown on the right-hand side of the figure
+      are dedicated network prefixes (black clouds) that are announced for the purpose
+      of attracting IBR (bottom of the figure).'
+    used_in_paper: false
+  - quote: 'E.g., this is the case of the two largest telescopes broadly accessible
+      to academic researchers: the UCSD Network Telescope [11]—once almost a /8 block—has
+      been gradually shrinking as subnets are assigned by the owner, and recently
+      saw a whole quarter of its addresses being sold [28];'
+    used_in_paper: false
+  references:
+  - '[11] CAIDA. 2023. The UCSD Network Telescope. https://www.caida.org/projects/network_telescope/.
+    (2023).'
+  type: tool
+  urls:
+  - https://www.caida.org/projects/network_telescope/
+---
+filename: I Tag, You Tag, Everybody Tags.pdf
+resources: []
+---
+filename: IRRegularities in the Internet Routing Registry.pdf
+resources:
+- id: CAIDA|AS Rank
+  name: AS Rank
+  quotes:
+  - quote: We used the CAIDA AS Rank dataset [7], CAIDA AS Relationship dataset [8],
+      and the CAIDA AS-toOrganizations dataset (as2org) [9] to analyze the ASes registered
+      in the IRR databases.
+    used_in_paper: true
+  - quote: We found one of those ASes (AS35916) to be a small US-based ISP with 10
+      customers according to CAIDA's AS Rank [7].
+    used_in_paper: true
+  references:
+  - '[7] CAIDA. 2022. AS Rank. https://asrank.caida.org'
+  type: dataset
+  urls:
+  - https://asrank.caida.org
+- id: CAIDA|AS Relationships
+  name: CAIDA|AS Relationships
+  quotes:
+  - quote: We used the CAIDA AS Rank dataset [7], CAIDA AS Relationship dataset [8],
+      and the CAIDA AS-toOrganizations dataset (as2org) [9] to analyze the ASes registered
+      in the IRR databases.
+    used_in_paper: true
+  references:
+  - '[8] CAIDA. 2022. AS Relationships. https://www.caida.org/catalog/datasets/asrelationships'
+  type: dataset
+  urls:
+  - https://www.caida.org/catalog/datasets/as-relationships/
+- id: CAIDA|AS2Org
+  name: CAIDA|AS2Org
+  quotes:
+  - quote: We used the CAIDA AS Rank dataset [7], CAIDA AS Relationship dataset [8],
+      and the CAIDA AS-toOrganizations dataset (as2org) [9] to analyze the ASes registered
+      in the IRR databases.
+    used_in_paper: true
+  - quote: During manual inspection, we found 30.4% (10,408 / 34,199) irregular route
+      objects registered by ipxo.com, an IP leasing company. They present a challenge
+      to automating inference of irregular objects. They registered 738 ASes under
+      different maintainers in RADB, none of which had a sibling or customer-provider/peering
+      relationship [9].
+    used_in_paper: true
+  references:
+  - '[9] CAIDA. 2022. Inferred AS to Organization Mapping Dataset. https://www.caida.org/catalog/datasets/as-organizations'
+  type: dataset
+  urls:
+  - https://www.caida.org/catalog/datasets/as-organizations/
+- id: CAIDA|BGPView
+  name: BGPView
+  quotes:
+  - quote: We used the CAIDA BGPView tool [32] to read BGP updates collected from
+      Routeviews [30] and RIPE RIS [27] between November 2021 and May 2023.
+    used_in_paper: true
+  references:
+  - '[32] Chiara Orsini, Alistair King, Danilo Giordano, Vasileios Giotsas, and Alberto
+    Dainotti. 2016. BGPStream: A Software Framework for Live and Historical BGP Data
+    Analysis. In Proceedings of the 2016 Internet Measurement Conference (Santa Monica,
+    California, USA) (IMC ''16). Association for Computing Machinery, New York, NY,
+    USA, 429–444. https://doi.org/10.1145/2987443.2987482'
+  type: tool
+- id: U.Oregon|Routeviews
+  name: RouteViews
+  quotes:
+  - quote: We used the CAIDA BGPView tool [32] to read BGP updates collected from
+      Routeviews [30] and RIPE RIS [27] between November 2021 and May 2023.
+    used_in_paper: true
+  references:
+  - '[30] University of Oregon. 2023. Route Views Project. http://www.routeviews.org/routeviews'
+  type: dataset
+  urls:
+  - http://www.routeviews.org/
+---
+filename: Illuminating Router Vendor Diversity Within Providers and Along Network
+  Paths.pdf
+resources:
+- id: CAIDA|AS Relationships
+  name: CAIDA|AS Relationships
+  quotes:
+  - quote: we use the CAIDA AS relationship dataset [12] to find AS paths where these
+      vendor homogeneous ASes serve as transit ASes.
+    used_in_paper: true
+  references:
+  - '[12] CAIDA. 2022. AS Relationships. https://publicdata.caida.org/datasets/as-relationships/serial-1/.'
+  type: dataset
+  urls:
+  - https://www.caida.org/catalog/datasets/as-relationships/
+- id: Censys|Universal Internet Dataset
+  name: Censys Universal Internet Dataset
+  quotes:
+  - quote: Censys [17] includes Hershel signatures in recent raw scanning data.
+    used_in_paper: false
+  - quote: Our methodology builds a model based in part on high-confidence router
+      vendor labels and then uses that model to extend coverage and improve accuracy.
+      Such ground-truth data can be collected using private information about the
+      deployment of routers in a network or via information leakage using protocol
+      scanning [17].
+    used_in_paper: false
+  - quote: we acquire a set of addresses from Censys, which are known to reveal vendor
+      information through service banners.
+    used_in_paper: true
+  references:
+  - '[17] Zakir Durumeric, David Adrian, Ariana Mirian, Michael Bailey, and J. Alex
+    Halderman. 2015. A Search Engine Backed by Internet-Wide Scanning. In ACM CCS.'
+  type: dataset
+  urls:
+  - https://docs.censys.com/docs/ls-download-censys-universal-internet-dataset
+- id: CAIDA|ITDK
+  name: ITDK
+  quotes:
+  - quote: Our contributions include:... Applying LFP to the widely used RIPE Atlas
+      and CAIDA Internet Topology Data Kit (ITDK) router datasets to classify 64%
+      of the active router IPs—more than double the coverage as compared to current
+      state-of-the-art (§7).
+    used_in_paper: true
+  references:
+  - '[11] CAIDA. 2021. Macroscopic Internet Topology Data Kit (ITDK). https://www.caida.org/catalog/datasets/internet-topology-data-kit/.'
+  type: dataset
+  urls:
+  - https://www.caida.org/catalog/datasets/internet-topology-data-kit/
+- id: LFP|Router Fingerprinting Artifacts
+  name: LFP Router Fingerprinting Artifacts
+  quotes:
+  - quote: LFP is publicly available, along with the the derived signatures and classification
+      results from this study to enable reproducibility and future work [3].
+    used_in_paper: true
+  references:
+  - '[3] Taha Albakour, Oliver Gasser, Robert Beverly, and Georgios Smaragdakis. 2023.
+    Illuminating Router Vendor Diversity Within Providers and Along Network Paths
+    (artifacts). https://routerfingerprinting.github.io/.'
+  type: tool
+  urls:
+  - https://routerfingerprinting.github.io/
+- id: CAIDA|MIDAR
+  name: MIDAR
+  quotes:
+  - quote: While the limited size (16 bits) of the IPID counter can be problematic,
+      Internet researchers have utilized the IPID field for a broad range of applications.
+      Bellovin [7] uses IPID to count NATed hosts, alias resolution tools such as
+      MIDAR [29] and Ally [47] use monotonic IPID counters to infer aliases, and Chen
+      et al. [14] use IPIDs to characterize end-systems
+    used_in_paper: false
+  - quote: This complementary dataset contains router alias sets (excluding singletons)
+      inferred via MIDAR [29] and iffinder measurements.
+    used_in_paper: true
+  references:
+  - '[29] K. Keys, Y. Hyun, M. Luckie, and k claffy. 2013. Internet-Scale IPv4 Alias
+    Resolution with MIDAR. IEEE/ACM Trans. Networking 21, 2 (2013).'
+  type: tool
+  urls:
+  - https://www.caida.org/projects/midar/
+- id: PTPerf Code Repository
+  name: PTPerf Code Repository
+  quotes:
+  - quote: Our contributions include:... Applying LFP to the widely used RIPE Atlas
+      and CAIDA Internet Topology Data Kit (ITDK) router datasets to classify 64%
+      of the active router IPs.
+    used_in_paper: true
+  - quote: We extract intermediate IP hops from RIPE Atlas traceroute measurements
+      to obtain router IPv4 addresses.
+    used_in_paper: true
+  references:
+  - '[43] RIPE NCC. 2021. RIPE Atlas. https://atlas.ripe.net/.'
+  type: dataset
+  urls:
+  - https://atlas.ripe.net/
+- id: UMich|ZMap
+  name: UMich|ZMap
+  quotes:
+  - quote: While general purpose remote fingerprinting tools have been used to great
+      effect, e.g., for Internet-wide surveys and scanning [23, 40, 49], these tools
+      are ill-suited to router fingerprinting.
+    used_in_paper: false
+  references:
+  - '[18] Zakir Durumeric, Eric Wustrow, and J. Alex Halderman. 2013. ZMap: Fast Internet-Wide
+    Scanning and its Security Applications. In USENIX Security Symposium.'
+  type: tool
+  urls:
+  - https://zmap.io/
+---
+filename: In the Room Where It Happens- Characterizing Local Communication and Threats
+  in Smart Homes.pdf
+resources:
+- id: MITRE|CVE
+  name: MITRE|CVE
+  quotes:
+  - quote: We find that 37 devices—including Amazon Echo and Google ones—use old or
+      custom DHCP client versions, potentially leaving them open to vulnerabilities
+      (e.g., [2]).
+    used_in_paper: true
+  - quote: This facilitates birthday attacks to obtain cleartext data in the presence
+      of a long-duration encrypted sessions [85].
+    used_in_paper: false
+  references:
+  - '[2] 2019. CVE-2019-11766. Available from MITRE, CVE-ID CVE-2019-11766.. https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11766'
+  - '[85] MITRE. 2016. CVE-2016-2183 Detail - NVD. https://nvd.nist.gov/vuln/detail/CVE-2016-2183.
+    Accessed on May 11, 2023.'
+  type: dataset
+  urls:
+  - https://cve.mitre.org/
+- id: IoTInspector
+  name: IoTInspector
+  quotes:
+  - quote: We collected the IoT Inspector dataset [69] and analyzed a subset of the
+      data for this paper.
+    used_in_paper: true
+  - quote: 'IoT Inspector does not collect any packet payload with two exceptions:
+      (i) the hostname fields in DHCP Request and DNS Response packets, and (ii) the
+      full mDNS and SSDP responses [69].'
+    used_in_paper: false
+  - quote: For details on how IoT Inspector protects user privacy, refer to the original
+      paper [69], the IRB protocol [6], and the FAQ page [9].
+    used_in_paper: false
+  references:
+  - '[69] Danny Yuxing Huang, Noah Apthorpe, Frank Li, Gunes Acar, and Nick Feamster.
+    2020. Iot inspector: Crowdsourcing labeled network traffic from smart home devices
+    at scale. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous
+    Technologies 4, 2 (2020), 1–21.'
+  type: tool
+  urls:
+  - https://github.com/nyu-mlab/iot-inspector-client
+---
+filename: Inferring Changes in Daily Human Activity from Internet Response.pdf
+resources:
+- id: ISI|ANT covid-work-from-home dataset
+  name: ANT Covid-Work-from-Home Datasets
+  quotes:
+  - quote: Data from our work is available at no cost [1], and we plan to release
+      our analysis software with our paper publication.
+    used_in_paper: true
+  - quote: Our detection data is available to researchers at no cost [1].
+    used_in_paper: true
+  references:
+  - '[1] ANT Project. 2022. ANT Covid-Work-from-Home Datasets. https://ant.isi.edu/datasets/covid/.
+    https://ant.isi.edu/datasets/covid/'
+  type: dataset
+  urls:
+  - https://ant.isi.edu/datasets/covid/
+- id: CAIDA|Archipelago
+  name: Archipelago (Ark) Measurement Infrastructure
+  quotes:
+  - quote: CAIDA's Archipelago [15] covers all routed /24 blocks, but it is far too
+      slow to track diurnal trends.
+    used_in_paper: false
+  references:
+  - '[15] CAIDA. 2007. Archipelago (Ark) Measurement Infrastructure. website https://www.caida.org/projects/ark/.
+    https://www.caida.org/projects/ark/'
+  type: dataset
+  urls:
+  - https://www.caida.org/projects/ark/
+- id: Censys|Universal Internet Dataset
+  name: Censys Universal Internet Dataset
+  quotes:
+  - quote: Censys scans [27] emphasize daily services and certificates on hosts, not
+      reachability many times per day, and bulk data is not currently available.
+    used_in_paper: false
+  references:
+  - '[27] Zakir Durumeric, David Adrian, Ariana Mirian, Michael Bailey, and J. Alex
+    Halderman. 2015. A Search Engine Backed by Internet-Wide Scanning. In Proceedings
+    of the ACM Conference on Computer and Communications Security. ACM, Denver, CO,
+    USA, 542–553. https://doi.org/10.1145/2810103.2813703'
+  type: dataset
+  urls:
+  - https://docs.censys.com/docs/ls-download-censys-universal-internet-dataset
+- id: ISI|Trinocular
+  name: Trinocular Internet Outage Detection System
+  quotes:
+  - quote: After examining several possibilities, we primarily use data from Trinocular,
+      an Internet outage detection system operating since 2013.
+    used_in_paper: true
+  - quote: 'We summarize prior detailed descriptions of collection [7, 71]: each of
+      the six geographically distributed sites independently probes about 5.2M /24
+      IPv4 address blocks with ICMP echo request messages.'
+    used_in_paper: true
+  - quote: We model the expected FBS time with logistic regression parameterized by
+      scanned addresses (𝐸(𝑏), the 𝑦-axis of these graphs, defined in §2.2) and availability
+      (𝐴, the expected response rate of 𝐸(𝑏), defined in [71]), both of which we estimate
+      from long-term data.
+    used_in_paper: true
+  references:
+  - '[71] Lin Quan, John Heidemann, and Yuri Pradkin. 2013. Trinocular: Understanding
+    Internet Reliability Through Adaptive Probing. In Proceedings of the ACM SIGCOMM
+    Conference. ACM, Hong Kong, China, 255–266. https://doi.org/10.1145/2486001.2486017'
+  type: dataset
+  urls:
+  - https://ant.isi.edu/datasets/outage/
+- id: UCSD|Network Telescope
+  name: UCSD Network Telescope
+  quotes:
+  - quote: It uses data from the UCSD Network Telescope [16].
+    used_in_paper: false
+  references:
+  - '[16] CAIDA. 2012. Network Telescope. https://www.caida.org/projects/network_telescope/'
+  type: tool
+  urls:
+  - https://www.caida.org/projects/network_telescope/
+- id: ISI|ANT Internet surveys
+  name: USC Internet Address Surveys
+  quotes:
+  - quote: We compare our analysis to USC Internet surveys [49].
+    used_in_paper: true
+  references:
+  - '[49] John Heidemann, Yuri Pradkin, Ramesh Govindan, Christos Papadopoulos, Genevieve
+    Bartlett, and Joseph Bannister. 2008. Census and Survey of the Visible Internet.
+    In Proceedings of the ACM Internet Measurement Conference. ACM, Vouliagmeni, Greece,
+    169–182. https://doi.org/10.1145/1452520.1452542'
+  type: dataset
+- id: UMich|ZMap
+  name: UMich|ZMap
+  quotes:
+  - quote: We examined ZMap [28], with its quick, complete scans of IPv4, but it preserves
+      only positive replies
+    used_in_paper: true
+  references:
+  - '[28] Zakir Durumeric, Eric Wustrow, and J. Alex Halderman. 2013. ZMap: Fast Internet-wide
+    Scanning and Its Security Applications. In Proceedings of the USENIX Security
+    Symposium. USENIX, Washington, DC, USA, 605–620. https://www.usenix.org/system/files/conference/usenixsecurity13/sec13-paper_durumeric.pdf'
+  type: tool
+  urls:
+  - https://zmap.io/
+---
+filename: Localizing Traffic Differentiation.pdf
+resources:
+- id: CAIDA|Anonymized Internet Traces
+  name: CAIDA Anonymized Internet Traces Dataset
+  quotes:
+  - quote: In addition to the trace replays, we send along the two paths background
+      traffic generated from CAIDA Internet traces [4].
+    used_in_paper: true
+  references:
+  - '[4] CAIDA. 2023. The CAIDA Anonymized Internet Traces Dataset (April 2008 - January
+    2019). https://www.caida.org/catalog/datasets/passive_dataset/. Accessed August
+    2023.'
+  type: dataset
+  urls:
+  - https://www.caida.org/catalog/datasets/passive_dataset/
+- id: U.Oregon|Routeviews
+  name: RouteViews
+  quotes:
+  - quote: 'In particular, TC''s input consists of two BigQuery tables from M-Lab''s
+      dataset: the first one contains traceroute records collected using scamper [24],
+      while the second one contains additional geolocation and Autonomous System Number
+      (ASN) information on each hop, collected from the MaxMind, IPinfo.io, and RouteViews
+      databases.'
+    used_in_paper: true
+  type: dataset
+  urls:
+  - http://www.routeviews.org/
+- id: Measurement Lab|WeHe
+  name: WeHe
+  quotes:
+  - quote: It consists of WeHe clients, installed on devices of participating users,
+      andWeHe servers, running on globally distributed infrastructure (EC2 and M-Lab
+      [21]).
+    used_in_paper: false
+  references:
+  - '[21] Measurement Lab. 2023. Wehe. https://measurementlab.net/tests/wehe. Accessed
+    August 2023.'
+  type: tool
+  urls:
+  - https://measurementlab.net/tests/wehe
+- id: EPFL|WeHeY
+  name: WeHeY
+  quotes:
+  - quote: We present a system, WeHeY, built atop WeHe, that can localize traffic
+      differentiation, i.e.,  obtain concrete evidence that the differentiation happened
+      within the client'sISP.
+    used_in_paper: true
+  - quote: We implemented WeHeY as part of WeHe, which is hosted by the M-Lab measurement
+      platform [20].
+    used_in_paper: true
+  type: tool
+  urls:
+  - https://nal-epfl.github.io/WeHeY
+---
+filename: Not only E.T. Phones Home- Analysing the Native User Tracking of Mobile
+  Browsers.pdf
+resources: []
+---
+filename: On the Importance of Being an AS- An Approach to Country-Level AS Rankings.pdf
+resources:
+- id: CAIDA|AS Rank
+  name: AS Rank
+  quotes:
+  - quote: CAIDA's AS Rank [9] uses this algorithm.
+    used_in_paper: true
+  references:
+  - '[9] CAIDA. March 2018, February 2021, March 2022. AS Rank. http://as-rank.caida.org.
+    (March 2018, February 2021, March 2022).'
+  type: dataset
+  urls:
+  - https://asrank.caida.org
+- id: CAIDA|AS Relationships
+  name: CAIDA|AS Relationships
+  quotes:
+  - quote: 'Researchers have used two BGP-based metrics to quantify the influence
+      of an AS over the global Internet routing system: (1) AS-level customer cone
+      size [30], to estimate the importance of an AS in the Internet transit hierarchy;
+      and (2) AS hegemony [20], a measure of the centrality of an AS in the Internet
+      AS-level graph.'
+    used_in_paper: false
+  - quote: In 2013, Luckie et al. [30] proposed CC as a framework for comparing large
+      Internet transit providers based on their customer footprint, as part of a broader
+      algorithm to infer business relationships (customer/provider or peering) between
+      ASes.
+    used_in_paper: false
+  - quote: We use the same data curation process as CAIDA's AS Relationship algorithm
+      [30], depicted in Table 1.
+    used_in_paper: true
+  - quote: As in [30], we infer poisoning when two clique ASes are separated by a
+      non-clique AS.
+    used_in_paper: true
+  references:
+  - '[30] Matthew Luckie, Bradley Huffaker, Amogh Dhamdhere, Vasileios Giotsas, and
+    kc claffy. 2013. AS Relationships, Customer Cones, and Validation. In ACM SIGCOMM
+    Internet Measurement Conference (IMC).'
+  - '[8] CAIDA. March 2018, April 2021, March 2022. AS Relationships. http://www.caida.org/data/as-relationships/.
+    (March 2018, April 2021, March 2022).'
+  type: dataset
+  urls:
+  - http://www.caida.org/data/as-relationships/
+- id: IIJ|Internet Health Report
+  name: Internet Health Report (IHR)
+  quotes:
+  - quote: Since late 2020, IIJ has included a country-level hegemony ranking in their
+      Internet Health Report (IHR) [19, 27].
+    used_in_paper: true
+  references:
+  - '[27] IIJ. 2022. Internet Health Report (IHR). https://ihr.iijlab.net. (October
+    2022).'
+  type: dataset
+  urls:
+  - https://ihr.iijlab.net
+- id: RIPE NCC|RIPE RIS
+  name: RIPE NCC|RIPE RIS
+  quotes:
+  - quote: AS topology metrics generally use BGP routing updates and tables collected
+      and published by the Routeviews [34] and RIPE RIS [32] projects.
+    used_in_paper: true
+  - quote: Also, our metrics operate at a prefix granularity, allowing them to capture
+      the fact that Amazon originated some of its address space from Australia. (RouteViews
+      and RIPE data for 1 April 2021.)
+    used_in_paper: true
+  references:
+  - '[32] RIPE NCC. April 2021, March 2022. Routing Information Service (RIS). http://www.ripe.net/projects/ris/rawdata.html.
+    (April 2021, March 2022).'
+  type: dataset
+  urls:
+  - http://www.ripe.net/projects/ris/rawdata.html
+- id: U.Oregon|Routeviews
+  name: RouteViews
+  quotes:
+  - quote: AS topology metrics generally use BGP routing updates and tables collected
+      and published by the Routeviews [34] and RIPE RIS [32] projects.
+    used_in_paper: false
+  - quote: No single router, nor even a large subset of routers, has enough information
+      to build the full AS-level topology, so even the large set of VPs provided by
+      the public route collector projects [32, 34] observe only a subset of available
+      AS paths.
+    used_in_paper: false
+  - quote: Also, our metrics operate at a prefix granularity, allowing them to capture
+      the fact that Amazon originated some of its address space from Australia. (RouteViews
+      and RIPE data for 1 April 2021.)
+    used_in_paper: true
+  references:
+  - '[34] RouteViews Project. 2021. http://www.routeviews.org/. (April 2021).'
+  type: dataset
+  urls:
+  - http://www.routeviews.org/
+- id: Routeviews|Peering Status Report
+  name: RouteViews Peering Status Report
+  quotes:
+  - quote: To geolocate VPs, we first download the reported location of each collector
+      [33, 35, 36] (usually in the form of an IXP location).
+    used_in_paper: true
+  references:
+  - '[36] RouteViews Project. March 2018, April 2021, March 2022. RouteViews Peering
+    Status Report. http://www.routeviews.org/peers/peering-status.html. (March 2018,
+    April 2021, March 2022).'
+  type: dataset
+  urls:
+  - http://www.routeviews.org/peers/peering-status.html
+- id: Routeviews|collector locations
+  name: Routeviews Collector Locations
+  quotes:
+  - quote: To geolocate VPs, we first download the reported location of each collector
+      [33, 35, 36] (usually in the form of an IXP location).
+    used_in_paper: true
+  references:
+  - '[35] RouteViews Project. March 2018, April 2021, March 2022. collector locations.
+    http://www.routeviews.org/routeviews/index.php/collectors/. (March 2018, April
+    2021, March 2022).'
+  type: dataset
+  urls:
+  - http://www.routeviews.org/routeviews/index.php/collectors/
+---
+filename: On the Similarity of Web Measurements Under Different Experimental Setups.pdf
+resources:
+- id: OpenWPM
+  name: OpenWPM
+  quotes:
+  - quote: Tools such as OpenWPM [19] or custom-built crawlers are used to scale up
+      these experiments.
+    used_in_paper: true
+  - quote: All of these profiles are based on the Firefox browser, and we utilize
+      OpenWPM (v0.18.0), a common and popular crawling framework [19], to capture
+      the traffic we are interested in.
+    used_in_paper: true
+  references:
+  - '[19] Steven Englehardt and Arvind Narayanan. 2016. Online Tracking: A 1-Million-Site
+    Measurement and Analysis. In ACM Conference on Computer and Communications Security
+    (CCS). https://doi.org/10.1145/2976749.2978313'
+  type: tool
+  urls:
+  - https://github.com/openwpm/OpenWPM
+  - https://github.com/mozilla/OpenWPM
+  - https://webtap.princeton.edu/software/
+- id: KIT|Parallel Web Measurement Framework
+  name: Parallel Web Measurement Framework
+  quotes:
+  - quote: Our setup is based on the openly available framework of Demir et al. that
+      implements a best-effort approach to conduct parallel Web measurements [14].
+    used_in_paper: true
+  references:
+  - '[14] Nurullah Demir, Matteo Große-Kampmann, Tobias Urban, Christian Wressnegger,
+    Thorsten Holz, and Pohlmann Norbert. 2022. Reproducibility and Replicability of
+    Web Measurement Studies. In International Conference on World Wide Web (TheWebConf).
+    https://doi.org/10.1145/3485447.3512214'
+  type: tool
+- id: KU Leuven|Tranco
+  name: KU Leuven|Tranco
+  quotes:
+  - quote: The basis of the set of websites to analyze is the widely used quasi-standard
+      Tranco list [26].
+    used_in_paper: true
+  references:
+  - '[26] Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczyński,
+    and Wouter Joosen. 2019. Tranco: A Research-Oriented Top Sites Ranking Hardened
+    Against Manipulation. In Symposium on Network and Distributed System Security
+    (NDSS). https://doi.org/10.14722/ndss.2019.23386 Generated on 03/04/2022. Available
+    at https://tranco-list.eu/list/5KJN/1000000.'
+  type: dataset
+  urls:
+  - https://tranco-list.eu/
+---
+filename: PTPerf- On the Performance Evaluation of Tor Pluggable Transports.pdf
+resources:
+- id: Berkman|URL Test Lists
+  name: Berkman Klein Center Website Inaccessibility Test Lists
+  quotes:
+  - quote: To assess the web access performance, we consider two sets of websites
+      (1) Tranco top-1k popular websites [71], and (2) randomly selected 1000 potentially
+      blocked websites from Citizen Lab [48] and Berkman research center [8] lists
+      (abbreviated as CBL-1k).
+    used_in_paper: true
+  references:
+  - '[8] Berkman Klein Center for Internet & Society. 2019. Berkman Website Inaccessibility
+    Test Lists. https://github.com/berkmancenter/url-lists. (2019).'
+  type: dataset
+  urls:
+  - https://github.com/berkmancenter/url-lists
+- id: CitizenLab|URL Test Lists
+  name: Citizen Lab URL Testing Lists
+  quotes:
+  - quote: To assess the web access performance, we consider two sets of websites
+      (1) Tranco top-1k popular websites [71], and (2) randomly selected 1000 potentially
+      blocked websites from Citizen Lab [48] and Berkman research center [8] lists
+      (abbreviated as CBL-1k).
+    used_in_paper: true
+  references:
+  - '[48] Citizen Lab. 2022. URL testing lists intended for discovering website censorship.
+    https://github.com/citizenlab/test-lists. (2022).'
+  type: dataset
+  urls:
+  - https://github.com/citizenlab/test-lists
+- id: TorProject|Snowflake Graphs
+  name: Snowflake Graphs
+  quotes:
+  - quote: Figure 10a shows that after September 2022, a large number of users were
+      actively using snowflake.
+    used_in_paper: true
+  references:
+  - '[29] David Fifield. 2023. Snowflake graphs. https://gitlab.torproject.org/dcf/snowflake-graphs.
+    (2023).'
+  type: dataset
+  urls:
+  - https://gitlab.torproject.org/dcf/snowflake-graphs
+- id: TorProject|Tor Metrics
+  name: Tor Metrics
+  quotes:
+  - quote: Iranian citizens resorted to using snowflake pluggable transport to access
+      the Tor network [90]
+    used_in_paper: true
+  references:
+  - '[90] Tor-metrics. 2022. Snowflake users in Iran. https://metrics.torproject.org/userstats-bridge-transport.html?start=2022-08-01&end=2023-01-10&transport=snowflake.
+    (2022).'
+  - '[55] Tor Metrics. 2022. Tor Mterics Users. https://metrics.torproject.org/userstats-bridge-combined.html?start=2022-10-01&end=2022-12-30&country=ir.
+    (2022).'
+  type: dataset
+  urls:
+  - https://metrics.torproject.org/
+- id: KU Leuven|Tranco
+  name: KU Leuven|Tranco
+  quotes:
+  - quote: To assess the web access performance, we consider two sets of websites
+      (1) Tranco top-1k popular websites [71], and (2) randomly selected 1000 potentially
+      blocked websites from Citizen Lab [48] and Berkman research center [8] lists
+      (abbreviated as CBL-1k).
+    used_in_paper: true
+  references:
+  - '[71] Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczyński,
+    and Wouter Joosen. 2018. Tranco: A research-oriented top sites ranking hardened
+    against manipulation. arXiv preprint arXiv:1806.01156 (2018).'
+  type: dataset
+  urls:
+  - https://tranco-list.eu/
+---
+filename: Performance of Cellular Networks on the Wheels.pdf
+resources:
+- id: CMU|Argoverse
+  name: Argoverse
+  quotes:
+  - quote: We used Argoverse [21], a dataset recorded by a RGB camera mounted on a
+      top of the car.
+    used_in_paper: true
+  references:
+  - '[21] Ming-Fang Chang, John Lambert, Patsorn Sangkloy, Jagjeet Singh, Slawomir
+    Bak, Andrew Hartnett, De Wang, Peter Carr, Simon Lucey, Deva Ramanan, and James
+    Hays. 2019. Argoverse: 3D Tracking and Forecasting With Rich Maps. In Proc. of
+    CVPR. https://doi.org/10.1109/CVPR.2019.00187'
+  type: dataset
+  urls:
+  - https://doi.org/10.1109/CVPR.2019.00187
+- id: NUWiNS|IMC2023-Dataset
+  name: Cellular Networks on the Wheels Dataset
+  quotes:
+  - quote: Our dataset and scripts are publicly available [8].
+    used_in_paper: true
+  references:
+  - '[8] Online. [IMC ''23] Performance of Cellular Networks on the Wheels. https://github.com/NUWiNS/imc2023-cellular-network-performance-on-wheels-data.'
+  type: dataset
+  urls:
+  - https://github.com/NUWiNS/imc2023-cellular-network-performance-on-wheels-data
+- id: Stanford|Puffer
+  name: Puffer
+  quotes:
+  - quote: We used Puffer, an open source video streaming server [51], and built our
+      own client to receive and display video chunks for 360◦ videos.
+    used_in_paper: true
+  references:
+  - '[51] Francis Y. Yan, Hudson Ayers, Chenzhi Zhu, Sadjad Fouladi, James Hong, Keyi
+    Zhang, Philip Levis, and Keith Winstein. 2020. Learning in situ: A Randomized
+    Experiment in Video Streaming. In Proc. of USENIX NSDI. https://doi.org/10.1145/2785956.2787486'
+  type: tool
+  urls:
+  - https://doi.org/10.1145/2785956.2787486
+---
+filename: Phishing in the Free Waters- A Study of Phishing Attacks Created using Free
+  Website Building Services.pdf
+resources:
+- id: FreePhish
+  quotes:
+  - quote: In this work, we propose FreePhish, a framework for automatically identifying
+      phishing attacks created using FWBs and shared on social media services, monitoring
+      the reaction of anti-phishing entities against them, and reporting them for
+      removal.
+    used_in_paper: true
+  - quote: 'FreePhish helped us identify more than 31.4K FWB phishing URLs from November
+      2022 to March 2023, and we dedicate Section 5 to closely investigate how well
+      they are detected by four popular phishing blocklists: PhishTank [5], OpenPhish
+      [69], Google Safe Browsing [4], and APWG eCrimeX [27], 76 security tools, as
+      well as the FWB service providers and the social media networks (Twitter and
+      Facebook).'
+    used_in_paper: true
+  references:
+  - Sayak Saha Roy, Unique Karanjit, and Shirin Nilizadeh. 2023. FreePhish. https://github.com/UTA-SPRLab/freephish/
+  type: tool
+  urls:
+  - https://github.com/UTA-SPRLab/freephish/
+---
+filename: Pushing Alias Resolution to the Limit.pdf
+resources:
+- id: RouterFingerprinting|AliasResolutionDataset
+  name: Alias Resolution Dataset (Paper Artifacts)
+  quotes:
+  - quote: 'We make the datasets we collected and our analysis publicly available
+      at: https://routerfingerprinting.github.io/'
+    used_in_paper: true
+  references:
+  - '[2] Taha Albakour, Oliver Gasser, and Georgios Smaragdakis. 2023. Pushing Alias
+    Resolution to the Limit (artifacts). https://routerfingerprinting.github.io/.'
+  type: dataset
+  urls:
+  - https://routerfingerprinting.github.io/
+- id: Censys|Universal Internet Dataset
+  name: Censys Universal Internet Dataset
+  quotes:
+  - quote: We apply our methodology on our own active measurements data as well as
+      data obtained from Censys.
+    used_in_paper: true
+  - quote: To complement our view of active services, we leverage the Censys dataset
+      [12], in addition to our own active measurements. Censys perform service scan
+      on the 65k ports.
+    used_in_paper: true
+  - quote: Second, we use data obtained from Censys [12] to identify additional responsive
+      hosts to SSH or BGP.
+    used_in_paper: true
+  references:
+  - '[12] Zakir Durumeric, David Adrian, Ariana Mirian, Michael Bailey, and J. Alex
+    Halderman. 2015. A Search Engine Backed by Internet-Wide Scanning. In ACM CCS.'
+  type: dataset
+  urls:
+  - https://docs.censys.com/docs/ls-download-censys-universal-internet-dataset
+- id: TUMunich|IPv6Hitlist
+  name: IPv6 Hitlist
+  quotes:
+  - quote: In IPv6, we use an IPv6 Hitlist [15, 32] to identify potentially active
+      addresses in the vast IPv6 address space.
+    used_in_paper: true
+  references:
+  - '[15] Oliver Gasser, Quirin Scheitle, Pawel Foremski, Qasim Lone, Maciej Korczyński,
+    Stephen D. Strowes, Luuk Hendriks, and Georg Carle. 2018. Clusters in the Expanse:
+    Understanding and Unbiasing IPv6 Hitlists. In ACM IMC.'
+  - '[32] Johannes Zirngibl, Lion Steger, Patrick Sattler, Oliver Gasser, and Georg
+    Carle. 2022. Rusty Clusters? Dusting an IPv6 Research Foundation. In ACM IMC.'
+  type: dataset
+- id: CAIDA|MIDAR
+  name: MIDAR
+  quotes:
+  - quote: RadarGun [3], Rocketfuel [28], and MIDAR [20] are few examples of tools
+      utilizing this technique for IPv4 addresses, and Speedtrap [22] for IPv6 addresses,
+      respectively.
+    used_in_paper: false
+  - quote: We also utilize MIDAR [20] as an additional source for validation. Specifically,
+      we test a random sample of 61k alias sets using MIDAR and check whether the
+      resulting sets perfectly match the ones we identify with SSH.
+    used_in_paper: true
+  references:
+  - '[20] Ken Keys, Young Hyun, Matthew Luckie, and Kim Claffy. 2013. Internet-Scale
+    IPv4 Alias Resolution with MIDAR. IEEE/ACM Trans. Networking 21 (2013). Issue
+    2.'
+  type: tool
+  urls:
+  - https://www.caida.org/projects/midar/
+- id: ZMap|ZGrab2
+  name: ZMap|ZGrab2
+  quotes:
+  - quote: 'We perform active service scans for SSH and BGP in two phases: (1) An
+      Internet-wide TCP scan sending a single SYN packet on port 22 and 179 using
+      ZMap [13]. (2) A service scan using ZGrab2 [16] targeting IPs, which are responsive
+      to the Internet-wide ZMap scan.'
+    used_in_paper: true
+  - quote: In IPv4, we perform Internet-wide scans for the SSH and BGP protocols using
+      ZMap [13] and ZGrab2 [16].
+    used_in_paper: true
+  references:
+  - '[16] ZGrab 2.0 GitHub. 2023. Fast Go Application Scanner. url-https://github.com/zmap/zgrab2.'
+  type: tool
+  urls:
+  - https://github.com/zmap/zgrab2
+- id: UMich|ZMap
+  name: UMich|ZMap
+  quotes:
+  - quote: Scanning for active services is a widely used technique in Internet measurement
+      and security analysis [9, 13].
+    used_in_paper: false
+  - quote: 'We perform active service scans for SSH and BGP in two phases: (1) An
+      Internet-wide TCP scan sending a single SYN packet on port 22 and 179 using
+      ZMap [13].'
+    used_in_paper: true
+  - quote: In IPv4, we perform Internet-wide scans for the SSH and BGP protocols using
+      ZMap [13] and ZGrab2 [16].
+    used_in_paper: true
+  - quote: For the active scanning we use best current practices [10, 13, 25] to ensure
+      that our prober IP address has a meaningful DNS PTR record.
+    used_in_paper: true
+  references:
+  - '[13] Zakir Durumeric, Eric Wustrow, and J. Alex Halderman. 2013. ZMap: Fast Internet-Wide
+    Scanning and its Security Applications. In USENIX Security Symposium.'
+  type: tool
+  urls:
+  - https://zmap.io/
+- id: CAIDA|iffinder
+  name: iffinder
+  quotes:
+  - quote: Prior work introduced many techniques to resolve aliases with the common
+      source address [5] as the earliest approach.
+    used_in_paper: false
+  references:
+  - '[5] CAIDA. 2023. iffinder. https://catalog.caida.org/software/iffinder.'
+  type: tool
+  urls:
+  - https://catalog.caida.org/software/iffinder
+---
+filename: Replication- Contrastive Learning and Data Augmentation in Traffic Classification
+  Using a Flowpic Input Representation.pdf
+resources: []
+---
+filename: Replication- Towards a Publicly Available Internet Scale IP Geolocation
+  Dataset.pdf
+resources:
+- id: Stanford|ASdb
+  name: ASdb
+  quotes:
+  - quote: In addition, we look at the AS type of our targets according to the ASDB
+      dataset [50], finding that they fall into 16 categories, with 72% falling into
+      the "Computer and Information Technology" category.
+    used_in_paper: true
+  references:
+  - '[50] Maya Ziv, Liz Izhikevich, Kimberly Ruth, Katherine Izhikevich, and Zakir
+    Durumeric. ASdb: a system for classifying owners of autonomous systems. In Proc.
+    ACM IMC, 2021.'
+  type: dataset
+  urls:
+  - https://asdb.stanford.edu/
+- id: CAIDA|AS classification
+  name: CAIDA AS Classification Dataset
+  quotes:
+  - quote: Table 2 shows the distribution of the AS category of our targets according
+      to the CAIDA AS classification dataset [1].
+    used_in_paper: true
+  references:
+  - '[1] CAIDA AS classification dataset. URL https://www.caida.org/catalog/datasets/asclassification/.'
+  type: dataset
+  urls:
+  - https://www.caida.org/catalog/datasets/asclassification/
+- id: CAIDA|HoiHo
+  name: HoiHo
+  quotes:
+  - quote: Some work has been made in this direction using DNS names and latency measurements
+      but was limited to routers [21, 36, 42] so future work could be to extend these
+      techniques to the entire Internet.
+    used_in_paper: false
+  - quote: It is not easy to compare with all of these techniques, as only a few of
+      them come with available code [21, 36].
+    used_in_paper: false
+  - quote: 'The authors of the million scale paper [32] are the last ones to have
+      published a dataset of all the routable IP addresses [12], and this dataset
+      is a single snapshot dated of 2012. In parallel, some efforts have been made
+      on the router IP addresses: (1) CAIDA ITDK [16] provides a dataset of geolocated
+      router IP addresses collected with the Ark platform. The geolocation is made
+      using a combination of sources, including DNS based techniques [36], peering
+      information [13, 14], and MaxMind [4].'
+    used_in_paper: false
+  references:
+  - '[36] Matthew Luckie, Bradley Huffaker, Alexander Marder, Zachary Bischof, Marianne
+    Fletcher, and K Claffy. Learning to extract geographic information from internet
+    router hostnames. In Proc. ACM CoNEXT, 2021.'
+  type: tool
+  urls:
+  - https://hoiho.caida.org/
+- id: ISI|IPV4 Hitlist
+  name: IPV4 Hitlist
+  quotes:
+  - quote: For the VP selection algorithm, we use the ISI hitlist [25] to select the
+      three representatives of the /24 prefix of each target with the highest score
+      of responsiveness.
+    used_in_paper: true
+  references:
+  - '[25] Xun Fan and John Heidemann. Selecting representative IP addresses for internet
+    topology studies. In Proc. ACM IMC, 2010.'
+  type: dataset
+  urls:
+  - https://ant.isi.edu/datasets/ip_hitlists/
+- id: CAIDA|ITDK
+  name: ITDK
+  quotes:
+  - quote: The only large scale publicly available datasets are ITDK [16], RIPE IPMap
+      [40], which are research efforts to provide the geolocation of router IP addresses
+      of the Internet topology, and commercial databases.
+    used_in_paper: false
+  - quote: 'In parallel, some efforts have been made on the router IP addresses: (1)
+      CAIDA ITDK [16] provides a dataset of geolocated router IP addresses collected
+      with the Ark platform.'
+    used_in_paper: false
+  references:
+  - '[16] CAIDA. The CAIDA ark IPv4 Internet topology data kits dataset. https://www.caida.org/catalog/datasets/internet-topology-data-kit/.'
+  type: dataset
+  urls:
+  - https://www.caida.org/catalog/datasets/internet-topology-data-kit/
+- id: PTPerf Code Repository
+  name: PTPerf Code Repository
+  quotes:
+  - quote: RIPE Atlas [41] is the largest geographically and topologically distributed
+      public measurement platform providing more than 10K vantage points in 172 different
+      countries, 5 continents, and 3,494 ASes.
+    used_in_paper: true
+  - quote: We use the set of the 723 RIPE Atlas anchors because their geolocation
+      is more accurate that RIPE Atlas probes
+    used_in_paper: true
+  references:
+  - '[41] RIPE NCC. RIPE Atlas, 2019. https://atlas.ripe.net/.'
+  type: tool
+  urls:
+  - https://atlas.ripe.net/
+- id: RIPE|IPMap
+  name: RIPE IPMap
+  quotes:
+  - quote: The only large scale publicly available datasets are ITDK [16], RIPE IPMap
+      [40], which are research efforts to provide the geolocation of router IP addresses
+      of the Internet topology, and commercial databases.
+    used_in_paper: false
+  - quote: RIPE IPMap is the service providing a daily dataset of the router IP addresses
+      that the single radius technique [23] could geolocate at city level.
+    used_in_paper: false
+  references:
+  - '[40] RIPE IPMap ftp. RIPE Atlas daily dumps. https://ftp.ripe.net/ripe/ipmap/.'
+  type: dataset
+  urls:
+  - https://ftp.ripe.net/ripe/ipmap/
+- id: USC/ISI ANT datasets
+  name: USC/ISI ANT Datasets
+  quotes:
+  - quote: The authors of the million scale paper [32] are the last ones to have published
+      a dataset of all the routable IP addresses [12], and this dataset is a single
+      snapshot dated of 2012
+    used_in_paper: false
+  references:
+  - '[12] USC/ISI ANT datasets. URL https://ant.isi.edu/datasets/all.html.'
+  type: dataset
+  urls:
+  - https://ant.isi.edu/datasets/all.html
+- id: Dioptra|geoloc-imc-2023
+  name: geoloc-imc-2023 (paper code and data)
+  quotes:
+  - quote: 'All of our code and data that is publicly available to facilitate reproducibility
+      at the following url: https://github.com/dioptra-io/geoloc-imc-2023'
+    used_in_paper: true
+  type: tool
+  urls:
+  - https://github.com/dioptra-io/geoloc-imc-2023
+---
+filename: RoVista- Measuring and Analyzing the Route Origin Validation (ROV) in RPKI.pdf
+resources:
+- id: CAIDA|AS Relationships
+  name: CAIDA|AS Relationships
+  quotes:
+  - quote: Now we examine the relationship between the ROV score and the ranking of
+      ASes, which is determined by its customer cone size [40].
+    used_in_paper: true
+  - quote: 'We then identify the ASes where all of the first hops in the traceroutes
+      belong to their customers by analyzing the CAIDA AS relationship datasets, which
+      reveals four ASes: AT&T (AS 7018), Cogent (AS 174), ARNES (AS 2107), and Forthnet
+      (AS 1241); among them, we are able to confirm our findings through communication
+      with AT&T [4].'
+    used_in_paper: true
+  references:
+  - '[40] M. Luckie, B. Huffaker, K. Claffy, A. Dhamdhere, and V. Giotsas. AS Relationships,
+    Customer Cones, and Validation. IMC, 2013.'
+  type: dataset
+  urls:
+  - https://www.caida.org/catalog/datasets/as-relationships/
+- id: CAIDA|BGPStream
+  name: BGPStream
+  quotes:
+  - quote: We now evaluate the impact of ROV using historical BGP hijacking reports
+      collected from BGPStream [13], which detects hijacking attempts [54] by monitoring
+      the real time BGP announcements from multiple datasets such as RouteViews [70]
+      or RIPE RIS [63].
+    used_in_paper: true
+  references:
+  - '[13] BGPStream. https://bgpstream.com/.'
+  type: tool
+  urls:
+  - https://bgpstream.com/
+- id: PTPerf Code Repository
+  name: PTPerf Code Repository
+  quotes:
+  - quote: Second, we use RIPE Atlas probes and choose probes from the 10 ASes that
+      we confirmed their ROV deployment through personal communication [6, 22] or
+      their official announcements [27, 41, 78].
+    used_in_paper: true
+  - quote: To validate the reachability between ASes and tNodes, we utilize RIPE-Atlas
+      [62].
+    used_in_paper: true
+  references:
+  - '[61] RIPE Atlas. https://atlas.ripe.net/.'
+  - '[62] RIPE NCC Annual Report 2015. https://www.ripe.net/publications/docs/ripe-665.'
+  type: dataset
+  urls:
+  - https://atlas.ripe.net/
+- id: RIPE NCC|RIPE RIS
+  name: RIPE NCC|RIPE RIS
+  quotes:
+  - quote: For example, Rueter et al. [59] conducted a controlled experiment by announcing
+      RPKI-invalid prefixes from their own AS to infer the ASes that deployed ROV
+      by comparing their prefix visibility measured from RouteViews [70] and RIPE
+      RIS [63].
+    used_in_paper: false
+  - quote: We now evaluate the impact of ROV using historical BGP hijacking reports
+      collected from BGPStream [13], which detects hijacking attempts [54] by monitoring
+      the real time BGP announcements from multiple datasets such as RouteViews [70]
+      or RIPE RIS [63].
+    used_in_paper: true
+  references:
+  - '[63] RIPE Routing Information Service (RIS). http://www.ripe.net/projects/ris/rawdata.html.'
+  type: dataset
+  urls:
+  - http://www.ripe.net/projects/ris/rawdata.html
+- id: APNIC|RPKI dashboard
+  name: APNIC|RPKI dashboard
+  quotes:
+  - quote: RPKI objects covering more than 40% of the IPv4 prefixes being announced
+      nowadays [65].
+    used_in_paper: true
+  - quote: APNIC maintains a RPKI dashboard [34] that shows the ROV status of ASes.
+    used_in_paper: false
+  references:
+  - '[65] RPKI Deployment Monitor. https://rpki-monitor.antd.nist.gov.'
+  type: tool
+  urls:
+  - https://rpki-monitor.antd.nist.gov
+- id: netsecurelab|rovista
+  name: RoVista
+  quotes:
+  - quote: To this end, we release all of our code and datasets to the research community
+      at https://rovista.netsecurelab.org for network operators, administrators, and
+      researchers to reproduce and benefit from our work.
+    used_in_paper: true
+  - quote: We launched our website (https://rovista.netsecurelab.org/) that publishes
+      the ROV score for ASes on a daily basis.
+    used_in_paper: true
+  type: dataset
+  urls:
+  - https://rovista.netsecurelab.org
+- id: U.Oregon|Routeviews
+  name: RouteViews
+  quotes:
+  - quote: For example, Rueter et al. [59] conducted a controlled experiment by announcing
+      RPKI-invalid prefixes from their own AS to infer the ASes that deployed ROV
+      by comparing their prefix visibility measured from RouteViews [70] and RIPE
+      RIS [63].
+    used_in_paper: false
+  - quote: Figure 1 (top) shows the portion of IP prefixes covered by at least one
+      VRP from December 24th, 2021 to September 12th, 2023 captured at RouteViews
+      [70].
+    used_in_paper: true
+  - quote: Due to the incomplete view of the routing table in RouteViews, there can
+      be tNodes that remain reachable through alternative routes. Thus, we take additional
+      steps to minimize such erroneous tNodes; First, to avoid RPKI-invalid announcement
+      changes during our measurement period, we ensure that the validity of the tNodes
+      IP prefix remains unchanged for each measurement round by validating BGP announcements
+      before and after the experiment.
+    used_in_paper: true
+  - quote: Second, RoVista relies on hosts that announce RPKI-invalid prefixes (i.e.,
+      tNodes), which are collected from public BGP collectors (e.g., RouteViews [70]),
+      which known as having a limited coverage [80].
+    used_in_paper: true
+  - quote: We now evaluate the impact of ROV using historical BGP hijacking reports
+      collected from BGPStream [13], which detects hijacking attempts [54] by monitoring
+      the real time BGP announcements from multiple datasets such as RouteViews [70]
+      or RIPE RIS [63].
+    used_in_paper: true
+  references:
+  - '[70] University of Oregon RouteViews project. http://www.routeviews.org/.'
+  type: dataset
+  urls:
+  - http://www.routeviews.org/
+- id: UMich|ZMap
+  name: UMich|ZMap
+  quotes:
+  - quote: We then scan them using ZMap [26] to find tNodes that open popular TCP
+      port numbers [68] so that we can send TCP SYN packets.
+    used_in_paper: true
+  references:
+  - '[26] Z. Durumeric, E. Wustrow, and J. A. Halderman. ZMap: Fast Internet-Wide
+    Scanning and its Security Applications. USENIX Security, 2013.'
+  type: tool
+  urls:
+  - https://zmap.io/
+---
+filename: Stale TLS Certificates- Investigating Precarious Third-Party Access to Valid
+  TLS Keys.pdf
+resources:
+- id: IMDEA|AVClass2
+  name: AVClass2
+  quotes:
+  - quote: We used AVClass2 [66] to identify malware families and manually inspected
+      the resulting malware family labels and resolved aliases using Malpedia [64].
+    used_in_paper: true
+  references:
+  - '[66] Silvia Sebastián and Juan Caballero. 2020. AVclass2: Massive Malware Tag
+    Extraction from AV Labels. In Annual Computer Security Applications Conference
+    (ACSAC).'
+  type: tool
+  urls:
+  - https://github.com/malrev/avclass2
+- id: ICANN|CZDS
+  name: Centralized Zone Data Service (CZDS)
+  quotes:
+  - quote: We first extracted the domains from all publicly available zone files from
+      the Centralized Zone Data Service (CZDS) [1], which includes the popular org,
+      com, and net zones.
+    used_in_paper: true
+  references:
+  - '[1] [n.d.]. Centralized Zone Data Service. https://czds.icann.org/home.'
+  type: dataset
+  urls:
+  - https://czds.icann.org/home
+- id: Google|Certificate Transparency
+  name: Certificate Transparency
+  quotes:
+  - quote: The primary dataset used for measuring third-party stale certificates is
+      Certificate Transparency (CT), which is a set of log servers that, in aggregate,
+      publishes all TLS certificates trusted by Google Chrome and Apple Safari.
+    used_in_paper: true
+  references:
+  - '[35] Google. [n.d.]. Chrome Compliant CT logs. https://www.certificate-transparency.org/known-logs.'
+  type: dataset
+---
+filename: The CVE Wayback Machine- Measuring Coordinated Disclosure from Exploits
+  against Two Years of Zero-Days.pdf
+resources:
+- id: MITRE|CVE
+  name: MITRE|CVE
+  quotes:
+  - quote: Mitre maintains arguably the most comprehensive listing of securitycritical
+      vulnerabilities through their Common Vulnerabilities and Exposures (CVE) program
+      [15], replacing older data sources [9, 23].
+    used_in_paper: false
+  - quote: These works use sources of CVE metadata [32, 22, 15], combined with additional
+      observations that allow measuring other events in the lifecycle, to characterize
+      a subset of events.
+    used_in_paper: false
+  references:
+  - '[15] [n. d.] CVE - CVE. (). https://cve.mitre.org/.'
+  type: dataset
+  urls:
+  - https://cve.mitre.org/index.html
+---
+filename: The Cloud Strikes Back- Investigating the Decentralization of IPFS.pdf
+resources:
+- id: ICANN|CZDS
+  name: Centralized Zone Data Service (CZDS)
+  quotes:
+  - quote: centralized Zone Data Service [33] for both legacy and new generic TLDs
+      (e.g., .org or .xyz)
+    used_in_paper: true
+  references:
+  - '[33] ICANN. 2022. Centralized Zone Data Service. https://czdns.icann.org'
+  type: dataset
+  urls:
+  - https://czds.icann.org/home
+- id: TUDarmstadt|IMC23-TCSB-Code
+  name: Code for the IMC23 paper The Cloud Strikes Back
+  quotes:
+  - quote: We make all code processing data available at [6].
+    used_in_paper: true
+  references:
+  - '[6] Balduf, Leonhard and Ascigil, Onur and Keizer, Navin V. and Pavlou, George
+    and Scheuermann, Björn and Korczyński, Maciej. 2023. Code for the IMC23 paper
+    The Cloud Strikes Back: Investigating the Decentralization of IPFS. https://github.com/mrd0ll4r/imc23-tcsb'
+  type: tool
+  urls:
+  - https://github.com/mrd0ll4r/imc23-tcsb
+- id: TUDarmstadt|IPFS-Crawler
+  name: IPFS Crawler
+  quotes:
+  - quote: Using the DHT crawler presented in [32, 79], we can enumerate all outgoing
+      DHT connections of functional DHT server nodes.
+    used_in_paper: true
+  references:
+  - '[79] trudi group. 2019. IPFS Crawler. https://github.com/trudi-group/ipfs-crawler'
+  type: tool
+  urls:
+  - https://github.com/trudi-group/ipfs-crawler
+- id: KU Leuven|Tranco
+  name: KU Leuven|Tranco
+  quotes:
+  - quote: Tranco top popularity domain name ranking [56]
+    used_in_paper: true
+  references:
+  - '[56] Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczyński,
+    and Wouter Joosen. 2019. Tranco: A Research-Oriented Top Sites Ranking Hardened
+    Against Manipulation. In Proceedings 2019 Network and Distributed System Security
+    Symposium.'
+  type: dataset
+  urls:
+  - https://tranco-list.eu/
+- id: UMich|ZDNS
+  name: UMich|ZDNS
+  quotes:
+  - quote: using the zdns [34] scanner and Cloudflare Public DNS, we send DNS SOA
+      (Start of Authority) requests to determine registered domain names
+    used_in_paper: true
+  references:
+  - '[34] Liz Izhikevich, Gautam Akiwate, Briana Berger, Spencer Drakontaidis, Anna
+    Ascheman, Paul Pearce, David Adrian, and Zakir Durumeric. 2022. ZDNS: A Fast DNS
+    Toolkit for Internet Measurement (IMC ''22).'
+  type: tool
+  urls:
+  - https://github.com/zmap/zdns
+- id: SWITCH|CHZoneData
+  name: Zone Data of .ch TLD
+  quotes:
+  - quote: 'publicly available zone files of three country-code TLDs: .se, .nu [25],
+      .ch [75]'
+    used_in_paper: true
+  references:
+  - '[75] SWITCH. 2017. Zone Data of .ch TLD. Retrieved May 26, 2023 from https://www.switch.ch/de/open-data/'
+  type: dataset
+  urls:
+  - https://www.switch.ch/de/open-data/
+- id: SwedishInternetFoundation|SEZoneData
+  name: Zone Data of .se and .nu TLDs
+  quotes:
+  - quote: 'publicly available zone files of three country-code TLDs: .se, .nu [25],
+      .ch [75]'
+    used_in_paper: true
+  references:
+  - '[25] The Swedish Internet Foundation. 2019. Zone Data of .se and .nu TLDs. Retrieved
+    May 26, 2023 from https://internetstiftelsen.se/en/zone-data/'
+  type: dataset
+  urls:
+  - https://internetstiftelsen.se/en/zone-data/
+---
+filename: The Prevalence of Single Sign-On on the Web- Towards the Next Generation
+  of Web Content Measurement.pdf
+resources:
+- id: USC/ISI|WebMeasurements
+  name: SSO Web Measurement Artifacts
+  quotes:
+  - quote: All code, data, and artifacts can be found at https://webmeasurements.org.
+    used_in_paper: true
+  references:
+  - '[1] Calvin Ardi and Matt Calder. 2023. The Prevalence of Single Sign-On on the
+    Web: Towards the Next Generation of Web Content Measurement. In Proceedings of
+    the 2023 ACM Internet Measurement Conference (IMC ''23).'
+  type: tool
+  urls:
+  - https://webmeasurements.org
+---
+filename: Thou Shalt Not Reject- Analyzing Accept-Or-Pay Cookie Banners on the Web.pdf
+resources:
+- id: CookiewallData
+  name: Analysis scripts and raw data for Cookiewall measurements
+  quotes:
+  - quote: we release as open-source [50] together with our analysis code and data
+      [49] at bannerclick.github.io
+    used_in_paper: true
+  - quote: Finally, we publish tools, data, and code to foster reproducibility and
+      further studies.
+    used_in_paper: true
+  references:
+  - '[49] Ali Rasaii. 2023. Analysis scripts and raw data for Cookiewall measurements.
+    https://doi.org/10.17617/3.TREBZR.'
+  type: dataset
+  urls:
+  - https://doi.org/10.17617/3.TREBZR
+- id: BannerClick
+  name: BannerClick
+  quotes:
+  - quote: We release our modified version of BannerClick as open-source software
+      [50].
+    used_in_paper: true
+  references:
+  - '[50] Ali Rasaii. 2023. BannerClick on GitHub. https://github.com/bannerclick/bannerclick.'
+  type: tool
+  urls:
+  - https://github.com/bannerclick/bannerclick
+- id: OpenWPM
+  name: OpenWPM
+  quotes:
+  - quote: To perform these studies in an automated way, different measurement tools—such
+      as Selenium [58], OpenWPM [21, 65], FPdetective [2], Chameleon [6], and Common
+      Crawl [11]—have been proposed.
+    used_in_paper: false
+  - quote: BannerClick is built on top of OpenWPM [21] and Selenium [58], and can
+      automatically detect and interact with cookie banners on websites.
+    used_in_paper: true
+  references:
+  - '[21] Steven Englehardt and Arvind Narayanan. 2016. Online tracking: A 1-million-site
+    measurement and analysis. In Proceedings of the 2016 ACM SIGSAC conference on
+    computer and communications security. 1388–1401.'
+  - '[65] WebTAP at Princeton University. 2023. Studies using OpenWPM. https://webtap.princeton.edu/software/.'
+  type: tool
+  urls:
+  - https://github.com/openwpm/OpenWPM
+  - https://github.com/mozilla/OpenWPM
+  - https://webtap.princeton.edu/software/
+---
+filename: Tracking, Profiling, and Ad Targeting in the Alexa Echo Smart Speaker Ecosystem.pdf
+resources:
+- id: OpenWPM
+  name: OpenWPM
+  quotes:
+  - quote: We extend OpenWPM [31] to identify and capture data on prebid.js supported
+      websites.
+    used_in_paper: true
+  references:
+  - '[31] Steven Englehardt and Arvind Narayanan. 2016. Online Tracking: A 1-MillionSite
+    Measurement and Analysis. In Proceedings of the 2016 ACM SIGSAC Conference on
+    Computer and Communications Security (CCS ''16). Association for Computing Machinery,
+    Vienna, 1388–1401.'
+  type: tool
+  urls:
+  - https://github.com/openwpm/OpenWPM
+  - https://github.com/mozilla/OpenWPM
+  - https://webtap.princeton.edu/software/
+- id: KU Leuven|Tranco
+  name: KU Leuven|Tranco
+  quotes:
+  - quote: We crawl Tranco top websites list (from 09/07/2021) [49] and probe for
+      prebid.js version.
+    used_in_paper: true
+  references:
+  - '[49] Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczyński,
+    and Wouter Joosen. 2019. Tranco: A Research-Oriented Top Sites Ranking Hardened
+    Against Manipulation. In 26th Annual Network and Distributed System Security Symposium.
+    Internet Society, San Diego.'
+  type: dataset
+  urls:
+  - https://tranco-list.eu/
+---
+filename: Understanding the Privacy Risks of Popular Search Engine Advertising Systems.pdf
+resources:
+- id: Mozilla|Disconnect Entity List
+  name: Disconnect Entity List
+  quotes:
+  - quote: we use the Disconnect Entity List [2] to get the entities of online tracker
+      domains.
+    used_in_paper: true
+  references:
+  - '[2] Last accessed September 11, 2023. Disconnect Entity List. https://github.com/mozilla-services/shavar-prod-lists/blob/master/disconnect-entitylist.json'
+  type: dataset
+  urls:
+  - https://github.com/mozilla-services/shavar-prod-lists/blob/master/disconnect-entitylist.json
+---
+filename: Using Gaming Footage as a Source of Internet Latency Information.pdf
+resources:
+- id: MLab|NDT
+  name: M-Lab NDT (Network Diagnostic Tool)
+  quotes:
+  - quote: We view Tero as complementary to active measurement platforms like RIPE
+      Atlas[51], BISmark [52], Speedchecker14, SamKnows15, and Mlab-hosted projects
+      like NDT [14].
+    used_in_paper: false
+  references:
+  - '[14] Constantine Dovrolis, Krishna Gummadi, Aleksandar Kuzmanovic, and Sascha
+    D Meinrath. 2010. Measurement lab: Overview and an invitation to the research
+    community. ACM SIGCOMM Computer Communication Review 40, 3 (2010), 53–56.'
+  type: data
+  urls:
+  - https://measurementlab.net/tests/ndt
+- id: PTPerf Code Repository
+  name: PTPerf Code Repository
+  quotes:
+  - quote: Open measurement platforms like RIPE Atlas are a great solution, but they
+      also face challenges.
+    used_in_paper: false
+  - quote: We view Tero as complementary to active measurement platforms like RIPE
+      Atlas[51], BISmark [52], Speedchecker14, SamKnows15, and Mlab-hosted projects
+      like NDT [14].
+    used_in_paper: false
+  references:
+  - '[3] RIPE Atlas. [n. d.]. https://atlas.ripe.net/. Accessed: 2023-08-31.'
+  - '[51] RIPE NCC Staff. 2015. Ripe atlas: A global internet measurement network.
+    Internet Protocol Journal 18, 3 (2015).'
+  type: tool
+  urls:
+  - https://atlas.ripe.net/
+- id: ESnet|iperf3
+  name: iperf3
+  quotes:
+  - quote: To create background traffic for the bottleneck, we used generator/sink
+      devices connected directly to Router and Switch2 and iperf310.
+    used_in_paper: true
+  type: tool
+  urls:
+  - https://iperf.fr/iperf-download.php
+---
+filename: Wolf in Sheep's Clothing- Evaluating Security Risks of the Undelegated Record
+  on DNS Hosting Services.pdf
+resources:
+- id: KU Leuven|Tranco
+  name: KU Leuven|Tranco
+  quotes:
+  - quote: Our measurement targeted 8,941 nameservers covering over 400 providers
+      and tested whether they provided URs for the top 2K Tranco sites.
+    used_in_paper: true
+  references:
+  - 'Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczyński,
+    and Wouter Joosen. 2019. Tranco: A Research-Oriented Top Sites Ranking Hardened
+    Against Manipulation. In Proceedings of the 2019 Network and Distributed Systems
+    Security Symposium (NDSS).'
+  type: dataset
+  urls:
+  - https://tranco-list.eu/
+- id: UMich|ZDNS
+  name: UMich|ZDNS
+  quotes:
+  - quote: For efficient measurement, both ZDNS [35] and XMAP [44] satisfied our requirements,
+      and URHunter collects the following responses with the support of ZDNS.
+    used_in_paper: true
+  references:
+  - '[35] Liz Izhikevich, Gautam Akiwate, Briana Berger, Spencer Drakontaidis, Anna
+    Ascheman, Paul Pearce, David Adrian, and Zakir Durumeric. 2022. ZDNS: A Fast DNS
+    Toolkit for Internet Measurement. In Proceedings of the 22nd ACM Internet Measurement
+    Conference (Nice, France) (IMC ''22). Association for Computing Machinery, New
+    York, NY, USA, 33–43. https://doi.org/10.1145/3517745.3561434'
+  type: tool
+  urls:
+  - https://github.com/zmap/zdns

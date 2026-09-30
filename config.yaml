@@ -1,0 +1,43 @@
+# Every path and parameter bin/extract.py and bin/evaluate.py use. Paths are
+# relative to the repository root. Endpoint and key come from the environment
+# (.env.example), never from this file.
+
+data:
+  papers_dir: data/imc2023/
+  # Each paper's filename, split, DOI or arXiv id, and SHA-256 (bin/fetch_papers.py).
+  papers_manifest: data/imc2023/_metadata/papers.yaml
+  target_list: data/imc2023/_metadata/target-list.yaml
+  # Reference ground truth for every reported number.
+  ground_truth: data/imc2023/_metadata/ground-truth-merged.yaml
+  # Main's 2026-04-06 ground truth, before the late-May corrections.
+  # bin/evaluate.py --ground-truth baseline scores a run against it.
+  baseline_ground_truth: data/imc2023/_metadata/ground-truth.yaml
+  splits:
+    training: data/imc2023/papers_training.yaml
+    validation: data/imc2023/papers_validation.yaml
+    evaluation: data/imc2023/papers_evaluation.yaml
+
+extraction:
+  model: gemma
+  temperature: 0
+  max_retries: 5
+  timeout: 600
+  runs: 5
+  shots: 1              # 1 to 3
+  shot_mode: partial    # partial: quotes and references only; whole: labelled as a worked example
+  shot_split: training  # shots come from this split, whatever split is scored; never the paper itself
+  seed: 42
+  workers: 5
+  runs_dir: runs/
+
+evaluation:
+  id_threshold: 80      # thefuzz ratio on ids
+  ref_threshold: 80     # thefuzz token_sort_ratio on references
+  judge_model: gpt-oss  # LLM fallback for what fuzzy matching leaves; --no-llm skips it
+  judge_temperature: null  # null: not sent, as in the reported scorer
+
+benchmark:
+  # Extraction models bin/benchmark_models.py compares, as served aliases: the
+  # four in Ryan's February benchmark. Record the builds from /v1/models with
+  # any result, because aliases drift.
+  models: [gemma, qwen3, kimi, glm-4.7]

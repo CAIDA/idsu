@@ -1,0 +1,1160 @@
+---
+- id: APNIC|RPKI dashboard
+  name: APNIC|RPKI dashboard
+  description: The NIST RPKI Monitor is a test and measurement tool designed to
+    monitor the dynamics of the global Resource Public Key Infrastructure (RPKI)
+    and the impact of RPKI Route Origin Validation (ROV) on Internet routing. It
+    provides measurement data and analyses to the research, standardization, and
+    operations communities to improve trust and confidence in the underlying
+    technologies.
+  type: tool
+  urls:
+    - https://rpki-monitor.antd.nist.gov
+  references:
+    - "NIST. NIST RPKI Deployment Monitor [Software]. Available from:
+      https://www.nist.gov/services-resources/software/nist-rpki-deployment-mon\
+      itor."
+- id: BannerClick
+  name: BannerClick
+  description: BannerClick is an open-source tool built on top of OpenWPM that
+    automatically detects and interacts with cookie consent banners on websites.
+    It enables researchers to study the impact of banner interaction on cookies
+    and tracking, supporting multi-perspective analyses of web cookie practices
+    from different geographic locations and device types.
+  type: tool
+  urls:
+    - https://github.com/bannerclick/bannerclick
+  references:
+    - "Rasaii, A., et al. Exploring the Cookieverse: A Multi-Perspective
+      Analysis of Web Cookies. In Proceedings on Privacy Enhancing Technologies
+      (PoPETs), 2023."
+- id: Berkman|URL Test Lists
+  name: Berkman Klein Center Website Inaccessibility Test Lists
+  description: A collection of lists of URLs intended to estimate the
+    accessibility or inaccessibility of different types of content from
+    different countries. Originally developed by experts for the OpenNet
+    Initiative and maintained by the Internet Monitor project at the Berkman
+    Klein Center at Harvard University, these lists are designed for testing
+    Internet censorship and filtering across regions.
+  type: dataset
+  urls:
+    - https://github.com/berkmancenter/url-lists
+  references:
+    - "Berkman Klein Center. URL Test Lists [Data set]. Available from:
+      https://github.com/berkmancenter/url-lists."
+- id: CAIDA|AS Rank
+  name: AS Rank
+  description: AS Rank provides a ranking of Autonomous Systems (ASes) based on
+    their topological importance in the global Internet routing system (customer
+    cone size and degree).
+  type: dataset
+  urls:
+    - https://asrank.caida.org
+  references:
+    - CAIDA. "AS Rank." 2022, https://asrank.caida.org/. Accessed.
+- id: CAIDA|AS Relationships
+  name: CAIDA|AS Relationships
+  description:
+    Contains AS links annotated with inferred relationships. Each file
+    contains a full AS graph derived from a set of RouteViews BGP table
+    snapshots.
+  type: dataset
+  urls:
+    - https://www.caida.org/catalog/datasets/as-relationships/
+  references:
+    - "CAIDA. AS Relationships (serial-1) [Data set]. 1998 [cited]. Available
+      from: https://catalog.caida.org/dataset/as_relationships_serial_1."
+- id: CAIDA|AS classification
+  name: CAIDA AS Classification Dataset
+  description: The AS Classification Dataset maps Autonomous Systems (ASes) to
+    their classification (Enterprise, Content, Transit/Access) using a machine
+    learning algorithm trained on peeringdb, CAIDA's AS relationships, and AS
+    rank data.
+  type: dataset
+  urls:
+    - https://www.caida.org/catalog/datasets/asclassification/
+  references:
+    - CAIDA. "AS Classification."
+      https://catalog.caida.org/dataset/as_classification. Accessed.
+- id: CAIDA|AS2Org
+  name: CAIDA|AS2Org
+  description: AS to organization mappings derived from the quarterly WHOIS dumps.
+  type: dataset
+  urls:
+    - https://www.caida.org/catalog/datasets/as-organizations/
+  references:
+    - "CAIDA. AS to organizations mappings [Data set]. 2004 [cited]. Available
+      from: https://catalog.caida.org/dataset/as_organizations."
+- id: CAIDA|Anonymized Internet Traces
+  name: CAIDA Anonymized Internet Traces Dataset
+  description: The CAIDA Anonymized Internet Traces Dataset contains anonymized
+    passive traffic traces from CAIDA's equinix-chicago and equinix-sanjose
+    monitors on high-speed Internet backbone links.
+  type: dataset
+  urls:
+    - https://www.caida.org/catalog/datasets/passive_dataset/
+  references:
+    - CAIDA. "The CAIDA Anonymized Internet Traces."
+      https://catalog.caida.org/dataset/passive_dataset. Accessed.
+- id: CAIDA|Archipelago
+  name: Archipelago (Ark) Measurement Infrastructure
+  description:
+    Archipelago (Ark) is CAIDA's active measurement infrastructure. It
+    consists of a global coordination facility and monitors (vantage points)
+    deployed worldwide that probe the Internet.
+  type: dataset
+  urls:
+    - https://www.caida.org/projects/ark/
+    - https://www.caida.org/catalog/datasets/internet-topology-data-kit/
+  references:
+    - CAIDA. "Archipelago (Ark) Measurement Infrastructure."
+      https://catalog.caida.org/project/ark. Accessed.
+- id: CAIDA|BGP Community Intent Data Supplement
+  name: BGP Community Intent Data Supplement
+  description: Supplementary data for the paper "Coarse-grained Inference of BGP
+    Community Intent," which presents an algorithm to infer whether a BGP
+    community is an action community (requesting action from another network) or
+    an informational community (signaling information). The supplement includes
+    code, dictionaries, inferences, and datasets for 78,480 community values
+    observed in public BGP data.
+  type: dataset
+  urls:
+    - https://publicdata.caida.org/datasets/supplement/2023-imc-bgpcomms/
+  references:
+    - Krenc, T., Marder, A., Luckie, M., and claffy, k. Coarse-grained Inference
+      of BGP Community Intent. In ACM Internet Measurement Conference (IMC), Oct
+      2023. https://doi.org/10.1145/3618257.3624838.
+- id: CAIDA|BGPStream
+  name: BGPStream
+  description:
+    BGPStream is an open-source software framework for the analysis of
+    both historical and real-time Border Gateway Protocol (BGP) measurement
+    data.
+  type: tool
+  urls:
+    - https://bgpstream.com/
+  references:
+    - CAIDA. "BGPStream." https://bgpstream.caida.org/. Accessed.
+- id: CAIDA|BGPView
+  name: BGPView
+  description:
+    BGPView is a set of highly optimized data structures and libraries
+    for the efficient reconstruction, transport, and analysis of BGP routing
+    tables. It facilitates inference of global routing tables at a finer
+    granularity than the RIB dumps provided by RouteViews and RIPE RIS,
+    supporting both realtime and offline analysis modes.
+  type: tool
+  urls:
+    - https://github.com/CAIDA/bgpview
+    - https://catalog.caida.org/software/bgpview
+  references:
+    - CAIDA. "BGPView." https://catalog.caida.org/project/bgpview. Accessed.
+- id: CAIDA|HoiHo
+  name: HoiHo
+  description:
+    Hoiho (Holistic Orthography of Internet Hostname Observations) is a
+    tool and dataset that provides regular expressions to extract meaningful
+    components from router hostnames, such as geographic location, network
+    ownership, and interconnection information. It supports Internet topology
+    research by enabling automated learning of semantic structure in router
+    hostnames.
+  type: tool
+  urls:
+    - https://hoiho.caida.org/
+  references:
+    - CAIDA. "Hoiho - Holistic Orthography of Internet Hostname Observations."
+      Oct. https://catalog.caida.org/dataset/hoiho. Accessed.
+- id: CAIDA|ITDK
+  name: ITDK
+  description:
+    The ITDK contains data about connectivity and routing gathered from
+    a large cross-section of the global Internet. This dataset is useful for
+    studying the topology of the Internet at the router-level, among other uses.
+  type: dataset
+  urls:
+    - https://www.caida.org/catalog/datasets/internet-topology-data-kit/
+  references:
+    - "CAIDA. ITDK: Internet Topology Data Kit [Data set]. 2025 [cited].
+      Available from: https://doi.org/10.21986/CAIDADATA.ARK-ITDK."
+- id: CAIDA|MIDAR
+  name: MIDAR
+  description: MIDAR (Monotonic ID-based Alias Resolution) is a tool for
+    large-scale IPv4 alias resolution. It uses a series of probes to identify IP
+    addresses that belong to the same router by observing the monotonicity of IP
+    ID values.
+  type: tool
+  urls:
+    - https://www.caida.org/projects/midar/
+  references:
+    - Ken Keys, Young Hyun, Matthew Luckie, and Kim Claffy. "Internet-Scale IPv4
+      Alias Resolution with MIDAR." IEEE/ACM Transactions on Networking, 2013.
+- id: CAIDA|Prefix2AS
+  name: Prefix2AS Dataset
+  description: Contains IPv4 and IPv6 Prefix to Autonomous System (AS) mappings
+    derived from RouteViews data.
+  type: dataset
+  urls:
+    - https://www.caida.org/catalog/datasets/routeviews-prefix2as/
+  references:
+    - "CAIDA. RouteViews IPv4 Prefix to AS mappings - coalesced [Data set]. 2019
+      [cited]. Available from:
+      https://catalog.caida.org/dataset/routeviews_ipv4_prefix2as_coalesced."
+- id: CAIDA|iffinder
+  name: iffinder
+  description:
+    Iffinder is a tool developed by CAIDA that discovers IPv4 addresses
+    belonging to the same router (aliases) using the common source address
+    method and other techniques including IP Record Route options and /30 subnet
+    mating. It is used as part of the Internet Topology Data Kit (ITDK) alias
+    resolution pipeline alongside MIDAR and kapar.
+  type: tool
+  urls:
+    - https://catalog.caida.org/software/iffinder
+  references:
+    - "Keys, K. iffinder [Software]. CAIDA. Available from:
+      https://www.caida.org/catalog/software/iffinder/."
+- id: CIRCL.lu
+  name: CIRCL Passive DNS
+  description: CIRCL Passive DNS is a database of historical DNS records
+    maintained by the Computer Incident Response Center Luxembourg (CIRCL). It
+    collects DNS query-answer pairs through sensors and enables analysts and
+    researchers to look up historical domain resolutions, useful for threat
+    intelligence, incident response, and security research.
+  type: dataset
+  urls:
+    - https://www.circl.lu/
+  references:
+    - "CIRCL. CIRCL Passive DNS [Data set]. Computer Incident Response Center
+      Luxembourg. Available from: https://www.circl.lu/services/passive-dns/."
+- id: CMU|Argoverse
+  name: Argoverse
+  description: Argoverse is a collection of datasets designed to support
+    autonomous vehicle perception tasks including 3D tracking and motion
+    forecasting. It includes sensor data collected by a fleet of autonomous
+    vehicles in Pittsburgh and Miami, with 3D tracking annotations, over 300,000
+    extracted vehicle trajectories, and rich HD maps with 290 km of mapped lanes
+    containing geometric and semantic metadata.
+  type: dataset
+  urls:
+    - https://doi.org/10.1109/CVPR.2019.00187
+  references:
+    - "Chang, M.-F., Lambert, J., Sangkloy, P., Singh, J., Bak, S., Hartnett,
+      A., Wang, D., Carr, P., Lucey, S., Ramanan, D., and Hays, J. Argoverse: 3D
+      Tracking and Forecasting with Rich Maps. In Proceedings of CVPR, pp.
+      8740-8749, 2019."
+- id: Censys|Universal Internet Dataset
+  name: Censys Universal Internet Dataset
+  description: The Censys Universal Internet Dataset provides data about the
+    services running on all publicly accessible hosts in the IPv4 and IPv6
+    address spaces. Censys continually scans over 3,500 ports with automatic
+    protocol detection and enriches the data with third-party information,
+    publishing updated daily snapshots of the state of the public Internet.
+  type: dataset
+  urls:
+    - https://docs.censys.com/docs/ls-download-censys-universal-internet-dataset
+  references:
+    - "Censys, Inc. Censys Universal Internet Dataset [Data set]. Available
+      from: https://search.censys.io/data."
+- id: CitizenLab|URL Test Lists
+  name: Citizen Lab URL Testing Lists
+  description: A collection of country-specific and global URL testing lists
+    intended for discovering website censorship, maintained by the Citizen Lab
+    at the University of Toronto. The lists include URLs categorized across 30
+    standardized categories such as news media, political criticism, and human
+    rights content, and are used by censorship measurement projects including
+    OONI.
+  type: dataset
+  urls:
+    - https://github.com/citizenlab/test-lists
+  references:
+    - "Citizen Lab and Others. URL Testing Lists Intended for Discovering
+      Website Censorship [Data set]. 2014. Available from:
+      https://github.com/citizenlab/test-lists."
+- id: CookiewallData
+  name: Analysis scripts and raw data for Cookiewall measurements
+  description: "Analysis scripts and raw data to reproduce the web cookie
+    measurements investigating cookiewalls in the wild. This dataset supports
+    the paper 'Thou Shalt Not Reject: Analyzing Accept-Or-Pay Cookie Banners on
+    the Web,' which performs the first automated large-scale analysis of
+    cookiewalls on 45k websites from eight vantage points."
+  type: dataset
+  urls:
+    - https://doi.org/10.17617/3.TREBZR
+  references:
+    - "Rasaii, A., Gosain, D., and Gasser, O. Thou Shalt Not Reject: Analyzing
+      Accept-Or-Pay Cookie Banners on the Web. In Proceedings of the 2023 ACM
+      Internet Measurement Conference (IMC '23), Oct 2023.
+      https://doi.org/10.1145/3618257.3624846."
+- id: DNSViz
+  name: DNSViz
+  description: DNSViz is a tool suite for analysis and visualization of Domain
+    Name System (DNS) behavior, including its security extensions (DNSSEC). It
+    provides a visual analysis of the DNSSEC authentication chain for a domain
+    name and its resolution path in the DNS namespace, helping administrators
+    understand and troubleshoot DNSSEC deployment.
+  type: tool
+  urls:
+    - https://dnsviz.net
+    - https://github.com/dnsviz/dnsviz
+  references:
+    - "Deccio, C. DNSViz: A DNS Visualization Tool [Software]. Sandia National
+      Laboratories. Available from: https://dnsviz.net."
+- id: Dioptra|geoloc-imc-2023
+  name: geoloc-imc-2023 (paper code and data)
+  description: "Source code and data for the IMC 2023 replicability paper
+    'Replication: Towards a Publicly Available Internet scale IP Geolocation
+    Dataset.' The project replicates two prior IP geolocation techniques and
+    evaluates their accuracy and coverage, showing that previously claimed
+    results could not be reproduced on today's Internet with publicly available
+    measurement infrastructure."
+  type: tool
+  urls:
+    - https://github.com/dioptra-io/geoloc-imc-2023
+  references:
+    - "Darwich, O., Rimlinger, H., Dreyfus, M., Gouel, M., and Vermeulen, K.
+      Replication: Towards a Publicly Available Internet scale IP Geolocation
+      Dataset. In Proceedings of the 2023 ACM Internet Measurement Conference
+      (IMC '23), Oct 2023."
+- id: EPFL|WeHeY
+  name: WeHeY
+  description: WeHeY is a network measurement tool built atop Wehe that can
+    localize traffic differentiation, obtaining concrete evidence that
+    differentiation detected by Wehe occurred within the client's ISP. It uses a
+    Y-shaped topology of two converging network paths and builds on ideas from
+    network performance tomography to detect common rate-limiters responsible
+    for throttling application traffic.
+  type: tool
+  urls:
+    - https://nal-epfl.github.io/WeHeY
+  references:
+    - Shmeis, Z., Abdullah, M., Nikolopoulos, P., Argyraki, K., Choffnes, D.,
+      and Gill, P. Localizing Traffic Differentiation. In Proceedings of the
+      2023 ACM Internet Measurement Conference (IMC '23), Oct 2023.
+      https://doi.org/10.1145/3618257.3624809.
+- id: ESnet|iperf3
+  name: iperf3
+  description:
+    iPerf3 is a tool for active measurements of the maximum achievable
+    bandwidth on IP networks. It supports tuning of various parameters related
+    to timing, buffers and protocols (TCP, UDP, SCTP with IPv4 and IPv6).
+  type: tool
+  urls:
+    - https://iperf.fr/iperf-download.php
+  references:
+    - ESnet. "iPerf, the Speed Test Tool for TCP." 2021,
+      https://iperf.fr/iperf-doc.php.
+- id: FreePhish
+  name: FreePhish
+  description: FreePhish is a scalable framework for automatically identifying
+    phishing websites created using Free Website Building services (FWBs) and
+    shared on social media. It detected and characterized over 31,400 phishing
+    URLs across 17 FWB services over six months, and is also available as a
+    Chromium browser extension to protect end users from FWB-based phishing
+    attacks.
+  type: tool
+  urls:
+    - https://github.com/UTA-SPRLab/freephish/
+  references:
+    - "Saha Roy, S., Karanjit, U., and Nilizadeh, S. Phishing in the Free
+      Waters: A Study of Phishing Attacks Created using Free Website Building
+      Services. In Proceedings of the 2023 ACM Internet Measurement Conference
+      (IMC '23), pp. 268-281, Oct 2023.
+      https://doi.org/10.1145/3618257.3624812."
+- id: Google|Certificate Transparency
+  name: Certificate Transparency
+  description: Certificate Transparency (CT) is an open framework of publicly
+    auditable, append-only logs that record TLS/SSL certificates issued by
+    certificate authorities. Started by Google, CT allows domain owners,
+    browsers, and researchers to monitor and audit certificate issuance,
+    enabling detection of misissued or malicious certificates and improving the
+    security of the Web PKI ecosystem.
+  type: dataset
+  urls:
+    - https://certificate.transparency.dev/
+    - https://transparencyreport.google.com/https/certificates
+    - https://certstream.calidog.io/
+  references:
+    - "Laurie, B., Langley, A., and Kasper, E. Certificate Transparency. RFC
+      6962, June 2013. Available from: https://www.rfc-editor.org/rfc/rfc6962."
+- id: ICANN|CZDS
+  name: Centralized Zone Data Service (CZDS)
+  description:
+    The ICANN Centralized Zone Data Service (CZDS) is an online portal
+    providing a centralized point for interested parties to request access to
+    DNS zone files from participating generic top-level domains (gTLDs). It
+    simplifies the process of entering into zone data agreements, allowing
+    researchers, law enforcement, and other approved users to download bulk zone
+    file data for legitimate purposes.
+  type: dataset
+  urls:
+    - https://czds.icann.org/home
+  references:
+    - "ICANN. Centralized Zone Data Service (CZDS) [Data service]. Available
+      from: https://www.icann.org/resources/pages/czds-2014-03-03-en."
+- id: IIJ|Internet Health Report
+  name: Internet Health Report (IHR)
+  description: The Internet Health Report (IHR) is an analytics platform for
+    Internet infrastructure data developed by IIJ Research Lab. It ingests BGP
+    and traceroute data to compute network metrics such as AS Hegemony and
+    round-trip times, providing interactive reports, a public API, and daily
+    data dumps to help network operators, policymakers, and researchers monitor
+    and understand Internet topology and connectivity.
+  type: dataset
+  urls:
+    - https://ihr.iijlab.net
+  references:
+    - "Fontugne, R., Shah, A., and Aben, E. The Internet Health Report [Data
+      set]. IIJ Research Lab. Available from: https://ihr.iijlab.net."
+- id: IMDEA|AVClass2
+  name: AVClass2
+  description: AVClass2 is an automatic malware tagging tool developed at the
+    IMDEA Software Institute that extracts clean, structured tags from antivirus
+    labels assigned to malware samples. Beyond family names, it identifies
+    malware classes, file properties, and behaviors, organizing them into an
+    open taxonomy. It is designed to scale to millions of samples and can
+    maintain an updated knowledge base as AV vendors introduce new tags.
+  type: tool
+  urls:
+    - https://github.com/malrev/avclass2
+    - https://github.com/malicialab/avclass
+  references:
+    - "Sebastián, S. and Caballero, J. AVClass2: Massive Malware Tag Extraction
+      from AV Labels. In Proceedings of the Annual Computer Security
+      Applications Conference (ACSAC), Dec 2020."
+- id: ISI|ANT Internet surveys
+  name: USC Internet Address Surveys
+  description:
+    USC conducts whole-Internet censuses to evaluate address usage and
+    provides analysis data to researchers at no cost. The ANT project at USC/ISI
+    has been taking complete Internet censuses since 2003 by probing all
+    allocated IPv4 addresses, producing data on address occupancy, host
+    stability, and network reliability.
+  type: dataset
+  urls:
+    - https://ant.isi.edu/datasets/address/
+  references:
+    - Heidemann, J., Pradkin, Y., Govindan, R., Papadopoulos, C., Bartlett, G.,
+      and Bannister, J. Census and Survey of the Visible Internet. In
+      Proceedings of the ACM Internet Measurement Conference, pp. 169-182, Oct
+      2008.
+- id: ISI|ANT covid-work-from-home dataset
+  name: ANT Covid-Work-from-Home Datasets
+  description:
+    Datasets from the ANT project at USC/ISI capturing Internet address
+    usage patterns during the COVID-19 pandemic, designed to study how
+    work-from-home patterns changed Internet traffic and address utilization
+    across residential and enterprise networks.
+  type: dataset
+  urls:
+    - https://ant.isi.edu/datasets/covid/
+  references:
+    - Baltra, G. and Heidemann, J. Quantifying COVID-19's Impact on the Internet
+      and on Remote Work. USC/ISI Technical Report ISI-TR-738, 2021.
+- id: ISI|IPV4 Hitlist
+  name: IPV4 Hitlist
+  description: The ISI hitlist is used for selecting representative IP addresses
+    for Internet topology studies based on responsiveness scores. Derived from
+    ANT census data, it provides a curated set of target addresses that are
+    likely to respond to probes, improving the efficiency of active Internet
+    measurement campaigns.
+  type: dataset
+  urls:
+    - https://ant.isi.edu/datasets/ip_hitlists/
+  references:
+    - Fan, X. and Heidemann, J. Selecting Representative IP Addresses for
+      Internet Topology Studies. In Proceedings of the ACM Internet Measurement
+      Conference, pp. 411-423, Nov 2010.
+- id: ISI|Internet Address History
+  name: Internet Address History
+  description:
+    This dataset provides a history of IPv4 address liveness, used for
+    validating results and as a supplemental data source. It combines data from
+    multiple recent censuses to track address usage over time, enabling studies
+    of Internet growth, address dynamics, and network reliability.
+  type: dataset
+  urls:
+    - https://ant.isi.edu/datasets/index.html
+  references:
+    - Heidemann, J., Pradkin, Y., Govindan, R., Papadopoulos, C., Bartlett, G.,
+      and Bannister, J. Census and Survey of the Visible Internet (extended).
+      Technical Report ISI-TR-2008-649. USC/Information Sciences Institute,
+      2008.
+- id: ISI|Trinocular
+  name: Trinocular Internet Outage Detection System
+  description:
+    Trinocular is an active probing system developed by the ANT Lab at
+    USC/ISI that detects Internet outages by adaptively probing all responsive
+    IPv4 /24 address blocks from multiple vantage points worldwide. It uses
+    Bayesian inference to determine block reachability with minimal probing,
+    tracking outages across more than 5 million blocks in near real-time.
+  type: dataset
+  urls:
+    - https://ant.isi.edu/datasets/outage/
+  references:
+    - "Quan, L., Heidemann, J., and Pradkin, Y. Trinocular: Understanding
+      Internet Reliability Through Adaptive Probing. In Proceedings of the ACM
+      SIGCOMM Conference, pp. 255-266, Aug 2013."
+- id: IoTInspector
+  name: IoTInspector
+  description: IoT Inspector is an open-source tool developed by researchers at
+    New York University for capturing, analyzing, and visualizing the network
+    activities of smart home IoT devices. It does not require special hardware
+    or network changes, and enables crowdsourced collection of labeled network
+    traffic from real-world home deployments to support security and privacy
+    research.
+  type: tool
+  urls:
+    - https://github.com/nyu-mlab/iot-inspector-client
+    - https://inspector.engineering.nyu.edu/
+  references:
+    - "Huang, D.Y., Apthorpe, N., Li, F., Acar, G., and Feamster, N. IoT
+      Inspector: Crowdsourcing Labeled Network Traffic from Smart Home Devices
+      at Scale. Proceedings of the ACM on Interactive, Mobile, Wearable and
+      Ubiquitous Technologies, 4(2), June 2020."
+- id: KIT|Parallel Web Measurement Framework
+  name: Parallel Web Measurement Framework
+  description: A framework developed at the Karlsruhe Institute of Technology
+    (KIT) and the Institute for Internet Security for orchestrating
+    quasi-parallel web measurements using multiple browser setups. Built on
+    OpenWPM, it allows crawling multiple websites simultaneously with various
+    browser configurations, enabling large-scale web privacy and security
+    measurement studies such as cookie banner analysis.
+  type: tool
+  urls:
+    - https://github.com/internet-sicherheit/A-Large-Scale-Study-of-Cookie-Banner-Interaction-Tools-and-Their-Impact-on-Users-Privacy
+  references:
+    # ref 1 proposed fix
+    - Demir, N., Große-Kampmann, M., Urban, T., Wressnegger, C., Holz, T.,
+      and Pohlmann, N. Reproducibility and Replicability of Web Measurement
+      Studies. In Proceedings of the ACM Web Conference 2022 (WWW '22),
+      pp. 533–544. https://doi.org/10.1145/3485447.3512214
+    - Demir, N., Urban, T., Wressnegger, C., and Pohlmann, N. A Large-Scale
+      Study of Cookie Banner Interaction Tools and Their Impact on Users'
+      Privacy. In Proceedings on Privacy Enhancing Technologies (PoPETS),
+      2024(1).
+    - "Nurullah Demir, Matteo Große-Kampmann, Tobias Urban, Chris-
+      tian Wressnegger, Thorsten Holz, and Pohlmann Norbert. 2022. Re-
+      producibility and Replicability of Web Measurement Studies. In In-
+      ternational Conference on World Wide Web (TheWebConf). https:
+      //doi.org/10.1145/3485447.3512214"
+- id: KU Leuven|Tranco
+  name: KU Leuven|Tranco
+  description:
+    Tranco is a research-oriented website ranking list maintained by KU
+    Leuven that combines multiple existing top-site lists (such as the Alexa,
+    Umbrella, Majestic, and Chrome User Experience Report lists) to produce a
+    more stable, reproducible, and manipulation- resistant ranking for use in
+    web measurement studies.
+  type: dataset
+  urls:
+    - https://tranco-list.eu/
+  references:
+    - "Le Pochat, V., Van Goethem, T., Tajalizadehkhoob, S., Korczynski, M., and
+      Joosen, W. Tranco: A Research-Oriented Top Sites Ranking Hardened Against
+      Manipulation. In Proceedings of the Network and Distributed System
+      Security Symposium (NDSS), 2019."
+- id: LFP|Router Fingerprinting Artifacts
+  name: LFP Router Fingerprinting Artifacts
+  description: Artifacts for the Lightweight Fingerprinting (LFP) technique that
+    identifies router vendors by analyzing ICMP, TCP, and UDP response
+    signatures. LFP enables Internet-scale router vendor identification without
+    requiring access to management protocols, and is used to study vendor
+    diversity within providers and along network paths.
+  type: tool
+  urls:
+    - https://routerfingerprinting.github.io/
+  references:
+    - Albakour, T., Gasser, O., Beverly, R., and Smaragdakis, G. Illuminating
+      Router Vendor Diversity Within Providers and Along Network Paths. In
+      Proceedings of the 2023 ACM Internet Measurement Conference (IMC '23), Oct
+      2023. https://doi.org/10.1145/3618257.3624813.
+- id: MITRE|CVE
+  name: MITRE|CVE
+  description: Common Vulnerabilities and Exposures (CVE) is a list of publicly
+    disclosed computer security flaws. Its goal is to make it easier to share
+    data across separate vulnerability capabilities (tools, databases, and
+    services).
+  type: dataset
+  urls:
+    - https://cve.mitre.org/index.html
+  references:
+    - MITRE. "CVE - CVE." https://cve.mitre.org/.
+- id: MLab|NDT
+  name: M-Lab NDT (Network Diagnostic Tool)
+  description: NDT (Network Diagnostic Tool) is a single-stream performance
+    measurement of a connection's capacity for bulk transport. Hosted by
+    Measurement Lab, NDT reports upload and download speeds and latency metrics,
+    and attempts to determine what problems limited speeds. All test results are
+    published as open data to promote Internet research.
+  type: data
+  urls:
+    - https://measurementlab.net/tests/ndt
+    - https://measurementlab.net/tests/ndt/ndt7/
+  references:
+    - The M-Lab NDT Data Set. https://measurementlab.net/tests/ndt.
+- id: Measurement Lab|WeHe
+  name: WeHe
+  description: Wehe is a platform for network measurement, consisting of clients
+    installed on user devices and servers running on globally distributed
+    infrastructure. It allows Internet users to test whether their ISP is
+    throttling or otherwise differentiating traffic of specific applications by
+    replaying recorded traffic and comparing performance of original versus
+    bit-inverted traces.
+  type: tool
+  urls:
+    - https://measurementlab.net/tests/wehe
+  references:
+    - Li, F., Niaki, A.A., Choffnes, D., Gill, P., and Mislove, A. A Large-Scale
+      Analysis of Deployed Traffic Differentiation Practices. In Proceedings of
+      ACM SIGCOMM, 2019.
+- id: Merit|Orion Network Telescope
+  name: Orion Network Telescope
+  description: The ORION (Observatory for cyber-Risk Insights and Outages of
+    Networks) Network Telescope is one of the largest and longest-operating
+    network telescopes in the United States, operated by Merit Network. It
+    collects and records unsolicited Internet-wide traffic destined to
+    approximately 500,000 unused (dark) IP addresses, providing visibility into
+    scanning, botnet propagation, backscatter from DDoS attacks, and other
+    malicious activities.
+  type: tool
+  urls:
+    - https://www.merit.edu/research/projects/orion-network-telescope/
+  references:
+    - "Merit Network, Inc. ORION Network Telescope: Observatory for cyber-Risk
+      Insights and Outages of Networks. Available from:
+      https://www.merit.edu/research/projects/orion-network-telescope/."
+- id: Mozilla|Disconnect Entity List
+  name: Disconnect Entity List
+  description: The Disconnect Entity List is a curated dataset maintained by
+    Mozilla that maps tracking domains to their parent organizations. It is used
+    by Firefox's Enhanced Tracking Protection and by researchers to identify and
+    classify third-party tracking entities on the web.
+  type: dataset
+  urls:
+    - https://github.com/mozilla-services/shavar-prod-lists/blob/master/disconnect-entitylist.json
+  references:
+    - "Mozilla. Disconnect Entity List [Data set]. Available from:
+      https://github.com/mozilla-services/shavar-prod-lists."
+- id: NUWiNS|IMC2023-Dataset
+  name: Cellular Networks on the Wheels Dataset
+  description: Dataset and scripts from the IMC 2023 paper "Performance of
+    Cellular Networks on the Wheels," which presents an in-depth measurement
+    study of user-perceived cellular network experience under driving conditions
+    across a 5,700+ km cross-continental US trip. The dataset covers network
+    coverage, performance, handovers, and QoE of latency-critical 5G
+    applications.
+  type: dataset
+  urls:
+    - https://github.com/NUWiNS/imc2023-cellular-network-performance-on-wheels-data
+  references:
+    - Ghoshal, M., Khan, I., Kong, Z.J., Dinh, P., Meng, J., Hu, Y.C., and
+      Koutsonikolas, D. Performance of Cellular Networks on the Wheels. In
+      Proceedings of the 2023 ACM Internet Measurement Conference (IMC '23), Oct
+      2023.
+- id: Northeastern|BehavIoT Dataset
+  name: BehavIoT Dataset
+  description: This dataset is from controlled IoT experiments and is publicly
+    released to facilitate follow-up research. It contains labeled network
+    traffic from smart home IoT devices used in the BehavIoT study of device
+    behavior identification and classification.
+  type: dataset
+  urls:
+    - https://moniotrlab.khoury.northeastern.edu/publications/behaviotimc23
+  references:
+    - "Northeastern University Mon(IoT)r Lab. BehavIoT Dataset [Data set].
+      Available from:
+      https://moniotrlab.khoury.northeastern.edu/publications/behaviotimc23."
+- id: Northeastern|BehavIoT Software
+  name: BehavIoT Software
+  description: This software is from controlled IoT experiments and is publicly
+    released to facilitate follow-up research. It provides the tools and
+    analysis pipeline for the BehavIoT study of IoT device behavior
+    identification and classification from network traffic.
+  type: tool
+  urls:
+    - https://moniotrlab.khoury.northeastern.edu/publications/behaviotimc23
+  references:
+    - "Northeastern University Mon(IoT)r Lab. BehavIoT Software [Tool].
+      Available from:
+      https://moniotrlab.khoury.northeastern.edu/publications/behaviotimc23."
+- id: OpenWPM
+  name: OpenWPM
+  description: OpenWPM is an open-source web privacy measurement framework built
+    on Firefox that enables automated, large-scale web crawling with
+    comprehensive browser instrumentation. It supports parallelism for speed and
+    scale, automatic recovery from browser failures, and captures detailed data
+    on cookies, JavaScript API calls, HTTP requests, and other tracking
+    mechanisms.
+  type: tool
+  urls:
+    - https://github.com/openwpm/OpenWPM
+    - https://github.com/mozilla/OpenWPM
+    - https://webtap.princeton.edu/software/
+  references:
+    - "Englehardt, S. and Narayanan, A. Online Tracking: A 1-million-site
+      Measurement and Analysis. In Proceedings of ACM CCS, 2016."
+- id: PTPerf Code Repository
+  name: PTPerf Code Repository
+  description: A public code repository for PTPerf, containing code and analysis
+    scripts for evaluating path tracing performance using RIPE Atlas measurement
+    infrastructure. The repository supports reproducibility of network path
+    analysis and traceroute-based measurement studies.
+  type: dataset
+  urls:
+    - https://atlas.ripe.net/
+  references:
+    - "RIPE NCC. RIPE Atlas [Measurement platform]. Available from:
+      https://atlas.ripe.net/."
+- id: QUICBench
+  name: QUICBench
+  description: An open-source tool used for measurement studies related to QUIC
+    and its evolution. QUICBench provides benchmarking capabilities for
+    evaluating QUIC protocol implementations and their performance
+    characteristics across different network conditions.
+  type: tool
+  urls:
+    - https://github.com/NUS-SNL/QUICbench
+  references:
+    - "NUS SNL. QUICBench [Software]. Available from:
+      https://github.com/NUS-SNL/QUICbench."
+- id: RIPE NCC|RIPE RIS
+  name: RIPE NCC|RIPE RIS
+  description: The Routing Information Service (RIS) is a RIPE NCC project that
+    collects and stores Internet routing data using a globally distributed set
+    of Remote Route Collectors (RRCs) located at Internet Exchange Points. Both
+    BGP updates and RIB dumps are collected in MRT format and made available to
+    the Internet community for troubleshooting and research.
+  type: dataset
+  urls:
+    - https://data.ris.ripe.net/rrc00/
+    - http://ris.ripe.net/
+  references:
+    - "RIPE NCC. Routing Information Service (RIS) [Data set]. Available from:
+      https://www.ripe.net/analyse/internet-measurements/routing-information-se\
+      rvice-ris/."
+- id: RIPE|IPMap
+  name: RIPE IPMap
+  description: RIPE IPmap is a multi-engine geolocation platform operated by the
+    RIPE NCC that infers the geographic coordinates of Internet infrastructure
+    IP addresses. It combines multiple geolocation engines including active
+    measurements via RIPE Atlas, reverse DNS analysis, crowdsourced data, and
+    IXP-based location inference, providing daily data dumps and a public API.
+  type: dataset
+  urls:
+    - https://ftp.ripe.net/ripe/ipmap/
+  references:
+    - "Du, B., Candela, M., Huffaker, B., Snoeren, A.C., and claffy, k. RIPE
+      IPmap Active Geolocation: Mechanism and Performance Evaluation. ACM
+      SIGCOMM Computer Communication Review, 50(2), 2020."
+- id: RWTH|quic-ecn-measurements
+  name: QUIC ECN Measurements Tools
+  description: Tools and measurement code for studying Explicit Congestion
+    Notification (ECN) support and behavior in QUIC deployments across the
+    Internet. Developed at RWTH Aachen University (COMSYS), the repository
+    provides scripts and analysis tools for conducting Internet-wide ECN
+    measurements over QUIC connections.
+  type: tool
+  urls:
+    - https://github.com/COMSYS/quic-ecn-measurements
+  references:
+    - "COMSYS, RWTH Aachen. QUIC ECN Measurements [Software]. Available from:
+      https://github.com/COMSYS/quic-ecn-measurements."
+- id: RouterFingerprinting|AliasResolutionDataset
+  name: Alias Resolution Dataset (Paper Artifacts)
+  description: Artifacts from the router fingerprinting research, including
+    signature lists and measurement data for the Lightweight Fingerprinting
+    (LFP) and SNMPv3-based techniques used for Internet-scale router alias
+    resolution and vendor identification. The dataset enables associating
+    multiple IP interfaces belonging to the same router and inferring router
+    vendors.
+  type: dataset
+  urls:
+    - https://routerfingerprinting.github.io/
+  references:
+    - Albakour, T., Gasser, O., Beverly, R., and Smaragdakis, G. Illuminating
+      Router Vendor Diversity Within Providers and Along Network Paths. In
+      Proceedings of the 2023 ACM Internet Measurement Conference (IMC '23), Oct
+      2023. https://doi.org/10.1145/3618257.3624813.
+- id: Routeviews|Peering Status Report
+  name: RouteViews Peering Status Report
+  description: A report detailing the peering status of RouteViews collectors,
+    providing location information for geolocation purposes. It lists the
+    current BGP peering sessions at each RouteViews collector, including the
+    peer ASN and status, useful for understanding the vantage points from which
+    routing data is collected.
+  type: dataset
+  urls:
+    - http://www.routeviews.org/peers/peering-status.html
+  references:
+    - "University of Oregon. RouteViews Peering Status Report [Data set].
+      Available from: http://www.routeviews.org/peers/peering-status.html."
+- id: Routeviews|collector locations
+  name: Routeviews Collector Locations
+  description: Information on the locations of RouteViews collectors, used for
+    geolocation of vantage points. The dataset documents where each RouteViews
+    BGP route collector is physically located and hosted, providing context for
+    interpreting the routing data each collector gathers.
+  type: dataset
+  urls:
+    - http://www.routeviews.org/routeviews/index.php/collectors/
+  references:
+    - "University of Oregon. RouteViews Project Collectors [Data set]. Available
+      from: http://www.routeviews.org/routeviews/index.php/collectors/."
+- id: SWITCH|CHZoneData
+  name: Zone Data of .ch TLD
+  description: Open data containing DNS zone file information for the .ch
+    (Switzerland) top-level domain, published by SWITCH, the registry operator
+    for .ch and .li domains. The dataset provides researchers with access to
+    domain registration and DNS configuration data for the Swiss namespace.
+  type: dataset
+  urls:
+    - https://www.switch.ch/de/open-data/
+  references:
+    - "SWITCH. Zone Data of .ch TLD [Data set]. Available from:
+      https://www.switch.ch/de/open-data/."
+- id: StAndrews|PSL-Privacy-Dataset
+  name: PSL Privacy Harms Analysis Code and Data
+  description: Code and data for analyzing privacy harms associated with the
+    Public Suffix List (PSL). The dataset supports research into how the PSL
+    impacts web privacy, including cookie scoping and tracking implications
+    across domain boundaries.
+  type: dataset
+  urls:
+    - https://doi.org/10.17630/50e596c3-7537-4f74-b503-e9bcc5c8b95a
+  references:
+    - University of St Andrews. PSL Privacy Harms Analysis Code and Data [Data
+      set]. https://doi.org/10.17630/50e596c3-7537-4f74-b503-e9bcc5c8b95a.
+- id: Stanford|ASdb
+  name: ASdb
+  description:
+    ASdb is a database that enriches Autonomous System (AS) information
+    by mapping ASes to their business types and organizational categories.
+    Developed at Stanford University, it provides a structured classification of
+    ASes to support Internet topology research and policy analysis.
+  type: dataset
+  urls:
+    - https://asdb.stanford.edu/
+  references:
+    - "Stanford University. ASdb [Data set]. Available from:
+      https://asdb.stanford.edu/."
+- id: Stanford|Cloud Watching Dataset
+  name: Cloud Watching Dataset
+  description: "Dataset from the IMC 2023 paper 'Cloud Watching: Understanding
+    Attacks Against Cloud-Hosted Services.' It contains honeypot traffic data
+    from 5 cloud providers and 23 countries, 2 educational networks, and 1
+    network telescope, used to analyze how attackers identify and target cloud
+    services in contrast to traditional enterprise networks."
+  type: dataset
+  urls:
+    - https://scans.io/study/cloud_watching
+  references:
+    - "Izhikevich, L., Kassar, M., Gannon, G., Wang, J., Cimaszewski, M.,
+      Kallitsis, M., and Durumeric, Z. Cloud Watching: Understanding Attacks
+      Against Cloud-Hosted Services. In Proceedings of the 2023 ACM Internet
+      Measurement Conference (IMC '23), Oct 2023."
+- id: Stanford|LZR
+  name: LZR
+  description: LZR ("Laser") is a system that quickly detects and fingerprints
+    unexpected services running on non-standard ports. Working alongside ZMap,
+    it identifies 99% of identifiable unexpected services in five handshakes and
+    dramatically reduces application-layer scan time by filtering hosts that
+    cannot complete an application-layer handshake.
+  type: tool
+  urls:
+    - https://github.com/stanford-esrg/lzr
+  references:
+    - "Izhikevich, L., Teixeira, R., and Durumeric, Z. LZR: Identifying
+      Unexpected Internet Services. In Proceedings of the USENIX Security
+      Symposium, 2021."
+- id: Stanford|Puffer
+  name: Puffer
+  description: Puffer is a research platform for studying video streaming
+    algorithms over the real Internet. Developed at Stanford, it serves as a
+    live testbed that streams live TV to real users while evaluating adaptive
+    bitrate (ABR) algorithms, enabling researchers to study how different
+    streaming strategies perform under real network conditions.
+  type: tool
+  urls:
+    - https://doi.org/10.1145/2785956.2787486
+  references:
+    - "Yan, F.Y., Ayers, H., Zhu, C., Fouladi, S., Hong, J., Zhang, K., Levis,
+      P., and Winstein, K. Learning in situ: a randomized experiment in video
+      streaming. In Proceedings of USENIX NSDI, 2020."
+- id: SwedishInternetFoundation|SEZoneData
+  name: Zone Data of .se and .nu TLDs
+  description:
+    Open zone file data for the .se (Sweden) and .nu top-level domains,
+    published by the Swedish Internet Foundation (Internetstiftelsen), the
+    registry operator for these TLDs. The dataset provides researchers with
+    access to domain registration and DNS configuration data for the Swedish
+    namespace.
+  type: dataset
+  urls:
+    - https://internetstiftelsen.se/en/zone-data/
+  references:
+    - "Internetstiftelsen. Zone Data of .se and .nu TLDs [Data set]. Available
+      from: https://internetstiftelsen.se/en/zone-data/."
+- id: TUDarmstadt|IMC23-TCSB-Code
+  name: Code for the IMC23 paper The Cloud Strikes Back
+  description: Source code and analysis tools for the IMC 2023 paper "The Cloud
+    Strikes Back," which studies how cloud infrastructure is targeted and
+    abused. The repository contains measurement code and data processing scripts
+    to reproduce the paper's findings.
+  type: tool
+  urls:
+    - https://github.com/mrd0ll4r/imc23-tcsb
+  references:
+    - TU Darmstadt. The Cloud Strikes Back [Software]. In Proceedings of the
+      2023 ACM Internet Measurement Conference (IMC '23), Oct 2023.
+- id: TUDarmstadt|IPFS-Crawler
+  name: IPFS Crawler
+  description: A crawler for the InterPlanetary File System (IPFS) network
+    developed at TU Darmstadt. It enumerates peers in the IPFS DHT to study the
+    network's topology, churn, and geographic distribution, providing insights
+    into the deployment and usage of decentralized content distribution systems.
+  type: tool
+  urls:
+    - https://github.com/trudi-group/ipfs-crawler
+  references:
+    - "Trudi Research Group, TU Darmstadt. IPFS Crawler [Software]. Available
+      from: https://github.com/trudi-group/ipfs-crawler."
+- id: TUMunich|IPv6Hitlist
+  name: IPv6 Hitlist
+  description: The IPv6 Hitlist Service provides regularly updated lists of
+    responsive IPv6 addresses, aliased prefixes, and non-aliased prefixes to the
+    research community. Since exhaustive scanning of the IPv6 address space is
+    infeasible, the hitlist serves as a foundation for IPv6 measurement studies
+    by providing reliably responsive, unbiased address targets.
+  type: dataset
+  urls:
+    - https://ipv6hitlist.github.io/
+  references:
+    - "Gasser, O., Scheitle, Q., Foremski, P., Lone, Q., Korczynski, M.,
+      Strowes, S.D., Hendriks, L., and Carle, G. Clusters in the Expanse:
+      Understanding and Unbiasing IPv6 Hitlists. In Proceedings of the ACM
+      Internet Measurement Conference (IMC), 2018."
+- id: Thingi10K
+  name: Thingi10K Dataset
+  description:
+    Thingi10K is a dataset of 10,000 3D printing models collected from
+    the Thingiverse repository. The dataset provides a diverse collection of
+    real-world 3D meshes for benchmarking geometry processing algorithms and
+    studying the characteristics of user-generated 3D content.
+  type: dataset
+  urls:
+    - https://arxiv.org/abs/1605.04797
+  references:
+    - "Zhou, Q. and Jacobson, A. Thingi10K: A Dataset of 10,000 3D- Printing
+      Models. arXiv preprint arXiv:1605.04797, 2016."
+- id: TopoMapping|BGP Communities Supplemental Material
+  name: BGP Communities – Supplemental Material
+  description: This resource provides supplemental material for research on BGP
+    communities, including a dataset for examining the benefit of filtering
+    action communities. It contains code and data to reproduce analyses of BGP
+    community semantics and their impact on Internet routing.
+  type: dataset
+  urls:
+    - https://github.com/TopoMapping/bgp-communities
+  references:
+    - "da Silva Jr., B.A., Mol, P., Fonseca, O., Cunha, I., Ferreira, R.A., and
+      Katz-Bassett, E. BGP Communities – Supplemental Material [Data set].
+      Available from: https://github.com/TopoMapping/bgp-communities."
+- id: TorProject|Snowflake Graphs
+  name: Snowflake Graphs
+  description:
+    Data and visualization code for tracking the usage and performance
+    of Snowflake, a pluggable transport for the Tor network that allows
+    volunteers to turn their browsers into proxy bridges for censored users. The
+    graphs provide metrics on the number of Snowflake proxies, users, and
+    connection statistics over time.
+  type: dataset
+  urls:
+    - https://gitlab.torproject.org/dcf/snowflake-graphs
+  references:
+    - "Tor Project. Snowflake Graphs [Data set]. Available from:
+      https://gitlab.torproject.org/dcf/snowflake-graphs."
+- id: TorProject|Tor Metrics
+  name: Tor Metrics
+  description:
+    Tor Metrics archives and publishes historical data about the public
+    Tor network, including relay and bridge statistics, user estimates by
+    country, bandwidth usage, and network performance. The data is collected
+    from Tor directory authorities and relays using privacy- preserving
+    aggregation methods, and is freely available under a CC0 public domain
+    dedication.
+  type: dataset
+  urls:
+    - https://metrics.torproject.org/
+  references:
+    - "The Tor Project. Tor Metrics [Data set]. Available from:
+      https://metrics.torproject.org/."
+- id: U.Oregon|Routeviews
+  name: RouteViews
+  description: Routeviews is a project that collects BGP data from multiple
+    vantage points around the world. The dataset includes BGP table snapshots
+    and update messages from peering sessions with hundreds of networks,
+    providing a comprehensive view of the global Internet routing system for
+    troubleshooting and research purposes.
+  type: dataset
+  urls:
+    - http://www.routeviews.org/
+  references:
+    - RouteViews. "University of Oregon RouteViews project."
+      http://www.routeviews.org/.
+- id: UCL|BGP Communities Classification
+  name: BGP Communities Classification
+  description: This resource provides supplemental material for research on BGP
+    communities, including a dataset for examining the benefit of filtering
+    action communities. It contains classified BGP community values and their
+    inferred semantics from the UCL research group's analysis of BGP community
+    usage across the Internet.
+  type: dataset
+  urls:
+    - https://web.archive.org/web/20080423050836/http://inl.info.ucl.ac.be:80/communities
+  references:
+    - "UCL. BGP Communities Classification [Data set]. Available from:
+      https://web.archive.org/web/20080423050836/http://inl.info.ucl.ac.be:80/c\
+      ommunities."
+- id: UCSD|Network Telescope
+  name: UCSD Network Telescope
+  description:
+    The UCSD Network Telescope observes traffic arriving at a globally
+    routed /8 network (approx 1/256th of the IPv4 Internet) that contains almost
+    no legitimate hosts. This "darknet" traffic provides visibility into
+    Internet-scale events like scanning, backscatter from spoofed DoS attacks,
+    and malware propagation.
+  type: tool
+  urls:
+    - https://www.caida.org/projects/network_telescope/
+  references:
+    - CAIDA. "UCSD Network Telescope."
+      https://catalog.caida.org/project/network_telescope. Accessed.
+- id: UMich|LLM-Device-Fingerprints
+  name: LLM Device Fingerprints Code
+  description:
+    Code for training and evaluating transformer-based language models
+    on service banners obtained from global Internet scans, as presented in the
+    IMC 2023 paper "An LLM-based Framework for Fingerprinting Internet-connected
+    Devices." The tool trains a RoBERTa model on hundreds of millions of banners
+    and uses density-based clustering to generate text-based fingerprints for
+    identifying IoT devices and server products.
+  type: tool
+  urls:
+    - https://github.com/arsarabi/llm-device-fingerprints
+  references:
+    - Sarabi, A., Yin, T., and Liu, M. An LLM-based Framework for Fingerprinting
+      Internet-connected Devices. In Proceedings of the 2023 ACM Internet
+      Measurement Conference (IMC '23), Oct 2023.
+      https://doi.org/10.1145/3618257.3624845.
+- id: UMich|ZDNS
+  name: UMich|ZDNS
+  description: ZDNS is a fast DNS toolkit for Internet measurement, used for
+    performing high-speed DNS lookups at scale. It supports generating bulk A,
+    AAAA, and other record type requests and is commonly used alongside ZMap for
+    comprehensive Internet scanning studies.
+  type: tool
+  urls:
+    - https://github.com/zmap/zdns
+  references:
+    - "ZMap Project. ZDNS [Software]. Available from:
+      https://github.com/zmap/zdns."
+- id: UMich|ZMap
+  name: UMich|ZMap
+  description: ZMap is a fast Internet-wide scanning tool used for network
+    measurement and security analysis, performing TCP SYN scans and service
+    scans. It can scan the entire IPv4 address space in under an hour from a
+    single machine and is widely used in security research to study protocol
+    deployment and vulnerabilities.
+  type: tool
+  urls:
+    - https://zmap.io/
+  references:
+    - "Durumeric, Z., Wustrow, E., and Halderman, J.A. ZMap: Fast Internet-wide
+      Scanning and Its Security Applications. In Proceedings of the USENIX
+      Security Symposium, 2013."
+- id: USC/ISI ANT datasets
+  name: USC/ISI ANT Datasets
+  description: A collection of Internet measurement datasets produced by the ANT
+    (Analysis of Network Traffic) project at USC's Information Sciences
+    Institute. The datasets include whole-Internet address censuses, surveys,
+    hitlists, IPv4 address history, outage detection data, and other
+    measurements of the Internet address space and its usage.
+  type: dataset
+  urls:
+    - https://ant.isi.edu/datasets/all.html
+    - https://ant.isi.edu/datasets/outage/
+  references:
+    - Heidemann, J., Pradkin, Y., Govindan, R., Papadopoulos, C., Bartlett, G.,
+      and Bannister, J. Census and Survey of the Visible Internet. In
+      Proceedings of the ACM Internet Measurement Conference, pp. 169-182, Oct
+      2008.
+- id: USC/ISI|WebMeasurements
+  name: SSO Web Measurement Artifacts
+  description: Artifacts and tools from web measurement research conducted at
+    USC/ISI, focusing on Single Sign-On (SSO) integration practices and their
+    security implications across the web. The repository provides measurement
+    code and analysis scripts for studying SSO deployment patterns.
+  type: tool
+  urls:
+    - https://webmeasurements.org
+  references:
+    - "USC/ISI. SSO Web Measurement Artifacts [Software]. Available from:
+      https://webmeasurements.org."
+- id: UVA|IoT-TLS-Certificate-Dataset
+  name: IoT TLS and Server Certificate Dataset
+  description: A dataset containing TLS certificate and server certificate
+    practices observed from IoT device vendors in the wild. The dataset captures
+    behind-the-scenes TLS behaviors of IoT devices from real-world smart home
+    deployments, enabling research into the security posture of IoT device
+    communications.
+  type: dataset
+  urls:
+    - https://github.com/hyingdon/acmimc23_iot
+  references:
+    - "Dong, H., Shu, H., Prakash, V., Zhang, Y., Paracha, M.T., Choffnes, D.,
+      Torres-Arias, S., Huang, D.Y., and Sun, Y. Behind the Scenes: Uncovering
+      TLS and Server Certificate Practice of IoT Device Vendors in the Wild. In
+      Proceedings of the 2023 ACM Internet Measurement Conference (IMC '23), Oct
+      2023."
+- id: ZMap|ZGrab2
+  name: ZMap|ZGrab2
+  description:
+    zGrab2 is a fast, modular application-layer scanner written in Go,
+    used for banner grabbing and connection information logging. It is often
+    used in conjunction with ZMap for Internet-wide scanning studies, supporting
+    multiple protocols including HTTP, TLS, SSH, DNS, FTP, and many others.
+  type: tool
+  urls:
+    - https://github.com/zmap/zgrab2
+  references:
+    - "ZMap Project. ZGrab2 [Software]. Available from:
+      https://github.com/zmap/zgrab2."
+- id: cvedetails|CVE-Details
+  name: CVE Details
+  description: CVE Details is a web-based platform that provides an easy-to-use
+    interface for browsing the CVE vulnerability database maintained by MITRE.
+    It aggregates and presents vulnerability data with security statistics by
+    vendor, product, version, and vulnerability type, enabling researchers and
+    security professionals to analyze trends in publicly disclosed security
+    flaws.
+  type: dataset
+  urls:
+    - https://www.cvedetails.com/index.php
+  references:
+    - "CVE Details. CVE Security Vulnerability Database [Data set]. Available
+      from: https://www.cvedetails.com/."
+- id: netsecurelab|rovista
+  name: RoVista
+  description:
+    RoVista is a platform that publishes Route Origin Validation (ROV)
+    scores for Autonomous Systems (ASes) on a daily basis. It measures and
+    tracks the deployment of RPKI-based ROV across the Internet, providing
+    resources for network operators and researchers to assess the routing
+    security posture of individual ASes and the broader Internet routing
+    ecosystem.
+  type: dataset
+  urls:
+    - https://rovista.netsecurelab.org
+  references:
+    - "NetSecureLab. RoVista [Data set]. Available from:
+      https://rovista.netsecurelab.org."

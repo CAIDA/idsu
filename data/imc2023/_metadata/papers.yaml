@@ -1,0 +1,270 @@
+- filename: 2023-sander-quic-ecn.pdf
+  split: training
+  category: used in list
+  doi: 10.1145/3618257.3624821
+  arxiv: null
+  sha256: a13b409cf709e39dd8f114d279869f3c3c5daa23546e072a453a12a7deaba3d4
+- filename: A Longitudinal Study of Vulnerable Client-side Resources and Web Developers' Updating Behaviors.pdf
+  split: training
+  category: used in list
+  doi: 10.1145/3618257.3624804
+  arxiv: null
+  sha256: d2b05ecd8fa9c2034607cbcf8c98b22fc5129b97d50949c00af57c29413f9f64
+- filename: Coarse-grained Inference of BGP Community Intent.pdf
+  split: training
+  category: used in list
+  doi: 10.1145/3618257.3624838
+  arxiv: null
+  sha256: 927f9039a43d08a240acdc36e71d5c875040ead4517911c4a5975bab1c1213a1
+- filename: Containing the Cambrian Explosion in QUIC Congestion Control.pdf
+  split: training
+  category: used in list
+  doi: 10.1145/3618257.3624811
+  arxiv: null
+  sha256: 7a12ddfcd6841741cd1e6ccdf92aa4910293f44790a40bf8c1cc54635d547e6e
+- filename: Extended DNS Errors- Unlocking the Full Potential of DNS Troubleshooting.pdf
+  split: training
+  category: used in list
+  doi: 10.1145/3618257.3624835
+  arxiv: null
+  sha256: e406e9289c9ee800989c695d352a38cc7c438922df8e1dbc3294585c45a6e85d
+- filename: How to Operate a Meta-Telescope in your Spare Time.pdf
+  split: training
+  category: used in list
+  doi: 10.1145/3618257.3624831
+  arxiv: null
+  sha256: 010b98d03a050b8d61f181f728c45075ffe02559575121625b2a13080ecbc0e9
+- filename: In the Room Where It Happens- Characterizing Local Communication and Threats in Smart Homes.pdf
+  split: training
+  category: used in list
+  doi: 10.1145/3618257.3624830
+  arxiv: null
+  sha256: 171ad4ba3c303f8c9b96b717fd79e50993ec848413718458b3f97b414447c96a
+- filename: Inferring Changes in Daily Human Activity from Internet Response.pdf
+  split: training
+  category: used in list
+  doi: 10.1145/3618257.3624796
+  arxiv: null
+  sha256: e1b5fc3e9cc85bd9ad4ef7b8e299176c92b7cc5137d94c24eb21d21385ef25b9
+- filename: Pushing Alias Resolution to the Limit.pdf
+  split: training
+  category: used in list
+  doi: 10.1145/3618257.3624840
+  arxiv: null
+  sha256: 535cc97ca330f9800e0624f39192204e181241fe45c85bb488e763e55f024569
+- filename: Replication- Towards a Publicly Available Internet Scale IP Geolocation Dataset.pdf
+  split: training
+  category: used in list
+  doi: "10.1145/3618257.3624801\uFFFF"
+  arxiv: null
+  sha256: 723def27083dca85dc97f57ca81514fb3271c033075b52ec4f8f5cd4d2b174cf
+- filename: Wolf in Sheep's Clothing- Evaluating Security Risks of the Undelegated Record on DNS Hosting Services.pdf
+  split: training
+  category: used in list
+  doi: 10.1145/3618257.3624839
+  arxiv: null
+  sha256: 3c2bfe30001a04ee0a3d5cb402684838730bb3be419d44b284283553bd4093ab
+- filename: A First Look at the Privacy Harms of the Public Suffix List.pdf
+  split: training
+  category: none
+  doi: 10.1145/3618257.3624836
+  arxiv: null
+  sha256: a7b75466cb3b3760e2284afd24bb0462681559bb952d930d493da0553314d4d5
+- filename: Characterizing and Modeling Session-Level Mobile Traffic Demands from Large-Scale Measurements.pdf
+  split: training
+  category: none
+  doi: 10.1145/3618257.3624825
+  arxiv: null
+  sha256: 5a3bd9a2e114e3f9556c1971d4183604b736786c2d45c5953192d07b65ba0b2f
+- filename: I Tag, You Tag, Everybody Tags.pdf
+  split: training
+  category: none
+  doi: 10.1145/3618257.3624834
+  arxiv: null
+  sha256: f7319714c469fda1abb853fde4fd67c660760cb193d1f01f71ebf9242a9b75f6
+- filename: On the Similarity of Web Measurements Under Different Experimental Setups.pdf
+  split: training
+  category: none
+  doi: null
+  arxiv: null
+  sha256: 8aea6e36a5190c3c7e579d301ea70fdc49e022d46da5920fa97200a13930608c
+- filename: Understanding the Privacy Risks of Popular Search Engine Advertising Systems.pdf
+  split: training
+  category: none
+  doi: 10.1145/3618257.3624823
+  arxiv: 2308.15309v3
+  sha256: 0733ecae654cfd0cfb59e58acc431f265337540b5c5ea4c6eb4becc80cbca47a
+- filename: An LLM-based Framework for Fingerprinting Internet-connected Devices.pdf
+  split: training
+  category: unused in list
+  doi: 10.1145/3618257.3624845
+  arxiv: null
+  sha256: 6e5006c229eb1d8fee79ed38bf97eed2cddece283aae48db2a006a5af9d7421d
+- filename: BehavIoT Measuring Smart Home IoT Behavior Using Network-Inferred Behavior Models.pdf
+  split: training
+  category: unused in list
+  doi: 10.1145/3618257.3624829
+  arxiv: null
+  sha256: 634311c4bdaecdeb1e43d109b97245e1782b0e80c731ccd742eab176d18eb728
+- filename: Demystifying Web-based Mobile Extended Reality Accelerated by WebAssembly.pdf
+  split: training
+  category: unused out list
+  doi: 10.1145/3618257.3624833
+  arxiv: null
+  sha256: 346c5a37822984b3ee6a4b0cbac08553a8c0e2c7a8ac85a2e3c070d7548d50ec
+- filename: Estimating WebRTC Video QoE Metrics Without Using Application Headers.pdf
+  split: training
+  category: used out list
+  doi: 10.1145/3618257.3624828
+  arxiv: 2306.01194v5
+  sha256: cb02b1d804bd32ab2b4a4f73d458b94add624c80ffacb14b238235b014f6d7a3
+- filename: Ethereum's Proposer-Builder Separation- Promises and Realities.pdf
+  split: training
+  category: used out list
+  doi: null
+  arxiv: 2305.19037v1
+  sha256: 67708c5128df122220e769b6586005de537a54c75e8d5b62f630cd2f9a63ba4a
+- filename: Performance of Cellular Networks on the Wheels.pdf
+  split: training
+  category: used out list
+  doi: 10.1145/3618257.3624814
+  arxiv: null
+  sha256: 381bb17a4f8030fcefb2e266891bf91c9585bab095a62e9984a6f772c8ce25ae
+- filename: Phishing in the Free Waters- A Study of Phishing Attacks Created using Free Website Building Services.pdf
+  split: training
+  category: used out list
+  doi: 10.1145/3618257.3624812
+  arxiv: null
+  sha256: e79b4882780960204802de086c1bf18b4afc551ac9ce35423601f59189942157
+- filename: Thou Shalt Not Reject- Analyzing Accept-Or-Pay Cookie Banners on the Web.pdf
+  split: training
+  category: used out list
+  doi: 10.1145/3618257.3624846
+  arxiv: null
+  sha256: 3da9b17aa114ba383dd5f3fe1561a4c1cfc25fb45b94aa6392d3fc691603f961
+- filename: Tracking, Profiling, and Ad Targeting in the Alexa Echo Smart Speaker Ecosystem.pdf
+  split: training
+  category: used out list
+  doi: 10.1145/3618257.3624803
+  arxiv: null
+  sha256: 082ca28656a370f248aa41e1789e5cda6e130aaea1e766b33c6506f7f6329003
+- filename: Behind the Scenes- Uncovering TLS and Server Certificate Practice of IoT Device Vendors in the Wild.pdf
+  split: validation
+  category: used in list
+  doi: 10.1145/3618257.3624815
+  arxiv: null
+  sha256: 9604d48775e4e4c1e2307f1d24c27952af824d6239d3aea7123771bdf18b80c8
+- filename: Dial N for NXDomain- The Scale, Origin, and Security Implications of DNS Queries to Non-Existent Domains.pdf
+  split: validation
+  category: used in list
+  doi: 10.1145/3618257.3624805
+  arxiv: null
+  sha256: b0b8e6f713ea2cefd3c29c311be116a8292eaaf98b0afcff211e6b2d1b258514
+- filename: IRRegularities in the Internet Routing Registry.pdf
+  split: validation
+  category: used in list
+  doi: 10.1145/3618257.3624843
+  arxiv: null
+  sha256: dd0685e24c9f25b51b6af41467532dae8d36cba99a55a6b2c48cef8799877306
+- filename: Localizing Traffic Differentiation.pdf
+  split: validation
+  category: used in list
+  doi: 10.1145/3618257.3624809
+  arxiv: null
+  sha256: df0a0d47f72f9c855dc5b74f531d7b68eb83719587de9a6b5cb0894d37400114
+- filename: RoVista- Measuring and Analyzing the Route Origin Validation (ROV) in RPKI.pdf
+  split: validation
+  category: used in list
+  doi: 10.1145/3618257.3624806
+  arxiv: null
+  sha256: fe1c474286d59335f79452e332ac85fe3f7c991263ca78a9c35d9ef42514a0d7
+- filename: Evolving Bots- The New Generation of Comment Bots and their Underlying Scam Campaigns in YouTube.pdf
+  split: validation
+  category: none
+  doi: 10.1145/3618257.3624822
+  arxiv: null
+  sha256: 4528d8de9e7bf7d00dcfe04856681d5d3838388b4624192b43ba577b969133d5
+- filename: The Cloud Strikes Back- Investigating the Decentralization of IPFS.pdf
+  split: validation
+  category: none
+  doi: null
+  arxiv: 2309.16203v2
+  sha256: 4d3381a837c6fd1f620f56fdc8c1070371f1205a9a3a1970dffbd1ad0083fc0b
+- filename: Fifteen Months in the Life of a Honeyfarm.pdf
+  split: validation
+  category: unused in list
+  doi: 10.1145/3618257.3624826
+  arxiv: null
+  sha256: e386ec3a35bd182534db79920ddc5059c90169f8b6c69e4409e3e39fb5a99c39
+- filename: Not only E.T. Phones Home- Analysing the Native User Tracking of Mobile Browsers.pdf
+  split: validation
+  category: used out list
+  doi: 10.1145/3618257.3624842
+  arxiv: null
+  sha256: da73380fe77df99ea36196f3917c0a0c08c98628e2ec3eb80782f474a4876d64
+- filename: Replication- Contrastive Learning and Data Augmentation in Traffic Classification Using a Flowpic Input Representation.pdf
+  split: validation
+  category: used out list
+  doi: null
+  arxiv: 2309.09733v2
+  sha256: f90400d6aeaa7ac4f7b1763b50faaf0528f34efbc63c5404e6af9c57c3cb30ea
+- filename: Cloud Watching- Understanding Attacks Against Cloud-Hosted Services.pdf
+  split: evaluation
+  category: used in list
+  doi: 10.1145/3618257.3624818
+  arxiv: 2309.13471v2
+  sha256: 4ef1534b612f2f0b1ec689d78abd90dfef336e6575d621c98588ba528001e055
+- filename: Does It Spin- On the Adoption and Use of QUICs Spin Bit.pdf
+  split: evaluation
+  category: used in list
+  doi: 10.1145/3618257.3624844
+  arxiv: 2310.02599v1
+  sha256: 8e700806b4a3d452f782dbd6f4c07fc52a16a59c34f3836255612e456963716a
+- filename: Illuminating Router Vendor Diversity Within Providers and Along Network Paths.pdf
+  split: evaluation
+  category: used in list
+  doi: 10.1145/3618257.3624813
+  arxiv: null
+  sha256: 8f1837902e812333de82474ee0938c93ee45a4870cacc5d8a0a102e7dafbc71b
+- filename: On the Importance of Being an AS- An Approach to Country-Level AS Rankings.pdf
+  split: evaluation
+  category: used in list
+  doi: 10.1145/3618257.3624798
+  arxiv: null
+  sha256: 73c8a7a71eae62243a630832fb99312a963cac79e00588776adcf5266bd9b8fa
+- filename: Using Gaming Footage as a Source of Internet Latency Information.pdf
+  split: evaluation
+  category: used in list
+  doi: 10.1145/3618257.3624816
+  arxiv: null
+  sha256: 5ab58cf0b593201e09bbe2677f06b8b1b6078bcb94f6b736d93115b21a21307c
+- filename: Flocking to Mastodon- Tracking the Great Twitter Migration.pdf
+  split: evaluation
+  category: none
+  doi: null
+  arxiv: 2302.14294v1
+  sha256: b0bf6caca4db5b3eae3f69f31cdb69b1f07a315c3d70bd50fa66f43da2b06ead
+- filename: The Prevalence of Single Sign-On on the Web- Towards the Next Generation of Web Content Measurement.pdf
+  split: evaluation
+  category: none
+  doi: 10.1145/3618257.3624841
+  arxiv: null
+  sha256: 519065e5c14da554b81809ed94246fe131e98ec4ff799fd282361596e74c34aa
+- filename: The CVE Wayback Machine- Measuring Coordinated Disclosure from Exploits against Two Years of Zero-Days.pdf
+  split: evaluation
+  category: unused in list
+  doi: 10.1145/3618257.3624810
+  arxiv: null
+  sha256: 6c23833cccb87655e7164dd264f805f215a0306c63fa8ab083a22b2ef7763975
+- filename: PTPerf- On the Performance Evaluation of Tor Pluggable Transports.pdf
+  split: evaluation
+  category: used out list
+  doi: 10.1145/3618257.3624817
+  arxiv: 2309.14856v1
+  sha256: 8916bf64af51ec84a2ea745973642ef9b5215408128d0f6c84237a7cf2f19ce1
+- filename: Stale TLS Certificates- Investigating Precarious Third-Party Access to Valid TLS Keys.pdf
+  split: evaluation
+  category: used out list
+  doi: 10.1145/3618257.3624802
+  arxiv: null
+  sha256: 13011d6c4839bcf460aa4b866f1ab353094c89c6b8312fed9458f29eaeec20e6
