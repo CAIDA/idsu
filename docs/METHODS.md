@@ -80,10 +80,16 @@ matrices; that was checked on synthetic runs. It differs in three ways:
 - **Stops instead of skipping.** A batch with no ground truth, two batches for one paper,
   or a paper missing from a run now stops the scorer. The original skipped each of these
   without saying so.
-- **Reports what it leaves out.** Both scorers score only extracted resources that carry
-  an `in_target_list` field. The prompt's output schema does not ask for that field, so
-  whether a resource is scored depends on whether the model added it anyway. The release
-  keeps the rule, for comparability, and reports the count per run under "Unscored".
+- **Scores resources that lack `in_target_list`.** The original scored only extracted
+  resources that carry that field, but the prompt's output schema never asks for it, so
+  whether a resource was scored depended on whether the model added it anyway. In
+  September 2026 the served Gemma never did, and every resource went unscored. The release
+  scores such a resource as on the list, and reports how many there were per run.
+  Resources that do carry the field are scored exactly as before. The original's skip was
+  not a filter on the field's value, which no metric reads: it was a `KeyError` from
+  `resource["in_target_list"]`, caught by a bare `except`, under a comment saying the
+  step filters out resources not on the target list. Extraction already does that
+  filtering, by dropping every resource the model marks `false`.
 
 ## What was tried
 

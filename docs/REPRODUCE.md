@@ -57,7 +57,8 @@ of the result depends on the corrections.
 
 `evaluate.py` stops, with no summary, if a paper has no ground truth, a run has two batches
 for one paper, or a paper listed in `run.yaml` has no batch. Extracted resources without an
-`in_target_list` field are not scored, and each run reports how many there were.
+`in_target_list` field are scored as on the list, and each run reports how many there were;
+resources with no `id` are not scored and are counted separately.
 
 ## 4. Matching: fuzzy against the LLM judge
 

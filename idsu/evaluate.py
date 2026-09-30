@@ -3,9 +3,10 @@
 A port of main() in extraction-eval-avg-new.py, without its console prompts.
 Where the original skipped something without saying so, this stops instead:
 a batch whose paper has no ground truth, two batches for one paper, or a paper
-the run was asked for but has no batch. Extracted resources that lack
-in_target_list are still left out of scoring, as the original did, but are
-now counted and reported.
+the run was asked for but has no batch. One scoring change: the original left
+out every extracted resource that lacked in_target_list, a field the prompt
+never asks for. Here such a resource is scored as on the list, and each run
+reports how many there were.
 """
 
 from __future__ import annotations
@@ -43,15 +44,18 @@ def truth_items(resources: list[dict]) -> list[dict]:
              "references": r.get("references")} for r in resources or []]
 
 
-def extracted_items(resources: list[dict]) -> tuple[list[dict], int]:
-    items, dropped = [], 0
+def extracted_items(resources: list[dict]) -> tuple[list[dict], int, int]:
+    """The resources to score, how many were malformed (skipped), and how many lacked in_target_list."""
+    items, dropped, assumed = [], 0, 0
     for r in resources if isinstance(resources, list) else []:
-        if not isinstance(r, dict) or "id" not in r or "in_target_list" not in r:
+        if not isinstance(r, dict) or "id" not in r:
             dropped += 1
             continue
-        items.append({"id": r["id"], "in_target_list": r["in_target_list"],
+        if "in_target_list" not in r:
+            assumed += 1
+        items.append({"id": r["id"], "in_target_list": r.get("in_target_list", True),
                       "used_in_paper": r.get("used_in_paper"), "references": r.get("references")})
-    return items, dropped
+    return items, dropped, assumed
 
 
 def load_batches(run_dir: Path) -> dict[str, Path]:
@@ -85,17 +89,17 @@ def score_run(run_dir: Path, ground_truth: list[dict], out_dir: Path, *, judge: 
         log(f"[WARN] {run_dir.name}: no {RUN_INFO}, so a paper missing from this run cannot be detected")
 
     totals = {"identity": {}, "used": {}, "extraction_used": {}}
-    papers, dropped_total = [], 0
+    papers, dropped_total, assumed_total = [], 0, 0
     (out_dir / run_dir.name).mkdir(parents=True, exist_ok=True)
     for filename in sorted(batches):
         batch = batches[filename]
         saved = batch / "matched-resources.yaml"
         if use_saved_matches and saved.is_file():
             matched = yaml.safe_load(saved.read_text(encoding="utf-8"))["matches"]
-            dropped, source = 0, "saved"
+            dropped, assumed, source = 0, 0, "saved"
         else:
             parsed = json.loads((batch / "extraction-parsed.json").read_text(encoding="utf-8"))
-            extracted, dropped = extracted_items(parsed.get("resources", []))
+            extracted, dropped, assumed = extracted_items(parsed.get("resources", []))
             matched = match_to_truth(extracted, truth_items(gt_by_file[filename]), judge=judge, log=log)
             source = "computed"
         cms = {"identity": metrics.identity_cm(matched), "used": metrics.used_cm(matched),
@@ -103,14 +107,16 @@ def score_run(run_dir: Path, ground_truth: list[dict], out_dir: Path, *, judge: 
         for k, cm in cms.items():
             metrics.add_cm(totals[k], cm)
         dropped_total += dropped
+        assumed_total += assumed
         if dropped:
-            log(f"[WARN] {run_dir.name}/{batch.name}: {dropped} extracted resource(s) lack in_target_list; not scored")
+            log(f"[WARN] {run_dir.name}/{batch.name}: {dropped} extracted resource(s) malformed (no id); not scored")
         papers.append({"filename": filename, "batch": batch.name, "matches": source,
-                       "dropped_no_in_target_list": dropped, **cms})
+                       "dropped_malformed": dropped, "assumed_in_target_list": assumed, **cms})
         with open(out_dir / run_dir.name / f"{batch.name}.yaml", "w", encoding="utf-8") as f:
             yaml.safe_dump({"filename": filename, "matches": matched}, f, sort_keys=False, allow_unicode=True)
 
-    return {"run": run_dir.name, "papers": len(papers), "dropped_no_in_target_list": dropped_total,
+    return {"run": run_dir.name, "papers": len(papers), "dropped_malformed": dropped_total,
+            "assumed_in_target_list": assumed_total,
             "confusion": totals, "metrics": {k: metrics.scores(cm) for k, cm in totals.items()},
             "per_paper": papers}
 
@@ -123,9 +129,11 @@ def summarize(runs: list[dict[str, Any]], label: str) -> tuple[dict[str, Any], s
     lines = [f"### {label}: extraction + used, mean (sample SD) over {len(runs)} run(s)", "",
              "| Metric | Mean | SD |", "|---|---|---|"]
     lines += [f"| {k.capitalize()} | {mean[k]:.4f} | {sd[k]:.4f} |" for k in metrics.METRICS]
-    lines += ["", "| Run | Papers | TP | FP | FN | TN | F1 | Unscored (no in_target_list) |", "|---|---|---|---|---|---|---|---|"]
+    lines += ["", "| Run | Papers | TP | FP | FN | TN | F1 | No in_target_list (scored as on list) | Malformed (not scored) |",
+              "|---|---|---|---|---|---|---|---|---|"]
     for r in runs:
         cm = r["confusion"]["extraction_used"]
         lines.append(f"| {r['run']} | {r['papers']} | {cm['tp']} | {cm['fp']} | {cm['fn']} | {cm['tn']} "
-                     f"| {r['metrics']['extraction_used']['f1']:.4f} | {r['dropped_no_in_target_list']} |")
+                     f"| {r['metrics']['extraction_used']['f1']:.4f} | {r['assumed_in_target_list']} "
+                     f"| {r['dropped_malformed']} |")
     return summary, "\n".join(lines) + "\n"
