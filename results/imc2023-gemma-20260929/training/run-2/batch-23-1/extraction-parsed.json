@@ -1,0 +1,30 @@
+{
+    "resources": [
+        {
+            "id": "FreePhish",
+            "name": "FreePhish",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "In this work, we propose FreePhish, a scalable framework to continuously identify phishing websites that are created using FWBs."
+            ],
+            "references": [
+                "Sayak Saha Roy, Unique Karanjit, and Shirin Nilizadeh. 2023. Phishing in the Free Waters: A Study of Phishing Attacks Created using Free Website Building Services. In Proceedings of the 2023 ACM Internet Measurement Conference (IMC \u201923), October 24\u201326, 2023, Montreal, QC, Canada. ACM, New York, NY, USA, 14 pages. https://doi.org/10.1145/3618257.3624812"
+            ],
+            "used_in_paper_reasoning": "The paper proposes and utilizes the FreePhish framework to identify, characterize, and report phishing websites created using Free Website Building services."
+        },
+        {
+            "id": "Google|Certificate Transparency",
+            "name": "Certificate Transparency",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Having the same SSL certification as their hosting domain renders FWB phishing attacks effectively invisible in Certificate Transparency (CT) logs as they do not appear as individually registered domains."
+            ],
+            "references": [
+                "[94] Certificate Transparency. [n. d.]. Working together to detect maliciously or mistakenly issued certificates. https://certificate.transparency.dev."
+            ],
+            "used_in_paper_reasoning": "The authors use Certificate Transparency logs to analyze and demonstrate that FWB-hosted phishing attacks are effectively invisible in these logs."
+        }
+    ]
+}

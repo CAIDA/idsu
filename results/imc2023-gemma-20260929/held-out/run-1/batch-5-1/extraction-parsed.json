@@ -1,0 +1,108 @@
+{
+    "resources": [
+        {
+            "id": "netsecurelab|rovista",
+            "name": "RoVista",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "In this paper, we present RoVista, an ROV measurement framework that leverages IP-ID side channel and in-the-wild RPKI-invalid prefix."
+            ],
+            "references": [
+                "Weitong Li, Zhexiao Lin, Md. Ishtiaq Ashiq, Emile Aben, Romain Fontugne, Amreesh Phokeer, and Taejoong Chung. 2023. RoVista: Measuring and Analyzing the Route Origin Validation (ROV) in RPKI. In Proceedings of the 2023 ACM Internet Measurement Conference (IMC \u201923), October 24\u201326, 2023, Montreal, QC, Canada. ACM, New York, NY, USA, 16 pages. https://doi.org/10.1145/3618257.3624806"
+            ],
+            "used_in_paper_reasoning": "The paper introduces and implements the RoVista framework for measuring ROV."
+        },
+        {
+            "id": "U.Oregon|Routeviews",
+            "name": "RouteViews",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Every 4 hours, we collect and validate RouteView datasets with all RPKI objects collected from all of the five RPKI repositories to obtain test IP prefixes."
+            ],
+            "references": [
+                "[70] University of Oregon RouteViews project. http://www.routeviews.org/."
+            ],
+            "used_in_paper_reasoning": "Used to obtain test IP prefixes and validate BGP announcements."
+        },
+        {
+            "id": "RIPE NCC|RIPE RIS",
+            "name": "RIPE NCC|RIPE RIS",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "comparing their prefix visibility measured from RouteViews [70] and RIPE RIS [63]."
+            ],
+            "references": [
+                "[63] RIPE Routing Information Service (RIS). http://www.ripe.net/projects/ris/rawdata.html."
+            ],
+            "used_in_paper_reasoning": "Mentioned as a source used by other studies to measure prefix visibility."
+        },
+        {
+            "id": "UMich|ZMap",
+            "name": "UMich|ZMap",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "We then scan them using ZMap [26] to find tNodes that open popular TCP port numbers [ 68] so that we can send TCP SYN packets."
+            ],
+            "references": [
+                "[26] Z. Durumeric, E. Wustrow, and J. A. Halderman. ZMap: Fast Internet-Wide Scanning and its Security Applications. USENIX Security, 2013."
+            ],
+            "used_in_paper_reasoning": "Used to find tNodes and vVP candidates through Internet-wide scanning."
+        },
+        {
+            "id": "CAIDA|BGPStream",
+            "name": "BGPStream",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "We now evaluate the impact of ROV using historical BGP hijacking reports collected from BGPStream [13]..."
+            ],
+            "references": [
+                "[13] BGPStream. https://bgpstream .com/."
+            ],
+            "used_in_paper_reasoning": "Used to collect historical BGP hijacking reports for impact evaluation."
+        },
+        {
+            "id": "CAIDA|AS Relationships",
+            "name": "CAIDA|AS Relationships",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We then identify the ASes where all of the first hops in the traceroutes belong to their customers by analyzing the CAIDA AS relationship datasets..."
+            ],
+            "references": [
+                "[40] M. Luckie, B. Huffaker, K. Claffy, A. Dhamdhere, and V. Giotsas. AS Relationships, Customer Cones, and Validation. IMC, 2013."
+            ],
+            "used_in_paper_reasoning": "Used to identify customer relationships of ASes."
+        },
+        {
+            "id": "CAIDA|AS Rank",
+            "name": "AS Rank",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Now we examine the relationship between the ROV score and the ranking of ASes, which is determined by its customer cone size [40]."
+            ],
+            "references": [
+                "[40] M. Luckie, B. Huffaker, K. Claffy, A. Dhamdhere, and V. Giotsas. AS Relationships, Customer Cones, and Validation. IMC, 2013."
+            ],
+            "used_in_paper_reasoning": "Used to analyze the relationship between AS rank (customer cone size) and ROV score."
+        },
+        {
+            "id": "APNIC|RPKI dashboard",
+            "name": "APNIC|RPKI dashboard",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "APNIC maintains a RPKI dashboard [34] that shows the ROV status of ASes."
+            ],
+            "references": [
+                "[34] G. Huston and J. Damas. Measuring Route Origin Validation. 2020. https://www.potaroo.net/ispcol/2020-06/rov.html."
+            ],
+            "used_in_paper_reasoning": "Used as a point of comparison for the RoVista framework."
+        }
+    ]
+}

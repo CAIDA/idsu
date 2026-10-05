@@ -1,0 +1,30 @@
+{
+    "resources": [
+        {
+            "id": "QUICBench",
+            "name": "QUICBench",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "We used a modified version of our open-source tool QUIC Bench [34] to run our experiments and compute our new metrics Conformance-T, \u0394-throughput, and \u0394-delay."
+            ],
+            "references": [
+                "[34] Ayush Mishra and Sherman Lim. 2022. QUICBench. https://github.com/NUS-SNL/QUICbench"
+            ],
+            "used_in_paper_reasoning": "The authors used a modified version of QUICBench to run their experiments and compute their proposed metrics."
+        },
+        {
+            "id": "ESnet|iperf3",
+            "name": "iperf3",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "To generate the TCP flows, we used the iperf3 [2] tool."
+            ],
+            "references": [
+                "[2] 2021. iPerf, the Speed Test Tool for TCP. https://iperf.fr/iperf-doc.php"
+            ],
+            "used_in_paper_reasoning": "The authors used iperf3 to generate the TCP flows used as reference implementations in their experiments."
+        }
+    ]
+}

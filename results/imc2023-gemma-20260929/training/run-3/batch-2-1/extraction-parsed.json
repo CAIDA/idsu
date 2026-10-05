@@ -1,0 +1,31 @@
+{
+    "resources": [
+        {
+            "id": "MITRE|CVE",
+            "name": "Common Vulnerabilities and Exposures (CVE)",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We collect the vulnerability information of affected resources\u2019 versions from multiple third-party websites for cross-reference, such as the National Vulnerability Database (NVD) [45], CVE MITRE Corporation [40], cvedetails.com [41], and SNYK Vul. DB [50].",
+                "We utilize CVE (Common Vulnerabilities and Exposures) reports to identify vulnerable JavaScript libraries."
+            ],
+            "references": [
+                "[40] 2022. CVE - CVE. https://cve .mitre.org/index.html. (Accessed on 05/26/2023)."
+            ],
+            "used_in_paper_reasoning": "The authors used the CVE MITRE Corporation database to collect vulnerability information for affected resource versions and to identify vulnerable JavaScript libraries."
+        },
+        {
+            "id": "cvedetails|CVE-Details",
+            "name": "CVE Details",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We collect the vulnerability information of affected resources\u2019 versions from multiple third-party websites for cross-reference, such as the National Vulnerability Database (NVD) [45], CVE MITRE Corporation [40], cvedetails.com [41], and SNYK Vul. DB [50]."
+            ],
+            "references": [
+                "[41] 2022. CVE security vulnerability database. Security vulnerabilities, exploits, references and more. https://www .cvedetails.com/index.php. (Accessed on 05/26/2023)."
+            ],
+            "used_in_paper_reasoning": "The authors used cvedetails.com as one of the third-party websites to collect vulnerability information for affected resource versions."
+        }
+    ]
+}

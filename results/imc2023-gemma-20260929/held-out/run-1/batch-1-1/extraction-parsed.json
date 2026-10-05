@@ -1,0 +1,45 @@
+{
+    "resources": [
+        {
+            "id": "IoTInspector",
+            "name": "IoTInspector",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "To this end, we utilize a crowdsourced dataset of IoT TLS traffic collected by IoT Inspector [23], consisting of 2,014 IoT devices of 286 models from 65 device vendors, across 721 users worldwide.",
+                "IoT Inspector is an open-source tool that crowdsourced the network traffic from 54,094 devices across 5,404 users worldwide [23].",
+                "a Raspberry Pi that is capturing all the local network traffic with a modified version of IoT Inspector [23]."
+            ],
+            "references": [
+                "Danny Yuxing Huang, Noah Apthorpe, Frank Li, Gunes Acar, and Nick Feamster. 2020. Iot inspector: Crowdsourcing labeled network traffic from smart home devices at scale. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (2020)."
+            ],
+            "used_in_paper_reasoning": "The paper uses the IoT Inspector dataset for its client-side TLS analysis and employs a modified version of the tool for local network traffic capture."
+        },
+        {
+            "id": "Google|Certificate Transparency",
+            "name": "Certificate Transparency",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We queried each certificate in CT logs [30] to check its existence."
+            ],
+            "references": [
+                "Ben Laurie, Adam Langley, and Emilia Kasper. 2013. Certificate Transparency. RFC 6962. (June 2013). https://doi.org/10.17487/RFC6962"
+            ],
+            "used_in_paper_reasoning": "The authors actively queried CT logs to check for the existence of the leaf certificates in their dataset."
+        },
+        {
+            "id": "UVA|IoT-TLS-Certificate-Dataset",
+            "name": "IoT TLS and Server Certificate Dataset",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "In support of the community, we make available both an anonymized version of our IoT Inspector dataset and server certificate dataset at: https://github.com/hyingdon/acmimc23_iot."
+            ],
+            "references": [
+                "Hongying Dong, Hao Shu, Vijay Prakash, Yizhe Zhang, Muhammad Talha Paracha, David Choffnes, Santiago Torres-Arias, Danny Yuxing Huang, and Yixin Sun. 2023. Behind the Scenes: Uncovering TLS and Server Certificate Practice of IoT Device Vendors in the Wild. In Proceedings of the 2023 ACM Internet Measurement Conference (IMC \u201923), October 24\u201326, 2023, Montr\u00e9al, QC, Canada."
+            ],
+            "used_in_paper_reasoning": "The paper produces and releases this dataset as a primary artifact of the research."
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "resources": [
+        {
+            "id": "USC/ISI|WebMeasurements",
+            "name": "SSO Web Measurement Artifacts",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "All code, data, and artifacts can be found at https://webmeasurements.org."
+            ],
+            "references": [],
+            "used_in_paper_reasoning": "The authors explicitly state that all code, data, and artifacts for their study on the prevalence of SSO are available at https://webmeasurements.org."
+        }
+    ]
+}

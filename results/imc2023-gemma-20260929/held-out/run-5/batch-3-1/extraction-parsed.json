@@ -1,0 +1,95 @@
+{
+    "resources": [
+        {
+            "id": "CAIDA|BGPView",
+            "name": "BGPView",
+            "type": "software",
+            "used_in_paper": true,
+            "quotes": [
+                "We used the CAIDA BGPView tool [32] to read BGP updates collected from Routeviews [ 30] and RIPE RIS [ 27] between November 2021 and May 2023."
+            ],
+            "references": [
+                "[32] Chiara Orsini, Alistair King, Danilo Giordano, Vasileios Giotsas, and Alberto Dainotti. 2016. BGPStream: A Software Framework for Live and Historical BGP Data Analysis. In Proceedings of the 2016 Internet Measurement Conference (Santa Monica, California, USA) (IMC \u201916). Association for Computing Machinery, New York, NY, USA, 429\u2013444. https://doi.org/10.1145/2987443.2987482"
+            ],
+            "used_in_paper_reasoning": "The authors used BGPView in Section 4 to read BGP updates from Routeviews and RIPE RIS."
+        },
+        {
+            "id": "U.Oregon|Routeviews",
+            "name": "RouteViews",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We used the CAIDA BGPView tool [32] to read BGP updates collected from Routeviews [ 30] and RIPE RIS [ 27] between November 2021 and May 2023."
+            ],
+            "references": [
+                "[30] University of Oregon. 2023. Route Views Project. http://www.routeviews.org/routeviews"
+            ],
+            "used_in_paper_reasoning": "Routeviews was used as a source for BGP updates in the BGP dataset described in Section 4."
+        },
+        {
+            "id": "RIPE NCC|RIPE RIS",
+            "name": "RIPE NCC|RIPE RIS",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We used the CAIDA BGPView tool [32] to read BGP updates collected from Routeviews [ 30] and RIPE RIS [ 27] between November 2021 and May 2023."
+            ],
+            "references": [
+                "[27] RIPE NCC. 2023. Routing Information System (RIS). https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris"
+            ],
+            "used_in_paper_reasoning": "RIPE RIS was used as a source for BGP updates in the BGP dataset described in Section 4."
+        },
+        {
+            "id": "CAIDA|AS Rank",
+            "name": "AS Rank",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We used the CAIDA AS Rank dataset [7], CAIDA AS Relationship dataset [ 8], and the CAIDA AS-to-Organizations dataset (as2org) [9] to analyze the ASes registered in the IRR databases."
+            ],
+            "references": [
+                "[7] CAIDA. 2022. AS Rank. https://asrank.caida.org"
+            ],
+            "used_in_paper_reasoning": "The authors used the AS Rank dataset in Section 4 to analyze ASes registered in the IRR databases."
+        },
+        {
+            "id": "CAIDA|AS Relationships",
+            "name": "CAIDA|AS Relationships",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We used the CAIDA AS Rank dataset [7], CAIDA AS Relationship dataset [ 8], and the CAIDA AS-to-Organizations dataset (as2org) [9] to analyze the ASes registered in the IRR databases."
+            ],
+            "references": [
+                "[8] CAIDA. 2022. AS Relationships. https://www.caida.org/catalog/datasets/as-relationships"
+            ],
+            "used_in_paper_reasoning": "The authors used the AS Relationship dataset in Section 4 to analyze ASes registered in the IRR databases."
+        },
+        {
+            "id": "CAIDA|AS2Org",
+            "name": "CAIDA|AS2Org",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We used the CAIDA AS Rank dataset [7], CAIDA AS Relationship dataset [ 8], and the CAIDA AS-to-Organizations dataset (as2org) [9] to analyze the ASes registered in the IRR databases."
+            ],
+            "references": [
+                "[9] CAIDA. 2022. Inferred AS to Organization Mapping Dataset. https://www.caida.org/catalog/datasets/as-organizations"
+            ],
+            "used_in_paper_reasoning": "The authors used the AS-to-Organizations (as2org) dataset in Section 4 to analyze ASes registered in the IRR databases."
+        },
+        {
+            "id": "CAIDA|BGPStream",
+            "name": "BGPStream",
+            "type": "software",
+            "used_in_paper": true,
+            "quotes": [
+                "We used the CAIDA BGPView tool [32] to read BGP updates collected from Routeviews [ 30] and RIPE RIS [ 27] between November 2021 and May 2023."
+            ],
+            "references": [
+                "[32] Chiara Orsini, Alistair King, Danilo Giordano, Vasileios Giotsas, and Alberto Dainotti. 2016. BGPStream: A Software Framework for Live and Historical BGP Data Analysis. In Proceedings of the 2016 Internet Measurement Conference (Santa Monica, California, USA) (IMC \u201916). Association for Computing Machinery, New York, NY, USA, 429\u2013444. https://doi.org/10.1145/2987443.2987482"
+            ],
+            "used_in_paper_reasoning": "The paper uses BGPView, and cites the BGPStream paper [32] as the source for the tool."
+        }
+    ]
+}

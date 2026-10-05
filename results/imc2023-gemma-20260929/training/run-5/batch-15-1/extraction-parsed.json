@@ -1,0 +1,43 @@
+{
+    "resources": [
+        {
+            "id": "OpenWPM",
+            "name": "OpenWPM",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "we utilize OpenWPM (v0.18.0), a common and popular crawling framework [19], to capture the traffic we are interested in."
+            ],
+            "references": [
+                "Steven Englehardt and Arvind Narayanan. 2016. Online Tracking: A 1-Million-Site Measurement and Analysis. In ACM Conference on Computer and Communications Security (CCS). https://doi.org/10.1145/2976749.2978313"
+            ],
+            "used_in_paper_reasoning": "The authors used OpenWPM as the crawling framework to capture traffic for their experiments, as described in Section 3.1.1."
+        },
+        {
+            "id": "KU Leuven|Tranco",
+            "name": "KU Leuven|Tranco",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "The basis of the set of websites to analyze is the widely used quasi-standard Tranco list [26]."
+            ],
+            "references": [
+                "Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczy\u0144ski, and Wouter Joosen. 2019. Tranco: A Research-Oriented Top Sites Ranking Hardened Against Manipulation. In Symposium on Network and Distributed System Security (NDSS) . https://doi.org/10.14722/ndss.2019.23386 Generated on 03/04/2022. Available at https://tranco-list.eu/list/5KJN/1000000."
+            ],
+            "used_in_paper_reasoning": "The Tranco list was used as the basis for selecting the set of websites to be analyzed in the study, as mentioned in Section 3.1.2."
+        },
+        {
+            "id": "KIT|Parallel Web Measurement Framework",
+            "name": "Parallel Web Measurement Framework",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "Our setup is based on the openly available framework of Demir et al. that implements a best-effort approach to conduct parallel Web measurements [14]."
+            ],
+            "references": [
+                "Nurullah Demir, Matteo Gro\u00dfe-Kampmann, Tobias Urban, Christian Wressnegger, Thorsten Holz, and Pohlmann Norbert. 2022. Reproducibility and Replicability of Web Measurement Studies. In International Conference on World Wide Web (TheWebConf) . https://doi.org/10.1145/3485447.3512214"
+            ],
+            "used_in_paper_reasoning": "The authors explicitly state in Section 3.1 that their measurement setup is based on the framework developed by Demir et al. [14]."
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "resources": [
+        {
+            "id": "Dioptra|geoloc-imc-2023",
+            "name": "geoloc-imc-2023 (paper code and data)",
+            "type": "software",
+            "used_in_paper": true,
+            "quotes": [
+                "All of our code and data are publicly available to support reproducibility at the following url: https://github.com/dioptra-io/geoloc-imc-2023"
+            ],
+            "references": [],
+            "used_in_paper_reasoning": "The paper explicitly states that all its code and data are publicly available at the provided URL to support reproducibility."
+        },
+        {
+            "id": "CAIDA|AS classification",
+            "name": "CAIDA AS Classification Dataset",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Table 2 shows the distribution of the AS category of our targets according to the CAIDA AS classification dataset [1]."
+            ],
+            "references": [
+                "[1] CAIDA AS classification dataset. URL https://www.caida.org/catalog/datasets/as-classification/."
+            ],
+            "used_in_paper_reasoning": "The authors used this dataset to determine the AS category distribution of their targets, as shown in Table 2."
+        },
+        {
+            "id": "Stanford|ASdb",
+            "name": "ASdb",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "In addition, we look at the AS type of our targets according to the ASDB dataset [50], finding that they fall into 16 categories"
+            ],
+            "references": [
+                "[50] Maya Ziv, Liz Izhikevich, Kimberly Ruth, Katherine Izhikevich, and Zakir Durumeric. ASdb: a system for classifying owners of autonomous systems. In Proc. ACM IMC, 2021."
+            ],
+            "used_in_paper_reasoning": "The authors used the ASDB dataset to analyze the AS type of their targets in Section 4.4.1."
+        },
+        {
+            "id": "ISI|IPV4 Hitlist",
+            "name": "IPV4 Hitlist",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "For the VP selection algorithm, we use the ISI hitlist [25] to select the three representatives of the /24 prefix of each target with the highest score of responsiveness."
+            ],
+            "references": [
+                "[25] Xun Fan and John Heidemann. Selecting representative IP addresses for internet topology studies. In Proc. ACM IMC, 2010."
+            ],
+            "used_in_paper_reasoning": "The authors used the ISI hitlist to select representative IP addresses for their vantage point selection algorithm."
+        },
+        {
+            "id": "CAIDA|ITDK",
+            "name": "ITDK",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "The only large scale publicly available datasets are ITDK [16], RIPE IPMap [40], which are research efforts to provide the geolocation of router IP addresses of the Internet topology"
+            ],
+            "references": [
+                "[16] CAIDA. The CAIDA ark IPv4 Internet topology data kits dataset. https://www.caida.org/catalog/datasets/internet-topology-data-kit/."
+            ],
+            "used_in_paper_reasoning": "ITDK is mentioned in the introduction as one of the few large-scale publicly available geolocation datasets."
+        },
+        {
+            "id": "RIPE|IPMap",
+            "name": "RIPE IPMap",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "The only large scale publicly available datasets are ITDK [16], RIPE IPMap [40], which are research efforts to provide the geolocation of router IP addresses of the Internet topology"
+            ],
+            "references": [
+                "[40] RIPE IPMap ftp. RIPE Atlas daily dumps. https://ftp.ripe.net/ripe/ipmap/."
+            ],
+            "used_in_paper_reasoning": "RIPE IPMap is mentioned in the introduction as one of the few large-scale publicly available geolocation datasets."
+        }
+    ]
+}

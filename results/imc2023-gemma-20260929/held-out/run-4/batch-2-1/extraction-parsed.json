@@ -1,0 +1,17 @@
+{
+    "resources": [
+        {
+            "id": "CIRCL.lu",
+            "name": "CIRCL Passive DNS",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "In addition to the Farsight DNS database, other popular DNS databases CIRCL.lu [3], DNSIQ [ 19], and Mnemonic [ 14] can also be analyzed to further enhance our experiments."
+            ],
+            "references": [
+                "[3] CIRCL.lu. https://www.circl.lu/."
+            ],
+            "used_in_paper_reasoning": "The resource is mentioned in the Limitations section as a potential source for future work to expand the study's measurements."
+        }
+    ]
+}

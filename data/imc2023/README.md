@@ -74,8 +74,7 @@ are found, and it lists the 7 that are not, each with its best fuzzy-match score
 ## Splits and categories
 
 Each split file lists `filename` and `category`. The category was assigned when the
-splits were built (`experiments/build-training-groups_bhuffake/main.py` in the project's
-GitLab history), from the fuller annotations of the time, which also covered resources
+splits were built, from the fuller annotations of the time, which also covered resources
 outside the target list. It exists to balance the splits and is not recomputed when the
 ground truth changes. In order of precedence:
 

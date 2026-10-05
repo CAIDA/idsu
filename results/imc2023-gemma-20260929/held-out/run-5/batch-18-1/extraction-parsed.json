@@ -1,0 +1,31 @@
+{
+    "resources": [
+        {
+            "id": "MITRE|CVE",
+            "name": "MITRE|CVE",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Mitre maintains arguably the most comprehensive listing of security-critical vulnerabilities through their Common Vulnerabilities and Exposures (CVE) program [15]",
+                "These events, recorded across 63 unique Common Vulnerabilities and Exposures (CVEs), offer a dataset of timelines of real-world exploitation of vulnerabilities ranging from end-of-life router firmware to the notorious Log4Shell vulnerability reported in December 2021."
+            ],
+            "references": [
+                "[15] [n. d.] CVE - CVE. (). https://cve.mitre.org/."
+            ],
+            "used_in_paper_reasoning": "The paper uses the CVE program to identify and track the 63 specific vulnerabilities analyzed in their study of vulnerability lifecycles."
+        },
+        {
+            "id": "Merit|Orion Network Telescope",
+            "name": "Orion Network Telescope",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "Our previous work established DScope\u2019s representativity by comparing collected traffic with that of Merit\u2019s ORION [27], a conventional Internet telescope."
+            ],
+            "references": [
+                "[27] [n. d.] The Merit Network, Inc. ORION. en-US. https://www.merit.edu. ()."
+            ],
+            "used_in_paper_reasoning": "The authors use Merit's ORION as a baseline to validate the representativity of their own measurement apparatus, DScope."
+        }
+    ]
+}

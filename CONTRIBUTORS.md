@@ -2,7 +2,7 @@
 
 IDSU was developed at CAIDA, UC San Diego, under NSF award OAC-2526448 (PI kc claffy,
 co-PI Bradley Huffaker). The full development history, with every contributor's commits,
-is in the project's GitLab repository.
+is in CAIDA's internal repository.
 
 | Contributor | Work |
 |---|---|

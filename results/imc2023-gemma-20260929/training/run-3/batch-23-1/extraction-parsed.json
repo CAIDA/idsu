@@ -1,0 +1,31 @@
+{
+    "resources": [
+        {
+            "id": "FreePhish",
+            "name": "FreePhish",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "In this work, we propose FreePhish, a framework for automatically identifying phishing attacks created using FWBs and shared on social media services, monitoring the reaction of anti-phishing entities against them, and reporting them for removal.",
+                "Finally, we also provide FreePhish as a free Chromium web extension that can be utilized to prevent end-users from accessing potential FWB-based phishing attacks."
+            ],
+            "references": [
+                "Sayak Saha Roy, Unique Karanjit, and Shirin Nilizadeh. 2023. Phishing in the Free Waters: A Study of Phishing Attacks Created using Free Website Building Services. In Proceedings of the 2023 ACM Internet Measurement Conference (IMC \u201923), October 24\u201326, 2023, Montreal, QC, Canada. ACM, New York, NY, USA, 14 pages. https://doi.org/10.1145/3618257.3624812"
+            ],
+            "used_in_paper_reasoning": "The paper introduces the FreePhish framework to identify FWB phishing attacks and provides it as a Chromium web extension."
+        },
+        {
+            "id": "Google|Certificate Transparency",
+            "name": "Certificate Transparency",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Having the same SSL certification as their hosting domain renders FWB phishing attacks effectively invisible in Certificate Transparency (CT) logs as they do not appear as individually registered domains."
+            ],
+            "references": [
+                "Certificate Transparency. [n. d.]. Working together to detect maliciously or mistakenly issued certificates. https://certificate.transparency.dev."
+            ],
+            "used_in_paper_reasoning": "The authors use Certificate Transparency (CT) logs to analyze and demonstrate that FWB phishing attacks are effectively invisible in these logs."
+        }
+    ]
+}

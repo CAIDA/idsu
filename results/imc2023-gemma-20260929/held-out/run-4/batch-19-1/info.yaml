@@ -1,0 +1,15 @@
+api_error: false
+extracted_resources_count: 5
+extraction_model: gemma
+filename: PTPerf- On the Performance Evaluation of Tor Pluggable Transports.pdf
+ground_truth_status: POSITIVE (Has Target Resource)
+raw_resources_count: 5
+shot_files:
+- A First Look at the Privacy Harms of the Public Suffix List.pdf
+shot_mode: partial
+shots_used: 1
+skipped_resources_details:
+  filtered_empty_quotes: 0
+  filtered_not_in_target: 0
+  filtered_unused: 0
+  malformed_json: 0

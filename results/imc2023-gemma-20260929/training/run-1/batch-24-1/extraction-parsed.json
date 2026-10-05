@@ -1,0 +1,59 @@
+{
+    "resources": [
+        {
+            "id": "BannerClick",
+            "name": "BannerClick",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "we use a heavily modified version of the tool BannerClick [51].",
+                "We release our modified version of BannerClick as open-source software [50]."
+            ],
+            "references": [
+                "Rasaii, A., Shivani Singh, Devashish Gosain, and Oliver Gasser. 2023. Exploring the Cookieverse: A Multi-Perspective Analysis of Web Cookies. In Proceedings of the 2023 Passive and Active Measurement Conference. https://doi.org/10.1007/978-3-031-28486-1_26"
+            ],
+            "used_in_paper_reasoning": "The authors used a heavily modified version of BannerClick to detect cookiewalls and released this modified version as open-source."
+        },
+        {
+            "id": "OpenWPM",
+            "name": "OpenWPM",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "BannerClick is built on top of OpenWPM [21]",
+                "We run OpenWPM in a similar way as any regular user when visiting websites with a normal Web browser."
+            ],
+            "references": [
+                "Steven Englehardt and Arvind Narayanan. 2016. Online tracking: A 1-million-site measurement and analysis. In Proceedings of the 2016 ACM SIGSAC conference on computer and communications security. 1388\u20131401."
+            ],
+            "used_in_paper_reasoning": "The measurement tool BannerClick is built on top of OpenWPM, and the authors explicitly mention running OpenWPM to visit websites."
+        },
+        {
+            "id": "CookiewallData",
+            "name": "Analysis scripts and raw data for Cookiewall measurements",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Finally, we publish tools, data, and code to foster reproducibility and further studies.",
+                "together with our analysis code and data [49] at bannerclick.github.io"
+            ],
+            "references": [
+                "Ali Rasaii. 2023. Analysis scripts and raw data for Cookiewall measurements . https://doi.org/10.17617/3.TREBZR."
+            ],
+            "used_in_paper_reasoning": "The paper produces and releases this dataset and the associated analysis code to foster reproducibility."
+        },
+        {
+            "id": "KU Leuven|Tranco",
+            "name": "KU Leuven|Tranco",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We use Google\u2019s Chrome User Experience Report (CrUX) [10] for target selection, as it was shown to be a more realistic toplist [54] compared to Alexa [3] or Tranco [38]."
+            ],
+            "references": [
+                "Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczy\u0144ski, and Wouter Joosen. 2019. Tranco: A Research-Oriented Top Sites Ranking Hardened Against Manipulation. In Proceedings of the 26th Annual Network and Distributed System Security Symposium. Internet Society, 1\u201315."
+            ],
+            "used_in_paper_reasoning": "Tranco is used as a point of comparison to justify the selection of the Google CrUX toplist for target selection."
+        }
+    ]
+}

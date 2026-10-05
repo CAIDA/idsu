@@ -1,0 +1,82 @@
+{
+    "resources": [
+        {
+            "id": "KU Leuven|Tranco",
+            "name": "KU Leuven|Tranco",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "our measurement pipeline is shown in Figure 2. It is fueled by different domain lists, among which we use domain toplists compiled from the (1) Alexa Top 1M1 [5], (2) Cisco Umbrella [2], (3) Majestic Million [17], and (4) the Tranco Research List [36]."
+            ],
+            "references": [
+                "[36] Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, and Wouter Joosen. 2019. TRANCO: A Research-Oriented Top Sites Ranking Hardened Against Manipulation. In Network and Distributed Security (NDSS) Symposium 2019. https://doi.org/10.14722/ndss.2019.23386"
+            ],
+            "used_in_paper_reasoning": "The authors used the Tranco Research List as one of the domain toplists to fuel their measurement pipeline."
+        },
+        {
+            "id": "ICANN|CZDS",
+            "name": "Centralized Zone Data Service (CZDS)",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "we also use domain lists compiled from TLD zone files. Here, we use the com/net/org zone files available at the ICANN Centralized Zone Data Service (CZDS) [7], which we download every Wednesday starting with our measurements."
+            ],
+            "references": [
+                "[7] 2023. Centralized Zone Data Service. https://czds.icann.org/home."
+            ],
+            "used_in_paper_reasoning": "The authors used the ICANN CZDS to download com/net/org zone files for compiling domain lists."
+        },
+        {
+            "id": "ZMap|ZGrab2",
+            "name": "ZMap|ZGrab2",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "For this, we utilize zgrab2 [10], a golang-based banner grabber, which we adapt to additionally (1) support HTTP/3, and (2) log connection information."
+            ],
+            "references": [
+                "[10] 2023. GitHub - zmap/zgrab2: Fast Go Application Scanner. https://github.com/zmap/zgrab2."
+            ],
+            "used_in_paper_reasoning": "The authors utilized zgrab2 as a banner grabber, adapting it to support HTTP/3 and log connection information for their transport layer analysis."
+        },
+        {
+            "id": "CAIDA|AS2Org",
+            "name": "CAIDA|AS2Org",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "The AS organizations are inferred via CAIDA\u2019s as2org dataset [25] to fuse different ASs operated by the same provider"
+            ],
+            "references": [
+                "[25] CAIDA. 2023. The CAIDA UCSD AS to Organization Mapping Dataset, April 2023. https://www.caida.org/data/as_organizations/."
+            ],
+            "used_in_paper_reasoning": "The authors used CAIDA's as2org dataset to infer AS organizations and fuse different ASs operated by the same provider."
+        },
+        {
+            "id": "RIPE NCC|RIPE RIS",
+            "name": "RIPE NCC|RIPE RIS",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "The respective ASs are mapped from our contacted IPs via BGP data of RIPE\u2019s RIS archive [45]."
+            ],
+            "references": [
+                "[45] RIPE. 2023. RIPE - Route Collection Raw Data / Routing Information Service (RIS). https://data.ris.ripe.net/rrc00/."
+            ],
+            "used_in_paper_reasoning": "The authors used BGP data from RIPE's RIS archive to map contacted IPs to their respective ASs."
+        },
+        {
+            "id": "RWTH|quic-ecn-measurements",
+            "name": "QUIC ECN Measurements Tools",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "Our tools and our toplist data are available via [47] and https://github.com/COMSYS/quic-ecn-measurements"
+            ],
+            "references": [
+                "[47] Constantin Sander, Ike Kunze, Leo Bl\u00f6cher, Mike Kosek, and Klaus Wehrle. 2023. Dataset to paper \"ECN with QUIC: Challenges in the Wild\" . https://doi.org/10.5281/zenodo.8338470"
+            ],
+            "used_in_paper_reasoning": "The paper introduces and provides the tools and toplist data used in the study via a GitHub repository."
+        }
+    ]
+}

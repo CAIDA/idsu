@@ -1,0 +1,16 @@
+api_error: false
+extracted_resources_count: 2
+extraction_model: gemma
+filename: Phishing in the Free Waters- A Study of Phishing Attacks Created using Free
+  Website Building Services.pdf
+ground_truth_status: POSITIVE (Has Target Resource)
+raw_resources_count: 2
+shot_files:
+- Pushing Alias Resolution to the Limit.pdf
+shot_mode: partial
+shots_used: 1
+skipped_resources_details:
+  filtered_empty_quotes: 0
+  filtered_not_in_target: 0
+  filtered_unused: 0
+  malformed_json: 0

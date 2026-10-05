@@ -1,0 +1,63 @@
+{
+    "resources": [
+        {
+            "id": "BannerClick",
+            "name": "BannerClick",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "we develop a tool to automatically detect cookiewalls with a precision of 98.2%, which we release as open-source [50] together with our analysis code and data [49] at bannerclick.github.io",
+                "we extend BannerClick to specifically detect these special types of cookie banners, i.e., cookiewalls.",
+                "To measure the prevalence of cookiewalls, we use a heavily modified version of the tool BannerClick [51]."
+            ],
+            "references": [
+                "[50] Ali Rasaii. 2023. BannerClick on GitHub. https://github.com/bannerclick/bannerclick.",
+                "[51] Ali Rasaii, Shivani Singh, Devashish Gosain, and Oliver Gasser. 2023. Exploring the Cookieverse: A Multi-Perspective Analysis of Web Cookies. In Proceedings of the 2023 Passive and Active Measurement Conference. https://doi.org/10.1007/978-3-031-28486-1_26"
+            ],
+            "used_in_paper_reasoning": "The authors extended and used a modified version of BannerClick as the primary tool to detect cookiewalls in their measurement study."
+        },
+        {
+            "id": "OpenWPM",
+            "name": "OpenWPM",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "BannerClick is built on top of OpenWPM [21] and Selenium [58]",
+                "Although OpenWPM has mechanisms to mitigate bot detection",
+                "We run OpenWPM in a similar way as any regular user when visiting websites with a normal Web browser."
+            ],
+            "references": [
+                "[21] Steven Englehardt and Arvind Narayanan. 2016. Online tracking: A 1-million-site measurement and analysis. In Proceedings of the 2016 ACM SIGSAC conference on computer and communications security. 1388\u20131401.",
+                "[65] WebTAP at Princeton University. 2023. Studies using OpenWPM. https://webtap.princeton.edu/software/."
+            ],
+            "used_in_paper_reasoning": "The authors used OpenWPM as the underlying framework for BannerClick and explicitly mentioned running it during their measurements."
+        },
+        {
+            "id": "CookiewallData",
+            "name": "Analysis scripts and raw data for Cookiewall measurements",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Finally, we publish tools, data, and code to foster reproducibility and further studies.",
+                "which we release as open-source [50] together with our analysis code and data [49] at bannerclick.github.io"
+            ],
+            "references": [
+                "[49] Ali Rasaii. 2023. Analysis scripts and raw data for Cookiewall measurements . https://doi.org/10.17617/3.TREBZR."
+            ],
+            "used_in_paper_reasoning": "The paper introduces and releases this dataset and the associated analysis code as a byproduct of the research."
+        },
+        {
+            "id": "KU Leuven|Tranco",
+            "name": "KU Leuven|Tranco",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "We use Google\u2019s Chrome User Experience Report (CrUX) [10] for target selection, as it was shown to be a more realistic toplist [54] compared to Alexa [3] or Tranco [38]."
+            ],
+            "references": [
+                "[38] Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczy\u0144ski, and Wouter Joosen. 2019. Tranco: A Research-Oriented Top Sites Ranking Hardened Against Manipulation. In Proceedings of the 26th Annual Network and Distributed System Security Symposium. Internet Society, 1\u201315."
+            ],
+            "used_in_paper_reasoning": "Tranco is mentioned as a point of comparison for target selection, but the authors explicitly state they used Google's CrUX instead."
+        }
+    ]
+}

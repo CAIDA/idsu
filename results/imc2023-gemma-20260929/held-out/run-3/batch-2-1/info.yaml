@@ -1,0 +1,16 @@
+api_error: false
+extracted_resources_count: 2
+extraction_model: gemma
+filename: Dial N for NXDomain- The Scale, Origin, and Security Implications of DNS
+  Queries to Non-Existent Domains.pdf
+ground_truth_status: POSITIVE (Has Target Resource)
+raw_resources_count: 2
+shot_files:
+- 2023-sander-quic-ecn.pdf
+shot_mode: partial
+shots_used: 1
+skipped_resources_details:
+  filtered_empty_quotes: 0
+  filtered_not_in_target: 0
+  filtered_unused: 0
+  malformed_json: 0

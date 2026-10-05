@@ -1,0 +1,16 @@
+api_error: false
+extracted_resources_count: 1
+extraction_model: gemma
+filename: The Prevalence of Single Sign-On on the Web- Towards the Next Generation
+  of Web Content Measurement.pdf
+ground_truth_status: POSITIVE (Has Target Resource)
+raw_resources_count: 1
+shot_files:
+- Pushing Alias Resolution to the Limit.pdf
+shot_mode: partial
+shots_used: 1
+skipped_resources_details:
+  filtered_empty_quotes: 0
+  filtered_not_in_target: 0
+  filtered_unused: 0
+  malformed_json: 0

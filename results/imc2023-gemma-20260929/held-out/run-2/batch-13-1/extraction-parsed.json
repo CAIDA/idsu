@@ -1,0 +1,104 @@
+{
+    "resources": [
+        {
+            "id": "LFP|Router Fingerprinting Artifacts",
+            "name": "LFP Router Fingerprinting Artifacts",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "LFP is publicly available, along with the the derived signatures and classification results from this study to enable reproducibility and future work [3]."
+            ],
+            "references": [
+                "[3] Taha Albakour, Oliver Gasser, Robert Beverly, and Georgios Smaragdakis. 2023. Illuminating Router Vendor Diversity Within Providers and Along Network Paths (artifacts). https://routerfingerprinting.github.io/."
+            ],
+            "used_in_paper_reasoning": "The paper introduces LFP as a novel fingerprinting methodology and tool, and provides its artifacts for reproducibility."
+        },
+        {
+            "id": "CAIDA|ITDK",
+            "name": "ITDK",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "we leverage two complementary public router datasets: the RIPE Atlas traceroutes dataset [43] and the ITDK dataset [11]."
+            ],
+            "references": [
+                "[11] CAIDA. 2021. Macroscopic Internet Topology Data Kit (ITDK). https://www.caida.org/catalog/datasets/internet-topology-data-kit/."
+            ],
+            "used_in_paper_reasoning": "The ITDK dataset is used as one of the primary sources of router IP addresses for the study's active measurements and analysis."
+        },
+        {
+            "id": "CAIDA|AS Relationships",
+            "name": "CAIDA|AS Relationships",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "we use the CAIDA AS relationship dataset [12] to find AS paths where these vendor homogeneous ASes serve as transit ASes."
+            ],
+            "references": [
+                "[12] CAIDA. 2022. AS Relationships. https://publicdata.caida.org/datasets/as-relationships/serial-1/."
+            ],
+            "used_in_paper_reasoning": "The CAIDA AS relationship dataset is used to identify AS paths and analyze transit ASes for vendor homogeneity."
+        },
+        {
+            "id": "Censys|Universal Internet Dataset",
+            "name": "Censys Universal Internet Dataset",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "we acquire a set of addresses from Censys, which are known to reveal vendor information through service banners."
+            ],
+            "references": [],
+            "used_in_paper_reasoning": "Censys is used to acquire a set of ground-truth router addresses that reveal vendor information through service banners."
+        },
+        {
+            "id": "CAIDA|MIDAR",
+            "name": "MIDAR",
+            "type": "tool",
+            "used_in_paper": false,
+            "quotes": [
+                "This complementary dataset contains router alias sets (excluding singletons) inferred via MIDAR [29] and iffinder measurements."
+            ],
+            "references": [
+                "[29] K. Keys, Y. Hyun, M. Luckie, and k claffy. 2013. Internet-Scale IPv4 Alias Resolution with MIDAR. IEEE/ACM Trans. Networking 21, 2 (2013)."
+            ],
+            "used_in_paper_reasoning": "MIDAR is mentioned as a tool used to infer the router alias sets contained within the ITDK dataset."
+        },
+        {
+            "id": "CAIDA|iffinder",
+            "name": "iffinder",
+            "type": "tool",
+            "used_in_paper": false,
+            "quotes": [
+                "This complementary dataset contains router alias sets (excluding singletons) inferred via MIDAR [29] and iffinder measurements."
+            ],
+            "references": [],
+            "used_in_paper_reasoning": "iffinder is mentioned as a tool used to infer the router alias sets contained within the ITDK dataset."
+        },
+        {
+            "id": "MITRE|CVE",
+            "name": "MITRE|CVE",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "if a vulnerability for a specific router vendor is discovered [22, 45, 48]"
+            ],
+            "references": [
+                "[48] The MITRE Corporation CVE. 2022. CVE.org Search Results for routers. https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=router."
+            ],
+            "used_in_paper_reasoning": "The MITRE CVE database is cited as a source of information regarding router vulnerabilities to motivate the study."
+        },
+        {
+            "id": "UMich|ZMap",
+            "name": "UMich|ZMap",
+            "type": "tool",
+            "used_in_paper": false,
+            "quotes": [
+                "general purpose remote fingerprinting tools have been used to great effect, e.g., for Internet-wide surveys and scanning [23, 40, 49]"
+            ],
+            "references": [
+                "[18] Zakir Durumeric, Eric Wustrow, and J. Alex Halderman. 2013. ZMap: Fast Internet-Wide Scanning and its Security Applications. In USENIX Security Symposium."
+            ],
+            "used_in_paper_reasoning": "ZMap is mentioned as a general-purpose remote fingerprinting tool used in other Internet-wide surveys."
+        }
+    ]
+}

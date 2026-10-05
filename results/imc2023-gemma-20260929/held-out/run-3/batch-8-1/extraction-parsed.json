@@ -1,0 +1,17 @@
+{
+    "resources": [
+        {
+            "id": "UCSD|Network Telescope",
+            "name": "UCSD Network Telescope",
+            "type": "tool",
+            "used_in_paper": false,
+            "quotes": [
+                "Network Telescopes: These network infrastructures monitor traffic reaching Internet address space that is not assigned to hosts but is advertised to the global routing system [32]."
+            ],
+            "references": [
+                "[32] David Moore, Colleen Shannon, Geoffrey M Voelker, and Stefan Savage. 2004. Network Telescopes: Technical Report. Technical Report. Cooperative Association for Internet Data Analysis (CAIDA)."
+            ],
+            "used_in_paper_reasoning": "The resource is mentioned in the 'Related Work' section to contrast the passive nature of network telescopes with the active capabilities of honeypots."
+        }
+    ]
+}

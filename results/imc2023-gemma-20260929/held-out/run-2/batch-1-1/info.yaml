@@ -1,0 +1,17 @@
+api_error: false
+extracted_resources_count: 3
+extraction_model: gemma
+filename: Behind the Scenes- Uncovering TLS and Server Certificate Practice of IoT
+  Device Vendors in the Wild.pdf
+ground_truth_status: POSITIVE (Has Target Resource)
+raw_resources_count: 3
+shot_files:
+- Phishing in the Free Waters- A Study of Phishing Attacks Created using Free Website
+  Building Services.pdf
+shot_mode: partial
+shots_used: 1
+skipped_resources_details:
+  filtered_empty_quotes: 0
+  filtered_not_in_target: 0
+  filtered_unused: 0
+  malformed_json: 0

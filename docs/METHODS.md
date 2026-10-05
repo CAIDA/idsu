@@ -94,8 +94,8 @@ matrices; that was checked on synthetic runs. It differs in three ways:
 ## What was tried
 
 The final pipeline came out of these studies. The ones by Nathan Man are from his internal
-reports (2026); the full reports, code and run outputs are in the project's GitLab
-history.
+reports (2026); the full reports, code and run outputs are in CAIDA's internal repository
+and are not public.
 
 - **Reasoning field** (Nathan Man). Adding `used_in_paper_reasoning` to the output raised
   training-set F1 from 0.8697 (SD 0.0176) to 0.8783 (SD 0.0137) over 5 runs each. That is

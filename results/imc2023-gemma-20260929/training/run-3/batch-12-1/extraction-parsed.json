@@ -1,0 +1,15 @@
+{
+    "resources": [
+        {
+            "id": "StAndrews|PSL-Privacy-Dataset",
+            "name": "PSL Privacy Harms Analysis Code and Data",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We make available our code for gathering, processing, and analyzing the data discussed in this paper. This, and our full labelled dataset of repositories that we identify as using the public suffix list, is available from https://doi.org/10.17630/50e596c3-7537-4f74-b503-e9bcc5c8b95a."
+            ],
+            "references": [],
+            "used_in_paper_reasoning": "The paper explicitly states that the code and dataset used for the study are made available at the provided DOI, making it a byproduct of the research."
+        }
+    ]
+}

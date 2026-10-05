@@ -12,7 +12,7 @@ model is being benchmarked. Writes <out>/benchmark.json and benchmark.md, one
 row per model.
 
 This is not the harness behind the February four-model table
-(experiments/model-extract-eval_rding in GitLab history), which used its own
+(in the project's internal repository), which used its own
 prompt, matcher and metrics, so its numbers are not comparable with these.
 """
 

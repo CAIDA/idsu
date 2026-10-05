@@ -1,0 +1,29 @@
+{
+    "resources": [
+        {
+            "id": "KU Leuven|Tranco",
+            "name": "KU Leuven|Tranco",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Our measurement targeted 8,941 nameservers covering over 400 providers and tested whether they provided URs for the top 2K Tranco sites.",
+                "To this end, we selected nameservers that host more than 50 domains in the top 1M Tranco sites."
+            ],
+            "references": [],
+            "used_in_paper_reasoning": "The authors used the Tranco list to select the top 2K and top 1M domains as targets for their measurement of undelegated records."
+        },
+        {
+            "id": "UMich|ZDNS",
+            "name": "UMich|ZDNS",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "For efficient measurement, both ZDNS [35] and XMAP [44] satisfied our requirements, and URHunter collects the following responses with the support of ZDNS."
+            ],
+            "references": [
+                "[35] Liz Izhikevich, Gautam Akiwate, Briana Berger, Spencer Drakontaidis, Anna Ascheman, Paul Pearce, David Adrian, and Zakir Durumeric. 2022. ZDNS: A Fast DNS Toolkit for Internet Measurement. In Proceedings of the 22nd ACM Internet Measurement Conference (Nice, France) (IMC \u201922). Association for Computing Machinery, New York, NY, USA, 33\u201343. https://doi.org/10.1145/3517745.3561434"
+            ],
+            "used_in_paper_reasoning": "The authors used ZDNS to collect DNS responses for their URHunter framework."
+        }
+    ]
+}

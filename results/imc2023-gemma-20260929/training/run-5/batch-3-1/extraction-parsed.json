@@ -1,0 +1,82 @@
+{
+    "resources": [
+        {
+            "id": "CAIDA|BGP Community Intent Data Supplement",
+            "name": "BGP Community Intent Data Supplement",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We publicly share our code, dictionaries, inferences, and datasets [33]."
+            ],
+            "references": [
+                "[33] Thomas Krenc, Matthew Luckie, Alexander Marder, and kc claffy. 2023. Data supplement for \u201cCoarse-grained Inference of BGP Community Intent\u201d. https://publicdata.caida.org/datasets/supplement/2023-imc-bgpcomms/."
+            ],
+            "used_in_paper_reasoning": "The paper introduces and shares this supplement containing code, dictionaries, inferences, and datasets."
+        },
+        {
+            "id": "CAIDA|AS Relationships",
+            "name": "CAIDA|AS Relationships",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We also used CAIDA\u2019s AS relationship [4] and organization [5] inferences for this week to provide context to our method."
+            ],
+            "references": [
+                "[4] CAIDA. 2022. AS Relationships. https://www.caida.org/catalog/datasets/as-relationships/."
+            ],
+            "used_in_paper_reasoning": "The authors used CAIDA's AS relationship inferences to provide context for their method in Section 4."
+        },
+        {
+            "id": "CAIDA|AS2Org",
+            "name": "CAIDA|AS2Org",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We also used CAIDA\u2019s AS relationship [4] and organization [5] inferences for this week to provide context to our method."
+            ],
+            "references": [
+                "[5] CAIDA. 2022. CAIDA. Mapping Autonomous Systems to Organizations. https://www.caida.org/research/topology/as2org/."
+            ],
+            "used_in_paper_reasoning": "The authors used CAIDA's organization inferences to provide context for their method in Section 4."
+        },
+        {
+            "id": "RIPE NCC|RIPE RIS",
+            "name": "RIPE NCC|RIPE RIS",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We extracted unique AS path and BGP Community tuples observed in RIBs and updates collected by RouteViews [43] and RIPE RIS [42]."
+            ],
+            "references": [
+                "[42] RIPE. 2021. RIS - RIPE Network Coordination Centre. http://ris.ripe.net/."
+            ],
+            "used_in_paper_reasoning": "The authors extracted BGP routing data from RIPE RIS for their analysis in Section 4."
+        },
+        {
+            "id": "U.Oregon|Routeviews",
+            "name": "RouteViews",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We extracted unique AS path and BGP Community tuples observed in RIBs and updates collected by RouteViews [43] and RIPE RIS [42]."
+            ],
+            "references": [
+                "[43] RouteViews. 2021. University of Oregon RouteViews project. http://www.routeviews.org/."
+            ],
+            "used_in_paper_reasoning": "The authors extracted BGP routing data from RouteViews for their analysis in Section 4."
+        },
+        {
+            "id": "TopoMapping|BGP Communities Supplemental Material",
+            "name": "BGP Communities \u2013 Supplemental Material",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Using the location community inferences and ground truth dataset that they publicly released [29], we examined the benefit of filtering out communities that our method inferred to be action communities from their December 2020 inferences."
+            ],
+            "references": [
+                "[29] Brivaldo A. Da Silva Junior, Paulo Mol, Osvaldo Fonseca, \u00d3talo Cunha, Ronaldo A. Ferreira, and Ethan Katz-Bassett. 2021. BGP Communities \u2013 Supplemental Material. https://github.com/TopoMapping/bgp-communities."
+            ],
+            "used_in_paper_reasoning": "The authors used the ground truth dataset from this resource to evaluate and improve the precision of a location community inference method in Section 6."
+        }
+    ]
+}

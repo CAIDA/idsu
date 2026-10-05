@@ -1,0 +1,43 @@
+{
+    "resources": [
+        {
+            "id": "IoTInspector",
+            "name": "IoTInspector",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "We collected the IoT Inspector dataset [ 69] and analyzed a subset of the data for this paper."
+            ],
+            "references": [
+                "[69] Danny Yuxing Huang, Noah Apthorpe, Frank Li, Gunes Acar, and Nick Feamster. 2020. Iot inspector: Crowdsourcing labeled network traffic from smart home devices at scale. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies 4, 2 (2020), 1\u201321."
+            ],
+            "used_in_paper_reasoning": "The authors explicitly state in Section 3.3 that they collected and analyzed a subset of the IoT Inspector dataset for their study."
+        },
+        {
+            "id": "MITRE|CVE",
+            "name": "MITRE|CVE",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We also use Nessus scanner [94] to detect potential vulnerabilities in running services, and annotate their security states and associated CVE (Common Vulnerabilities and Exposures)."
+            ],
+            "references": [
+                "[2] 2019. CVE-2019-11766. Available from MITRE, CVE-ID CVE-2019-11766.. https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11766"
+            ],
+            "used_in_paper_reasoning": "The authors used CVE data to annotate the security states of services identified during their active scans in Section 3.1."
+        },
+        {
+            "id": "Northeastern|BehavIoT Software",
+            "name": "BehavIoT Software",
+            "type": "tool",
+            "used_in_paper": false,
+            "quotes": [
+                "To check the periodicity of the traffic, we use an approach [68] that combines Discrete Fourier Transformation (DFT) and autocorrelation."
+            ],
+            "references": [
+                "[68] Tianrui Hu, Daniel J. Dubois, and David Choffnes. 2023. BehavIoT: Measuring Smart Home IoT Behavior Using Network-Inferred Behavior Models. In Proceedings of the Internet Measurement Conference (IMC) ."
+            ],
+            "used_in_paper_reasoning": "The authors cite the BehavIoT paper [68] for the periodicity analysis approach used in Section D.1, which constitutes a methodological reference rather than active use of the software tool."
+        }
+    ]
+}
