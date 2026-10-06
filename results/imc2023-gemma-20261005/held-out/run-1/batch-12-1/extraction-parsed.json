@@ -1,0 +1,80 @@
+{
+    "resources": [
+        {
+            "id": "KU Leuven|Tranco",
+            "name": "KU Leuven|Tranco",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Relying on different toplists, we first gather a target set that focuses on popular domains: (i) Alexa Top 1M1 [13], (ii) Cisco Umbrella [ 31], (iii) Majestic Million [ 21], and (iv) the Tranco Research List [20]."
+            ],
+            "references": [
+                "[20] Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczynski, and Joosen Wouter. 2019. TRANCO: A Research-Oriented Top Sites Ranking Hardened Against Manipulation. In Proceedings of the 2019 Network and Distributed System Security Symposium (NDSS) . https://doi.org/10.14722/ndss.2019.23386"
+            ],
+            "used_in_paper_reasoning": "The authors used the Tranco Research List to gather a target set of popular domains for their measurement campaign."
+        },
+        {
+            "id": "ICANN|CZDS",
+            "name": "Centralized Zone Data Service (CZDS)",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "For a broader assessment and to also include less popular domains, we enrich our target population with domains from zone files accessible via the ICANN Centralized Zone Data Service (CZDS)."
+            ],
+            "references": [],
+            "used_in_paper_reasoning": "The authors used zone files from the ICANN CZDS to enrich their target population with less popular domains."
+        },
+        {
+            "id": "ZMap|ZGrab2",
+            "name": "ZMap|ZGrab2",
+            "type": "software",
+            "used_in_paper": true,
+            "quotes": [
+                "We use an adapted version of zgrab2 [3], a golang-based banner grabber, as the general framework for our measurements."
+            ],
+            "references": [
+                "[3] 2023. Zmap/Zgrab2: Fast Go Application Scanner. https://github.com/zmap/zgrab2"
+            ],
+            "used_in_paper_reasoning": "The authors used an adapted version of zgrab2 as the general framework for their measurements."
+        },
+        {
+            "id": "RIPE NCC|RIPE RIS",
+            "name": "RIPE NCC|RIPE RIS",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Analyzing the affiliation of all connections, we first map each IP to its corresponding ASN using BGP data of RIPE\u2019s RIS archive [23]"
+            ],
+            "references": [
+                "[23] RIPE. 2023. RIPE - Route Collection Raw Data / Routing Information Service (RIS). https://data.ris.ripe.net/rrc00/"
+            ],
+            "used_in_paper_reasoning": "The authors used BGP data from RIPE's RIS archive to map IP addresses to their corresponding ASNs."
+        },
+        {
+            "id": "CAIDA|AS2Org",
+            "name": "CAIDA|AS2Org",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "and then lookup the corresponding organizations using CAIDA\u2019s as2org dataset [7]."
+            ],
+            "references": [
+                "[7] CAIDA. 2023. The CAIDA UCSD AS to Organization Mapping Dataset, 2022-2023. https://www.caida.org/catalog/datasets/as-organizations/"
+            ],
+            "used_in_paper_reasoning": "The authors used CAIDA's as2org dataset to look up the organizations associated with the identified ASNs."
+        },
+        {
+            "id": "UMich|ZMap",
+            "name": "UMich|ZMap",
+            "type": "software",
+            "used_in_paper": false,
+            "quotes": [
+                "We follow widely accepted ethical measures and measurement guidelines to minimize the impact of our study [11, 12]."
+            ],
+            "references": [
+                "[12] Zakir Durumeric, Eric Wustrow, and J. Alex Halderman. 2013. ZMap: Fast Internet-Wide Scanning and Its Security Applications. In Proceedings of the 2013 USENIX Security Symposium . https://www.usenix.org/conference/usenixsecurity13/technical-sessions/paper/durumeric"
+            ],
+            "used_in_paper_reasoning": "ZMap is cited in the ethics section as a source for measurement guidelines, which does not constitute active usage."
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "resources": [
+        {
+            "id": "KU Leuven|Tranco",
+            "name": "KU Leuven|Tranco",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "To identify prebid.js supported websites, we crawl Tranco top websites list (from 09/07/2021) [49] and probe for prebid.js version."
+            ],
+            "references": [
+                "[49] Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczy\u0144ski, and Wouter Joosen. 2019. Tranco: A Research-Oriented Top Sites Ranking Hardened Against Manipulation. In 26th Annual Network and Distributed System Security Symposium. Internet Society, San Diego."
+            ],
+            "used_in_paper_reasoning": "The authors used the Tranco top websites list in Section 3.3 to identify websites for probing prebid.js support."
+        },
+        {
+            "id": "OpenWPM",
+            "name": "OpenWPM",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "We extend OpenWPM [ 31] to identify and capture data on prebid.js supported websites."
+            ],
+            "references": [
+                "[31] Steven Englehardt and Arvind Narayanan. 2016. Online Tracking: A 1-Million-Site Measurement and Analysis. In Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security (CCS \u201916). Association for Computing Machinery, Vienna, 1388\u20131401."
+            ],
+            "used_in_paper_reasoning": "The authors extended OpenWPM in Section 3.3 to identify and capture data from websites supporting prebid.js."
+        },
+        {
+            "id": "IoTInspector",
+            "name": "IoTInspector",
+            "type": "tool",
+            "used_in_paper": false,
+            "quotes": [
+                "For example, [41, 53, 54, 64, 66] have shown that tracking is common in several IoT platforms, regardless of the presence of speci/f_ic apps/skills."
+            ],
+            "references": [
+                "[41] Danny Yuxing Huang, Noah Apthorpe, Frank Li, Gunes Acar, and Nick Feamster. 2020. IoT Inspector: Crowdsourcing Labeled Network Tra\ufb03c from Smart Home Devices at Scale. In Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, Vol. 4. Association for Computing Machinery, New York, NY, USA, Article 46, 21 pages. https://doi.org/10.1145/3397333"
+            ],
+            "used_in_paper_reasoning": "IoT Inspector is mentioned in Section 7.1.1 as part of prior work that demonstrated common tracking in IoT platforms."
+        }
+    ]
+}

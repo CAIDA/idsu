@@ -1,0 +1,79 @@
+{
+    "resources": [
+        {
+            "id": "Stanford|Cloud Watching Dataset",
+            "name": "Cloud Watching Dataset",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We publicly release our data at: https://scans.io/study/cloud_watching."
+            ],
+            "references": [
+                "Liz Izhikevich, Manda Tran, Michalis Kallitsis, Aurore Fass, and Zakir Durumeric. 2023. Cloud Watching: Understanding Attacks Against Cloud-Hosted Services. In Proceedings of the 2023 ACM Internet Measurement Conference (IMC \u201923), October 24\u201326, 2023, Montreal, QC, Canada. ACM, New York, NY, USA, 15 pages. https://doi.org/10.1145/3618257.3624818"
+            ],
+            "used_in_paper_reasoning": "The paper introduces and releases this dataset as a primary byproduct of its research."
+        },
+        {
+            "id": "Merit|Orion Network Telescope",
+            "name": "Orion Network Telescope",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "To obtain a diverse set of vantage points, we use existing honeypots from GreyNoise, deploy our own honeypots, and use the Orion Network Telescope."
+            ],
+            "references": [],
+            "used_in_paper_reasoning": "The Orion Network Telescope is used as one of the primary vantage points for collecting scanning traffic."
+        },
+        {
+            "id": "Stanford|LZR",
+            "name": "LZR",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "We use the open-source scanner LZR [45] to fingerprint unexpected services for 13 of the most popular TCP scanning protocols"
+            ],
+            "references": [
+                "[45] L. Izhikevich, R. Teixeira, and Z. Durumeric. LZR: Identifying unexpected Internet services. In USENIX Security Symposium, 2021."
+            ],
+            "used_in_paper_reasoning": "LZR is used in the methodology to fingerprint unexpected services across popular TCP ports."
+        },
+        {
+            "id": "Censys|Universal Internet Dataset",
+            "name": "Censys Universal Internet Dataset",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "we use the most-frequently scanning Internet service search engines [53]\u2014Censys [32] and Shodan [69]\u2014to find services.",
+                "IP addresses that previously hosted services that were indexed by Shodan [69] or Censys [32] attract a significantly different set of scanners"
+            ],
+            "references": [
+                "[32] Z. Durumeric, D. Adrian, A. Mirian, M. Bailey, and J. A. Halderman. A search engine backed by Internet-wide scanning. In CCS, 2015."
+            ],
+            "used_in_paper_reasoning": "Censys is used to identify previously indexed services and as a key variable in the service-leaking experiment."
+        },
+        {
+            "id": "MITRE|CVE",
+            "name": "MITRE|CVE",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "many exploits are also delivered over HTTP, including the critical Log4Shell (CVE-2021-44228) vulnerability [40]."
+            ],
+            "references": [],
+            "used_in_paper_reasoning": "The paper references a specific CVE ID to identify the Log4Shell vulnerability."
+        },
+        {
+            "id": "UMich|ZMap",
+            "name": "UMich|ZMap",
+            "type": "tool",
+            "used_in_paper": false,
+            "quotes": [
+                "While prior work [22, 33, 39, 68, 75] has shown that the vast majority of Internet scanners target a small sub-sample of the IPv4 address space"
+            ],
+            "references": [
+                "[35] Z. Durumeric, E. Wustrow, and J. A. Halderman. ZMap: Fast Internet-wide scanning and its security applications. In USENIX Security Symposium, 2013."
+            ],
+            "used_in_paper_reasoning": "ZMap is mentioned in the related work section regarding prior Internet scanning research."
+        }
+    ]
+}

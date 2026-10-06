@@ -1,0 +1,44 @@
+{
+    "resources": [
+        {
+            "id": "Northeastern|BehavIoT Dataset",
+            "name": "BehavIoT Dataset",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "To facilitate follow-up research, we publicly released our dataset from controlled experiments and software [38].",
+                "This section presents our IoT testbed and the datasets produced by our experiments (available for download [38])."
+            ],
+            "references": [
+                "[38] Tianrui Hu, Daniel J. Dubois, and David Choffnes. 2023. BehavIoT Dataset and Software. https://moniotrlab.khoury.northeastern.edu/publications/behaviot-imc23."
+            ],
+            "used_in_paper_reasoning": "The paper introduces and releases the BehavIoT dataset as a primary contribution of the work."
+        },
+        {
+            "id": "Northeastern|BehavIoT Software",
+            "name": "BehavIoT Software",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "To facilitate follow-up research, we publicly released our dataset from controlled experiments and software [38]."
+            ],
+            "references": [
+                "[38] Tianrui Hu, Daniel J. Dubois, and David Choffnes. 2023. BehavIoT Dataset and Software. https://moniotrlab.khoury.northeastern.edu/publications/behaviot-imc23."
+            ],
+            "used_in_paper_reasoning": "The paper introduces and releases the BehavIoT software as a primary contribution of the work."
+        },
+        {
+            "id": "IoTInspector",
+            "name": "IoTInspector",
+            "type": "tool",
+            "used_in_paper": false,
+            "quotes": [
+                "the average number of IoT devices per home is 7 according to crowdsourced data from IoT Inspector [39]."
+            ],
+            "references": [
+                "[39] Danny Yuxing Huang, Noah Apthorpe, Frank Li, Gunes Acar, and Nick Feamster. 2020. Iot inspector: Crowdsourcing labeled network traffic from smart home devices at scale. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies 4, 2 (2020), 1\u201321."
+            ],
+            "used_in_paper_reasoning": "The paper cites IoT Inspector solely to reference a statistic regarding the average number of IoT devices per home."
+        }
+    ]
+}

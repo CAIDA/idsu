@@ -1,0 +1,98 @@
+{
+    "resources": [
+        {
+            "id": "CAIDA|AS Rank",
+            "name": "AS Rank",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "CAIDA\u2019s AS Rank [9] uses this algorithm.",
+                "The tables also indicate if an AS appears in the top ten ASes of the Customer Cone Global (CCG) ranking"
+            ],
+            "references": [
+                "[9] CAIDA. March 2018, February 2021, March 2022. AS Rank. http://as-rank.caida.org. (March 2018, February 2021, March 2022)."
+            ],
+            "used_in_paper_reasoning": "The paper uses CAIDA's AS Rank as a baseline for comparison, specifically referring to the Customer Cone Global (CCG) ranking."
+        },
+        {
+            "id": "CAIDA|AS Relationships",
+            "name": "CAIDA|AS Relationships",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We use the same data curation process as CAIDA\u2019s AS Relationship algorithm [30]"
+            ],
+            "references": [
+                "[8] CAIDA. March 2018, April 2021, March 2022. AS Relationships. http://www.caida.org/data/as-relationships/. (March 2018, April 2021, March 2022).",
+                "[30] Matthew Luckie, Bradley Huffaker, Amogh Dhamdhere, Vasileios Giotsas, and kc claffy. 2013. AS Relationships, Customer Cones, and Validation. In ACM SIGCOMM Internet Measurement Conference (IMC)."
+            ],
+            "used_in_paper_reasoning": "The authors explicitly state they use the data curation process from CAIDA's AS Relationship algorithm to sanitize their BGP paths."
+        },
+        {
+            "id": "IIJ|Internet Health Report",
+            "name": "Internet Health Report (IHR)",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Since late 2020, IIJ has included a country-level hegemony ranking in their Internet Health Report (IHR) [19, 27].",
+                "Our approach (\u00a73) has three notable differences from IHR\u2019s current computation of a country-level hegemony value (AHC)."
+            ],
+            "references": [
+                "[27] IIJ. 2022. Internet Health Report (IHR). https://ihr.iijlab.net. (October 2022)."
+            ],
+            "used_in_paper_reasoning": "The paper compares its proposed country-level metrics against the existing country-level hegemony ranking provided by the IIJ Internet Health Report."
+        },
+        {
+            "id": "RIPE NCC|RIPE RIS",
+            "name": "RIPE NCC|RIPE RIS",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "AS topology metrics generally use BGP routing updates and tables collected and published by the Routeviews [34] and RIPE RIS [32] projects."
+            ],
+            "references": [
+                "[32] RIPE NCC. April 2021, March 2022. Routing Information Service (RIS). http://www.ripe.net/projects/ris/rawdata.html. (April 2021, March 2022)."
+            ],
+            "used_in_paper_reasoning": "The paper uses RIPE RIS as one of the primary sources for collecting BGP routing updates and tables."
+        },
+        {
+            "id": "U.Oregon|Routeviews",
+            "name": "RouteViews",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "AS topology metrics generally use BGP routing updates and tables collected and published by the Routeviews [34] and RIPE RIS [32] projects."
+            ],
+            "references": [
+                "[34] RouteViews Project. 2021. http://www.routeviews.org/. (April 2021)."
+            ],
+            "used_in_paper_reasoning": "The paper uses RouteViews as one of the primary sources for collecting BGP routing updates and tables."
+        },
+        {
+            "id": "Routeviews|collector locations",
+            "name": "Routeviews Collector Locations",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "To geolocate VPs, we first download the reported location of each collector [33, 35, 36]"
+            ],
+            "references": [
+                "[35] RouteViews Project. March 2018, April 2021, March 2022. collector locations. http://www.routeviews.org/routeviews/index.php/collectors/."
+            ],
+            "used_in_paper_reasoning": "The authors use RouteViews collector location data to geolocate the vantage points (VPs) in their study."
+        },
+        {
+            "id": "Routeviews|Peering Status Report",
+            "name": "RouteViews Peering Status Report",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "To geolocate VPs, we first download the reported location of each collector [33, 35, 36]"
+            ],
+            "references": [
+                "[36] RouteViews Project. March 2018, April 2021, March 2022. RouteViews Peering Status Report. http://www.routeviews.org/peers/peering-status.html."
+            ],
+            "used_in_paper_reasoning": "The authors use the RouteViews Peering Status Report to assist in the geolocation of vantage points."
+        }
+    ]
+}

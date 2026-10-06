@@ -1,0 +1,30 @@
+{
+    "resources": [
+        {
+            "id": "ESnet|iperf3",
+            "name": "iperf3",
+            "type": "software",
+            "used_in_paper": true,
+            "quotes": [
+                "To create background traffic for the bottleneck, we used generator/sink devices connected directly to Router and Switch2 and iperf310."
+            ],
+            "references": [
+                "https://iperf.fr/iperf-download.php"
+            ],
+            "used_in_paper_reasoning": "The authors used iperf3 in Section 4.1 to generate background traffic for their experimental network bottleneck."
+        },
+        {
+            "id": "MLab|NDT",
+            "name": "M-Lab NDT (Network Diagnostic Tool)",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "We view Tero as complementary to active measurement platforms like RIPE Atlas[ 51], BISmark [ 52], Speedchecker 14, Sam-Knows15, and Mlab-hosted projects like NDT [ 14]."
+            ],
+            "references": [
+                "[14] Constantine Dovrolis, Krishna Gummadi, Aleksandar Kuzmanovic, and Sascha D Meinrath. 2010. Measurement lab: Overview and an invitation to the research community. ACM SIGCOMM Computer Communication Review 40, 3 (2010), 53\u201356."
+            ],
+            "used_in_paper_reasoning": "NDT is mentioned in the Related Work section as an example of an active measurement platform that complements the authors' proposed system."
+        }
+    ]
+}

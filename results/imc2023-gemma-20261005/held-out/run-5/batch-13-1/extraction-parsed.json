@@ -1,0 +1,80 @@
+{
+    "resources": [
+        {
+            "id": "LFP|Router Fingerprinting Artifacts",
+            "name": "LFP Router Fingerprinting Artifacts",
+            "type": "software",
+            "used_in_paper": true,
+            "quotes": [
+                "Lightweight FingerPrinting (LFP), a novel lightweight, accurate, and more complete remote vendor fingerprinting methodology and tool (\u00a73)."
+            ],
+            "references": [
+                "[3] Taha Albakour, Oliver Gasser, Robert Beverly, and Georgios Smaragdakis. 2023. Illuminating Router Vendor Diversity Within Providers and Along Network Paths (artifacts). https://routerfingerprinting.github.io/."
+            ],
+            "used_in_paper_reasoning": "The paper introduces LFP as its primary contribution, describing it as a novel fingerprinting methodology and tool used throughout the study."
+        },
+        {
+            "id": "CAIDA|ITDK",
+            "name": "ITDK",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "we leverage two complementary public router datasets: the RIPE Atlas traceroutes dataset [43] and the ITDK dataset [11]."
+            ],
+            "references": [
+                "[11] CAIDA. 2021. Macroscopic Internet Topology Data Kit (ITDK). https://www.caida.org/catalog/datasets/internet-topology-data-kit/."
+            ],
+            "used_in_paper_reasoning": "The authors use the ITDK dataset to select target router IPs and for router-level analysis."
+        },
+        {
+            "id": "CAIDA|AS Relationships",
+            "name": "CAIDA|AS Relationships",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Next, we use the CAIDA AS relationship dataset [12] to find AS paths where these vendor homogeneous ASes serve as transit ASes."
+            ],
+            "references": [
+                "[12] CAIDA. 2022. AS Relationships. https://publicdata.caida.org/datasets/as-relationships/serial-1/."
+            ],
+            "used_in_paper_reasoning": "The paper uses the CAIDA AS relationship dataset to identify AS paths for its informed routing case study."
+        },
+        {
+            "id": "CAIDA|MIDAR",
+            "name": "MIDAR",
+            "type": "software",
+            "used_in_paper": false,
+            "quotes": [
+                "This complementary dataset contains router alias sets (excluding singletons) inferred via MIDAR [29] and iffinder measurements."
+            ],
+            "references": [
+                "[29] K. Keys, Y. Hyun, M. Luckie, and k claffy. 2013. Internet-Scale IPv4 Alias Resolution with MIDAR. IEEE/ACM Trans. Networking 21, 2 (2013)."
+            ],
+            "used_in_paper_reasoning": "MIDAR is mentioned as a tool used to generate the alias sets within the ITDK dataset, but it was not actively run by the authors of this paper."
+        },
+        {
+            "id": "CAIDA|iffinder",
+            "name": "iffinder",
+            "type": "software",
+            "used_in_paper": false,
+            "quotes": [
+                "This complementary dataset contains router alias sets (excluding singletons) inferred via MIDAR [29] and iffinder measurements."
+            ],
+            "references": [],
+            "used_in_paper_reasoning": "iffinder is mentioned as a tool used to generate the alias sets within the ITDK dataset, but it was not actively run by the authors of this paper."
+        },
+        {
+            "id": "MITRE|CVE",
+            "name": "MITRE|CVE",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "Moreover, if a vulnerability for a specific router vendor is discovered [22, 45, 48], paths with these vendors might, in theory, be avoided until a patch is developed and applied."
+            ],
+            "references": [
+                "[48] The MITRE Corporation CVE. 2022. CVE.org Search Results for routers. https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=router."
+            ],
+            "used_in_paper_reasoning": "The paper refers to CVE data to motivate the need for avoiding specific vendors when vulnerabilities are discovered."
+        }
+    ]
+}

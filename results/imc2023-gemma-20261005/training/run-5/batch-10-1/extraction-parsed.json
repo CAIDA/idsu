@@ -1,0 +1,106 @@
+{
+    "resources": [
+        {
+            "id": "CAIDA|ITDK",
+            "name": "ITDK",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "The only large scale publicly available datasets are ITDK [16], RIPE IPMap [40], which are research efforts to provide the geolocation of router IP addresses of the Internet topology, and commercial databases."
+            ],
+            "references": [
+                "[16] CAIDA. The CAIDA ark IPv4 Internet topology data kits dataset. https://www.caida.org/catalog/datasets/internet-topology-data-kit/."
+            ],
+            "used_in_paper_reasoning": "The paper mentions ITDK as one of the few large-scale publicly available datasets for IP geolocation in the introduction and related work, but does not use it for its own measurements."
+        },
+        {
+            "id": "RIPE|IPMap",
+            "name": "RIPE IPMap",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "The only large scale publicly available datasets are ITDK [16], RIPE IPMap [40], which are research efforts to provide the geolocation of router IP addresses of the Internet topology, and commercial databases."
+            ],
+            "references": [
+                "[40] RIPE IPMap ftp. RIPE Atlas daily dumps. https://ftp.ripe.net/ripe/ipmap/."
+            ],
+            "used_in_paper_reasoning": "The paper mentions RIPE IPMap as an existing large-scale publicly available dataset for IP geolocation in the introduction and related work, but does not use it for its own measurements."
+        },
+        {
+            "id": "CAIDA|AS classification",
+            "name": "CAIDA AS Classification Dataset",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Table 2 shows the distribution of the AS category of our targets according to the CAIDA AS classification dataset [1]."
+            ],
+            "references": [
+                "[1] CAIDA AS classification dataset. URL https://www.caida.org/catalog/datasets/as-classification/."
+            ],
+            "used_in_paper_reasoning": "The authors use the CAIDA AS classification dataset to analyze the distribution of AS categories for their targets, as shown in Table 2."
+        },
+        {
+            "id": "Stanford|ASdb",
+            "name": "ASdb",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "In addition, we look at the AS type of our targets according to the ASDB dataset [50], finding that they fall into 16 categories, with 72% falling into the \u201cComputer and Information Technology\u201d category."
+            ],
+            "references": [
+                "[50] Maya Ziv, Liz Izhikevich, Kimberly Ruth, Katherine Izhikevich, and Zakir Durumeric. ASdb: a system for classifying owners of autonomous systems. In Proc. ACM IMC, 2021."
+            ],
+            "used_in_paper_reasoning": "The authors use the ASdb dataset to analyze the organizational categories of their targets in Section 4.4.1."
+        },
+        {
+            "id": "ISI|IPV4 Hitlist",
+            "name": "IPV4 Hitlist",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "For the VP selection algorithm, we use the ISI hitlist [25] to select the three representatives of the /24 prefix of each target with the highest score of responsiveness."
+            ],
+            "references": [
+                "[25] Xun Fan and John Heidemann. Selecting representative IP addresses for internet topology studies. In Proc. ACM IMC, 2010."
+            ],
+            "used_in_paper_reasoning": "The authors use the ISI hitlist to select representative IP addresses for their vantage point selection algorithm in Section 4.1.3."
+        },
+        {
+            "id": "Dioptra|geoloc-imc-2023",
+            "name": "geoloc-imc-2023 (paper code and data)",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "All of our code and data that is publicly available to facilitate reproducibility at the following url: https://github.com/dioptra-io/geoloc-imc-2023"
+            ],
+            "references": [
+                "Omar Darwich, Hugo Rimlinger, Milo Dreyfus, Matthieu Gouel, and Kevin Vermeulen. 2023. Replication: Towards a Publicly Available Internet Scale IP Geolocation Dataset. In Proceedings of the 2023 ACM Internet Measurement Conference (IMC \u201923), October 24\u201326, 2023, Montreal, QC, Canada. ACM, New York, NY, USA, 15 pages. https://doi.org/10.1145/3618257.3624801"
+            ],
+            "used_in_paper_reasoning": "The paper introduces and releases the code and data for this project to support reproducibility."
+        },
+        {
+            "id": "U.Oregon|Routeviews",
+            "name": "RouteViews",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "140 targets (19%) have at least one landmark within the same AS as the target, 59 targets (8%) have at least one landmark in the same BGP prefix retrieved from RouteViews"
+            ],
+            "references": [],
+            "used_in_paper_reasoning": "The authors use RouteViews to retrieve BGP prefixes for their analysis in Section 5.2.3."
+        },
+        {
+            "id": "CAIDA|Archipelago",
+            "name": "Archipelago (Ark) Measurement Infrastructure",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "CAIDA ITDK [16] provides a dataset of geolocated router IP addresses collected with the Ark platform."
+            ],
+            "references": [
+                "[16] CAIDA. The CAIDA ark IPv4 Internet topology data kits dataset. https://www.caida.org/catalog/datasets/internet-topology-data-kit/."
+            ],
+            "used_in_paper_reasoning": "The paper mentions the Ark platform as the source of the ITDK dataset, but does not use the Archipelago infrastructure itself for its own measurements."
+        }
+    ]
+}

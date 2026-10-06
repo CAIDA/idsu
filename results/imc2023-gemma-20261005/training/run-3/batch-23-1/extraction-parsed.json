@@ -1,0 +1,31 @@
+{
+    "resources": [
+        {
+            "id": "FreePhish",
+            "name": "FreePhish",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "In this work, we propose FreePhish, a scalable framework to continuously identify phishing websites that are created using FWBs.",
+                "Using FreePhish, we were able to detect and characterize more than 31.4K phishing URLs that were created using 17 unique free website builder services and shared on Twitter and Facebook over a period of six months."
+            ],
+            "references": [
+                "Sayak Saha Roy, Unique Karanjit, and Shirin Nilizadeh. 2023. Phishing in the Free Waters: A Study of Phishing Attacks Created using Free Website Building Services. In Proceedings of the 2023 ACM Internet Measurement Conference (IMC \u201923), October 24\u201326, 2023, Montreal, QC, Canada. ACM, New York, NY, USA, 14 pages. https://doi.org/10.1145/3618257.3624812"
+            ],
+            "used_in_paper_reasoning": "The paper introduces and utilizes the FreePhish framework to identify and characterize over 31.4K phishing URLs."
+        },
+        {
+            "id": "Google|Certificate Transparency",
+            "name": "Certificate Transparency",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "various anti-phishing methods utilize this log to identify new attacks [37, 40, 84]. However, we found that all websites created using all 17 FWB services inherited the same SSL certification used by the service itself... renders FWB phishing attacks effectively invisible in Certificate Transparency (CT) logs"
+            ],
+            "references": [
+                "[94] Certificate Transparency. [n. d.]. Working together to detect maliciously or mistakenly issued certificates. https://certificate.transparency.dev."
+            ],
+            "used_in_paper_reasoning": "The paper mentions Certificate Transparency logs to explain why FWB-based phishing attacks are difficult to discover using such logs."
+        }
+    ]
+}

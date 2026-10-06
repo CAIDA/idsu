@@ -45,7 +45,7 @@ without an API key.
 | `idsu/` | The library the tools share; the prompts are in `idsu/prompts/` |
 | `data/imc2023/` | The benchmark: target list, ground truth, splits ([README](data/imc2023/README.md)) |
 | `config.yaml` | Models, paths, thresholds, number of runs |
-| `results/imc2023-gemma-20260929/` | The extractions and scores behind the reported results |
+| `results/imc2023-gemma-20261005/` | The extractions and scores behind the reported results |
 | `docs/REPRODUCE.md` | Reproducing the reported numbers, command by command |
 | `docs/ADAPTING.md` | Using IDSU on another field: a new target list and ground truth |
 | `docs/METHODS.md` | How extraction and scoring work, and what was tried along the way |
@@ -59,18 +59,20 @@ scored against the corrected ground truth. `config.yaml` holds its defaults. The
 | Split | Papers | Source | Accuracy | Precision | Recall | F1 |
 |---|---|---|---|---|---|---|
 | Training | 25 | Internal report | 0.9051 (0.0201) | 0.9434 (0.0161) | 0.9294 (0.0123) | 0.9363 (0.0134) |
-| | | This release | 0.9287 (0.0126) | 0.9535 (0.0064) | 0.9507 (0.0130) | 0.9521 (0.0084) |
+| | | This release | 0.9369 (0.0249) | 0.9560 (0.0148) | 0.9588 (0.0192) | 0.9574 (0.0168) |
 | Validation + evaluation (held out) | 20 | Internal report | 0.8640 (0.0239) | 0.9313 (0.0076) | 0.9048 (0.0251) | 0.9177 (0.0152) |
-| | | This release | 0.8406 (0.0229) | 0.9182 (0.0242) | 0.8857 (0.0133) | 0.9015 (0.0148) |
+| | | This release | 0.8700 (0.0170) | 0.9188 (0.0148) | 0.9246 (0.0187) | 0.9215 (0.0112) |
 
 "Internal report" is the project's internal report (N. Man, 2026). "This release" is a
-rerun with this code on 2026-09-29 (new extractions, NRP `gemma`, fuzzy matching then the
-LLM judge). The two differ by less than two SDs on both splits. Its outputs and scores are
-in [results/imc2023-gemma-20260929/](results/imc2023-gemma-20260929/).
+rerun with this code on 2026-10-05 (new extractions, NRP `gemma`, fuzzy matching then the
+LLM judge). It also uses a ground truth and target list with one error fixed (see
+[docs/METHODS.md](docs/METHODS.md#ground-truth)). The two differ by less than two SDs on
+both splits. Its outputs and scores are in
+[results/imc2023-gemma-20261005/](results/imc2023-gemma-20261005/).
 
 Ten of the held-out papers had their ground truth corrected in late May 2026, before the
-held-out results were computed. Against the uncorrected ground truth, held-out F1 is 0.8627
-(0.0221). How the metric is defined, and how the release scorer relates to the original, is
+held-out results were computed. Against the uncorrected ground truth, held-out F1 is 0.8649
+(0.0113). How the metric is defined, and how the release scorer relates to the original, is
 in [docs/METHODS.md](docs/METHODS.md).
 
 ## Credits

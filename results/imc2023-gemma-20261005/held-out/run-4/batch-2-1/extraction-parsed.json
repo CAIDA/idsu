@@ -1,0 +1,30 @@
+{
+    "resources": [
+        {
+            "id": "CIRCL.lu",
+            "name": "CIRCL Passive DNS",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "In addition to the Farsight DNS database, other popular DNS databases CIRCL.lu [3], DNSIQ [ 19], and Mnemonic [ 14] can also be analyzed to further enhance our experiments."
+            ],
+            "references": [
+                "[3] CIRCL.lu. https://www.circl.lu/."
+            ],
+            "used_in_paper_reasoning": "The authors mention CIRCL.lu as a popular DNS database that could be analyzed in the future to enhance their experiments in Section 7."
+        },
+        {
+            "id": "MITRE|CVE",
+            "name": "MITRE|CVE",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "In particular, we search the National Vulnerability Database provided by NIST [16] to discover existing vulnerabilities associated with such URIs."
+            ],
+            "references": [
+                "[16] National Vulnerability Database. https://nvd.nist.gov/vuln/search."
+            ],
+            "used_in_paper_reasoning": "The authors used the National Vulnerability Database (NVD) provided by NIST to identify vulnerabilities associated with requested URIs in Section 6.2."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+api_error: false
+extracted_resources_count: 8
+extraction_model: gemma
+filename: Replication- Towards a Publicly Available Internet Scale IP Geolocation
+  Dataset.pdf
+ground_truth_status: POSITIVE (Has Target Resource)
+raw_resources_count: 8
+shot_files:
+- Inferring Changes in Daily Human Activity from Internet Response.pdf
+shot_mode: partial
+shots_used: 1
+skipped_resources_details:
+  filtered_empty_quotes: 0
+  filtered_not_in_target: 0
+  filtered_unused: 0
+  malformed_json: 0

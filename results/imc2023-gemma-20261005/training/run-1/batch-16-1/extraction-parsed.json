@@ -1,0 +1,17 @@
+{
+    "resources": [
+        {
+            "id": "Mozilla|Disconnect Entity List",
+            "name": "Disconnect Entity List",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "In addition, we use the Disconnect Entity List [2] to get the entities of online tracker domains."
+            ],
+            "references": [
+                "[2] Last accessed September 11, 2023. Disconnect Entity List. https://github.com/mozilla-services/shavar-prod-lists/blob/master/disconnect-entitylist.json"
+            ],
+            "used_in_paper_reasoning": "The authors used the Disconnect Entity List in their detection techniques to map tracker domains to their parent organizations."
+        }
+    ]
+}

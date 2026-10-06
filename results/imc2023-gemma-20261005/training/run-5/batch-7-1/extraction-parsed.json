@@ -1,0 +1,55 @@
+{
+    "resources": [
+        {
+            "id": "IoTInspector",
+            "name": "IoTInspector",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "We collected the IoT Inspector dataset [ 69] and analyzed a subset of the data for this paper.",
+                "To do so, we rely on IoT Inspector\u2019s crowdsourced data, which captures the organic behavior of 12,669 IoT devices deployed in 3,860 households, associated with 264 different products from 165 vendors."
+            ],
+            "references": [
+                "[69] Danny Yuxing Huang, Noah Apthorpe, Frank Li, Gunes Acar, and Nick Feamster. 2020. Iot inspector: Crowdsourcing labeled network traffic from smart home devices at scale. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies 4, 2 (2020), 1\u201321."
+            ],
+            "used_in_paper_reasoning": "The authors used the IoT Inspector dataset to analyze organic local network interactions from crowdsourced households and perform entropy analysis to measure household fingerprintability."
+        },
+        {
+            "id": "MITRE|CVE",
+            "name": "MITRE|CVE",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We also use Nessus scanner [94] to detect potential vulnerabilities in running services, and annotate their security states and associated CVE (Common Vulnerabilities and Exposures)."
+            ],
+            "references": [
+                "[2] 2019. CVE-2019-11766. Available from MITRE, CVE-ID CVE-2019-11766.. https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11766"
+            ],
+            "used_in_paper_reasoning": "The authors used CVE data to annotate the security states of the services discovered during their active scans of IoT devices."
+        },
+        {
+            "id": "Censys|Universal Internet Dataset",
+            "name": "Censys Universal Internet Dataset",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Google smart speakers, Nest hubs, Google Chromecast (with Google TV), and TiVo TV (based on Android TV) communicate using TLSv1.2 and use their own internal PKI with root certificates not in any trust store (according to Censys)"
+            ],
+            "references": [],
+            "used_in_paper_reasoning": "The authors used Censys to verify whether the root certificates of the devices' internal PKI were present in any trust store."
+        },
+        {
+            "id": "Northeastern|BehavIoT Software",
+            "name": "BehavIoT Software",
+            "type": "tool",
+            "used_in_paper": false,
+            "quotes": [
+                "To check the periodicity of the traffic, we use an approach [68] that combines Discrete Fourier Transformation (DFT) and autocorrelation."
+            ],
+            "references": [
+                "[68] Tianrui Hu, Daniel J. Dubois, and David Choffnes. 2023. BehavIoT: Measuring Smart Home IoT Behavior Using Network-Inferred Behavior Models. In Proceedings of the Internet Measurement Conference (IMC)."
+            ],
+            "used_in_paper_reasoning": "The paper cites the BehavIoT project for the methodological approach of using DFT and autocorrelation to check traffic periodicity, but does not explicitly use the software tool itself."
+        }
+    ]
+}

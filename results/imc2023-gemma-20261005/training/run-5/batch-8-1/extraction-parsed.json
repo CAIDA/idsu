@@ -1,0 +1,110 @@
+{
+    "resources": [
+        {
+            "id": "ISI|Trinocular",
+            "name": "Trinocular Internet Outage Detection System",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "we primarily use data from Trinocular, an Internet outage detection system operating since 2013."
+            ],
+            "references": [
+                "[71] Lin Quan, John Heidemann, and Yuri Pradkin. 2013. Trinocular: Understanding Internet Reliability Through Adaptive Probing. In Proceedings of the ACM SIGCOMM Conference. ACM, Hong Kong, China, 255\u2013266. https://doi.org/10.1145/2486001.2486017"
+            ],
+            "used_in_paper_reasoning": "The paper explicitly states that it primarily uses data from Trinocular as its main source for observing diurnal network trends."
+        },
+        {
+            "id": "ISI|ANT Internet surveys",
+            "name": "USC Internet Address Surveys",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We compare our analysis to USC Internet surveys [49]."
+            ],
+            "references": [
+                "[49] John Heidemann, Yuri Pradkin, Ramesh Govindan, Christos Papadopoulos, Genevieve Bartlett, and Joseph Bannister. 2008. Census and Survey of the Visible Internet. In Proceedings of the ACM Internet Measurement Conference. ACM, Vouliagmeni, Greece, 169\u2013182. https://doi.org/10.1145/1452520.1452542"
+            ],
+            "used_in_paper_reasoning": "The authors use USC Internet surveys as ground truth to validate their reconstruction quality in Section 3.2."
+        },
+        {
+            "id": "UMich|ZMap",
+            "name": "UMich|ZMap",
+            "type": "tool",
+            "used_in_paper": false,
+            "quotes": [
+                "We examined ZMap [28], with its quick, complete scans of IPv4, but it preserves only positive replies."
+            ],
+            "references": [
+                "[28] Zakir Durumeric, Eric Wustrow, and J. Alex Halderman. 2013. ZMap: Fast Internet-wide Scanning and Its Security Applications. In Proceedings of the USENIX Security Symposium. USENIX, Washington, DC, USA, 605\u2013620. https://www.usenix.org/system/files/conference/usenixsecurity13/sec13-paper_durumeric.pdf"
+            ],
+            "used_in_paper_reasoning": "ZMap is mentioned as an alternative source of active probing data that was examined but not used because it does not preserve probe order."
+        },
+        {
+            "id": "Censys|Universal Internet Dataset",
+            "name": "Censys Universal Internet Dataset",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "Censys scans [27] emphasize daily services and certificates on hosts, not reachability many times per day, and bulk data is not currently available."
+            ],
+            "references": [
+                "[27] Zakir Durumeric, David Adrian, Ariana Mirian, Michael Bailey, and J. Alex Halderman. 2015. A Search Engine Backed by Internet-Wide Scanning. In Proceedings of the ACM Conference on Computer and Communications Security. ACM, Denver, CO, USA, 542\u2013553. https://doi.org/10.1145/2810103.2813703"
+            ],
+            "used_in_paper_reasoning": "Censys scans are mentioned as an alternative source that was examined but found unsuitable for the study's needs."
+        },
+        {
+            "id": "CAIDA|Archipelago",
+            "name": "Archipelago (Ark) Measurement Infrastructure",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "CAIDA\u2019s Archipelago [15] covers all routed /24 blocks, but it is far too slow to track diurnal trends."
+            ],
+            "references": [
+                "[15] CAIDA. 2007. Archipelago (Ark) Measurement Infrastructure. website https://www.caida.org/projects/ark/. https://www.caida.org/projects/ark/"
+            ],
+            "used_in_paper_reasoning": "CAIDA's Archipelago is mentioned as an alternative source that is too slow to track the diurnal trends required for this study."
+        },
+        {
+            "id": "U.Oregon|Routeviews",
+            "name": "RouteViews",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Routing data from Routeviews [2\u20134]."
+            ],
+            "references": [
+                "[2] APNIC. 2020. Routing Table Report - Japan view. https://mailman.apnic.net/mailing-lists/bgp-stats/archive/2019/10/msg00001.html",
+                "[3] APNIC. 2020. Routing Table Report - Japan view. https://mailman.apnic.net/mailing-lists/bgp-stats/archive/2020/01/msg00001.html",
+                "[4] APNIC. 2020. Routing Table Report - Japan view. https://mailman.apnic.net/mailing-lists/bgp-stats/archive/2020/04/msg00001.html"
+            ],
+            "used_in_paper_reasoning": "The paper uses routing data from RouteViews to identify allocated and routed blocks, as noted in the caption of Table 2."
+        },
+        {
+            "id": "ISI|ANT covid-work-from-home dataset",
+            "name": "ANT Covid-Work-from-Home Datasets",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Data from our work is available at no cost [1]"
+            ],
+            "references": [
+                "[1] ANT Project. 2022. ANT Covid-Work-from-Home Datasets. https://ant.isi.edu/datasets/covid/. https://ant.isi.edu/datasets/covid/"
+            ],
+            "used_in_paper_reasoning": "The paper explicitly states that the data from their work is available as the ANT Covid-Work-from-Home Datasets."
+        },
+        {
+            "id": "UCSD|Network Telescope",
+            "name": "UCSD Network Telescope",
+            "type": "tool",
+            "used_in_paper": false,
+            "quotes": [
+                "It uses data from the UCSD Network Telescope [16]."
+            ],
+            "references": [
+                "[16] CAIDA. 2012. Network Telescope. https://www.caida.org/projects/network_telescope/"
+            ],
+            "used_in_paper_reasoning": "The UCSD Network Telescope is mentioned in the related work section as a data source used by another system (Chocolatine)."
+        }
+    ]
+}

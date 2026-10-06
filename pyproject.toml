@@ -1,6 +1,6 @@
 [project]
 name = "idsu"
-version = "1.0.0"
+version = "1.1.0"
 description = "LLM extraction of the datasets and software a paper uses, restricted to a target list"
 readme = "README.md"
 requires-python = ">=3.14"

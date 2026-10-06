@@ -1,0 +1,108 @@
+{
+    "resources": [
+        {
+            "id": "TUDarmstadt|IPFS-Crawler",
+            "name": "IPFS Crawler",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "Using the DHT crawler presented in [32, 79], we can enumerate all outgoing DHT connections of functional DHT server nodes."
+            ],
+            "references": [
+                "[79] trudi group. 2019. IPFS Crawler. https://github.com/trudi-group/ipfs-crawler"
+            ],
+            "used_in_paper_reasoning": "The authors used the IPFS crawler to enumerate outgoing DHT connections of functional DHT server nodes to build a snapshot of the DHT graph."
+        },
+        {
+            "id": "ICANN|CZDS",
+            "name": "Centralized Zone Data Service (CZDS)",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Our active scanning input list comprises domain names collected in April 2023 from the following sources: (1) centralized Zone Data Service [33] for both legacy and new generic TLDs (e.g., .org or .xyz)"
+            ],
+            "references": [
+                "[33] ICANN. 2022. Centralized Zone Data Service . https://czdns.icann.org"
+            ],
+            "used_in_paper_reasoning": "The authors used the CZDS to collect domain names for their active scanning input list."
+        },
+        {
+            "id": "SwedishInternetFoundation|SEZoneData",
+            "name": "Zone Data of .se and .nu TLDs",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "publicly available zone files of three country-code TLDs: .se, .nu [25]"
+            ],
+            "references": [
+                "[25] The Swedish Internet Foundation. 2019. Zone Data of .se and .nu TLDs. Retrieved May 26, 2023 from https://internetstiftelsen.se/en/zone-data/"
+            ],
+            "used_in_paper_reasoning": "The authors used the zone files of .se and .nu TLDs as a source for domain names in their active scanning input list."
+        },
+        {
+            "id": "SWITCH|CHZoneData",
+            "name": "Zone Data of .ch TLD",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "publicly available zone files of three country-code TLDs: ... .ch [75]"
+            ],
+            "references": [
+                "[75] SWITCH. 2017. Zone Data of .ch TLD . Retrieved May 26, 2023 from https://www.switch.ch/de/open-data/"
+            ],
+            "used_in_paper_reasoning": "The authors used the zone files of the .ch TLD as a source for domain names in their active scanning input list."
+        },
+        {
+            "id": "Google|Certificate Transparency",
+            "name": "Certificate Transparency",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Google Certificate Transparency logs [9]"
+            ],
+            "references": [
+                "[9] Cali Dog Security. 2022. Certstream. https://calidog.io"
+            ],
+            "used_in_paper_reasoning": "The authors used Google Certificate Transparency logs as a source for domain names in their active scanning input list."
+        },
+        {
+            "id": "KU Leuven|Tranco",
+            "name": "KU Leuven|Tranco",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Tranco top popularity domain name ranking [56]"
+            ],
+            "references": [
+                "[56] Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczy\u0144ski, and Wouter Joosen. 2019. Tranco: A Research-Oriented Top Sites Ranking Hardened Against Manipulation. In Proceedings 2019 Network and Distributed System Security Symposium ."
+            ],
+            "used_in_paper_reasoning": "The authors used the Tranco top popularity domain name ranking as a source for domain names in their active scanning input list."
+        },
+        {
+            "id": "UMich|ZDNS",
+            "name": "UMich|ZDNS",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "Next, using the zdns [34] scanner and Cloudflare Public DNS, we send DNS SOA (Start of Authority) requests to determine registered domain names"
+            ],
+            "references": [
+                "[34] Liz Izhikevich, Gautam Akiwate, Briana Berger, Spencer Drakontaidis, Anna Ascheman, Paul Pearce, David Adrian, and Zakir Durumeric. 2022. ZDNS: A Fast DNS Toolkit for Internet Measurement (IMC \u201922)."
+            ],
+            "used_in_paper_reasoning": "The authors used the zdns scanner to send DNS SOA requests to determine registered domain names."
+        },
+        {
+            "id": "TUDarmstadt|IMC23-TCSB-Code",
+            "name": "Code for the IMC23 paper The Cloud Strikes Back",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "We make all code processing data available at [6]."
+            ],
+            "references": [
+                "[6] Balduf, Leonhard and Ascigil, Onur and Keizer, Navin V. and Pavlou, George and Scheuermann, Bj\u00f6rn and Korczy\u0144ski, Maciej. 2023. Code for the IMC23 paper The Cloud Strikes Back: Investigating the Decentralization of IPFS . https://github.com/mrd0ll4r/imc23-tcsb"
+            ],
+            "used_in_paper_reasoning": "The paper introduces and provides the code used for the measurements and data processing described in the study."
+        }
+    ]
+}

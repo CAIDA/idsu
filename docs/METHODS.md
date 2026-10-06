@@ -154,5 +154,7 @@ The annotations were built by Bradley Huffaker from December 2025 to April 2026,
 corrected them, adding missing used resources and fixing labels. In June Nathan merged
 both sets of corrections into `_metadata/ground-truth-merged.yaml`. Its ids were
 aligned with the target list for the release, and one leftover duplicate (a paper that
-examined ZMap and rejected it) was removed, leaving 165 instances. The earlier file stays
-available: `bin/evaluate.py --ground-truth baseline` scores the same runs against it.
+examined ZMap and rejected it) was removed. Four RIPE Atlas entries filed under the PTPerf
+id in April 2026 were removed, and PTPerf's target-list entry restored, leaving 161
+instances. The earlier file stays available: `bin/evaluate.py --ground-truth baseline`
+scores the same runs against it.

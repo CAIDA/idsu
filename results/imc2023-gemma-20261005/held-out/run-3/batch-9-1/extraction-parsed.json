@@ -1,0 +1,17 @@
+{
+    "resources": [
+        {
+            "id": "KU Leuven|Tranco",
+            "name": "KU Leuven|Tranco",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "we (i) obtain the top 500 most popular websites based on the Tranco list [20]"
+            ],
+            "references": [
+                "[20] Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczy\u0144ski, and Wouter Joosen. Tranco: A research-oriented top sites ranking hardened against manipulation. In Proceedings of the 26th Annual Network and Distributed System Security Symposium, NDSS 2019, February 2019."
+            ],
+            "used_in_paper_reasoning": "The authors used the Tranco list to select the top 500 most popular websites for their crawling campaign."
+        }
+    ]
+}

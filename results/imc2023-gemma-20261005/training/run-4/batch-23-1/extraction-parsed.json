@@ -1,0 +1,31 @@
+{
+    "resources": [
+        {
+            "id": "FreePhish",
+            "name": "FreePhish",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "In this work, we propose FreePhish, a framework for automatically identifying phishing attacks created using FWBs and shared on social media services, monitoring the reaction of anti-phishing entities against them, and reporting them for removal.",
+                "Using FreePhish, we characterize the features and effectiveness of over 31.4K such phishing URLs that are shared on Twitter and Facebook over a period of six months."
+            ],
+            "references": [
+                "Sayak Saha Roy, Unique Karanjit, and Shirin Nilizadeh. 2023. Phishing in the Free Waters: A Study of Phishing Attacks Created using Free Website Building Services. In Proceedings of the 2023 ACM Internet Measurement Conference (IMC \u201923), October 24\u201326, 2023, Montreal, QC, Canada. ACM, New York, NY, USA, 14 pages. https://doi.org/10.1145/3618257.3624812"
+            ],
+            "used_in_paper_reasoning": "The paper introduces and utilizes the FreePhish framework to identify, characterize, and report FWB-based phishing attacks."
+        },
+        {
+            "id": "Google|Certificate Transparency",
+            "name": "Certificate Transparency",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Having the same SSL certification as their hosting domain renders FWB phishing attacks effectively invisible in Certificate Transparency (CT) logs as they do not appear as individually registered domains."
+            ],
+            "references": [
+                "[94] Certificate Transparency. [n. d.]. Working together to detect maliciously or mistakenly issued certificates. https://certificate.transparency.dev."
+            ],
+            "used_in_paper_reasoning": "The authors analyze the invisibility of FWB phishing attacks in Certificate Transparency logs as a key evasion characteristic."
+        }
+    ]
+}

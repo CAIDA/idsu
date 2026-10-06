@@ -1,0 +1,31 @@
+{
+    "resources": [
+        {
+            "id": "MITRE|CVE",
+            "name": "Common Vulnerabilities and Exposures (CVE)",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We utilize CVE (Common Vulnerabilities and Exposures) reports to identify vulnerable JavaScript libraries.",
+                "Furthermore, we manually investigate the fidelity of CVE (Common Vulnerabilities and Exposures) reports on client-side resources, leveraging PoC (Proof of Concept) code."
+            ],
+            "references": [
+                "[40] 2022. CVE - CVE. https://cve.mitre.org/index.html. (Accessed on 05/26/2023)."
+            ],
+            "used_in_paper_reasoning": "The authors used CVE reports to identify vulnerable JavaScript libraries and conducted a specific analysis on the accuracy of the version information provided in these reports."
+        },
+        {
+            "id": "cvedetails|CVE-Details",
+            "name": "CVE Details",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We also collect the vulnerability information of affected resources\u2019 versions from multiple third-party websites for cross-reference, such as the National Vulnerability Database (NVD) [45], CVE MITRE Corporation [40], cvedetails.com [41], and SNYK Vul. DB [50]."
+            ],
+            "references": [
+                "[41] 2022. CVE security vulnerability database. Security vulnerabilities, exploits, references and more. https://www.cvedetails.com/index.php. (Accessed on 05/26/2023)."
+            ],
+            "used_in_paper_reasoning": "The authors used cvedetails.com as one of the third-party sources to collect vulnerability information for affected resource versions."
+        }
+    ]
+}

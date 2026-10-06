@@ -1,0 +1,61 @@
+{
+    "resources": [
+        {
+            "id": "BannerClick",
+            "name": "BannerClick",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "In early 2023, Rasaii et al. [51] presented BannerClick, a tool which can automatically detect and interact (i.e., accept and reject) with cookie banners with an accuracy of 99% and 96%, respectively.",
+                "Therefore, in this work we extend BannerClick to specifically detect these special types of cookie banners, i.e., cookiewalls.",
+                "We release our modified version of BannerClick as open-source software [50]."
+            ],
+            "references": [
+                "Ali Rasaii, Shivani Singh, Devashish Gosain, and Oliver Gasser. 2023. Exploring the Cookieverse: A Multi-Perspective Analysis of Web Cookies. In Proceedings of the 2023 Passive and Active Measurement Conference. https://doi.org/10.1007/978-3-031-28486-1_26",
+                "Ali Rasaii. 2023. BannerClick on GitHub. https://github.com/bannerclick/bannerclick."
+            ],
+            "used_in_paper_reasoning": "The authors extended BannerClick to detect cookiewalls and used this modified version for their large-scale measurement study."
+        },
+        {
+            "id": "OpenWPM",
+            "name": "OpenWPM",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "BannerClick is built on top of OpenWPM [21] and Selenium [58]",
+                "Although OpenWPM has mechanisms to mitigate bot detection, it is impossible to completely circumvent bot detection."
+            ],
+            "references": [
+                "Steven Englehardt and Arvind Narayanan. 2016. Online tracking: A 1-million-site measurement and analysis. In Proceedings of the 2016 ACM SIGSAC conference on computer and communications security. 1388\u20131401."
+            ],
+            "used_in_paper_reasoning": "The authors used OpenWPM as the underlying framework for BannerClick and relied on its bot detection mitigation mechanisms."
+        },
+        {
+            "id": "CookiewallData",
+            "name": "Analysis scripts and raw data for Cookiewall measurements",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "we release... our analysis code and data [49] at bannerclick.github.io",
+                "Finally, we publish tools, data, and code to foster reproducibility and further studies."
+            ],
+            "references": [
+                "Ali Rasaii. 2023. Analysis scripts and raw data for Cookiewall measurements . https://doi.org/10.17617/3.TREBZR."
+            ],
+            "used_in_paper_reasoning": "The paper introduces and releases this dataset and the associated analysis code as a byproduct of the study to foster reproducibility."
+        },
+        {
+            "id": "KU Leuven|Tranco",
+            "name": "KU Leuven|Tranco",
+            "type": "dataset",
+            "used_in_paper": false,
+            "quotes": [
+                "We use Google\u2019s Chrome User Experience Report (CrUX) [10] for target selection, as it was shown to be a more realistic toplist [54] compared to Alexa [3] or Tranco [38]."
+            ],
+            "references": [
+                "Victor Le Pochat, Tom Van Goethem, Samaneh Tajalizadehkhoob, Maciej Korczy\u0144ski, and Wouter Joosen. 2019. Tranco: A Research-Oriented Top Sites Ranking Hardened Against Manipulation. In Proceedings of the 26th Annual Network and Distributed System Security Symposium. Internet Society, 1\u201315."
+            ],
+            "used_in_paper_reasoning": "Tranco is mentioned as a point of comparison for the target selection process, but was not used to select the websites for the study."
+        }
+    ]
+}

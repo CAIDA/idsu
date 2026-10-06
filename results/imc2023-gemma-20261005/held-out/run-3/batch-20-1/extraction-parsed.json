@@ -1,0 +1,44 @@
+{
+    "resources": [
+        {
+            "id": "Google|Certificate Transparency",
+            "name": "Certificate Transparency",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "The primary dataset used for measuring third-party stale certificates is Certificate Transparency (CT), which is a set of log servers that, in aggregate, publishes all TLS certificates trusted by Google Chrome and Apple Safari."
+            ],
+            "references": [
+                "[35] Google. [n.d.]. Chrome Compliant CT logs. https://www.certificate-transparency.org/known-logs.",
+                "[9] Apple. [n.d.]. Current Apple CT logs. https://valid.apple.com/ct/log_list/current_log_list.json."
+            ],
+            "used_in_paper_reasoning": "The authors used Certificate Transparency logs as their primary dataset to collect and analyze 5 billion TLS certificates."
+        },
+        {
+            "id": "ICANN|CZDS",
+            "name": "Centralized Zone Data Service (CZDS)",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "We first extracted the domains from all publicly available zone files from the Centralized Zone Data Service (CZDS) [1], which includes the popular org, com, and net zones."
+            ],
+            "references": [
+                "[1] [n.d.]. Centralized Zone Data Service. https://czds.icann.org/home."
+            ],
+            "used_in_paper_reasoning": "The authors used CZDS to extract domains from publicly available zone files for their DNS scanning experiments."
+        },
+        {
+            "id": "IMDEA|AVClass2",
+            "name": "AVClass2",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "We used AVClass2 [66] to identify malware families and manually inspected the resulting malware family labels and resolved aliases using Malpedia [ 64]."
+            ],
+            "references": [
+                "[66] Silvia Sebasti\u00e1n and Juan Caballero. 2020. AVclass2: Massive Malware Tag Extraction from AV Labels. In Annual Computer Security Applications Conference (ACSAC)."
+            ],
+            "used_in_paper_reasoning": "The authors used AVClass2 to identify malware families from security vendor labels obtained via VirusTotal."
+        }
+    ]
+}

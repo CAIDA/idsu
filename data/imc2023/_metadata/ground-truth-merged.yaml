@@ -1011,21 +1011,6 @@ resources:
   type: tool
   urls:
   - https://www.caida.org/projects/midar/
-- id: PTPerf Code Repository
-  name: PTPerf Code Repository
-  quotes:
-  - quote: Our contributions include:... Applying LFP to the widely used RIPE Atlas
-      and CAIDA Internet Topology Data Kit (ITDK) router datasets to classify 64%
-      of the active router IPs.
-    used_in_paper: true
-  - quote: We extract intermediate IP hops from RIPE Atlas traceroute measurements
-      to obtain router IPv4 addresses.
-    used_in_paper: true
-  references:
-  - '[43] RIPE NCC. 2021. RIPE Atlas. https://atlas.ripe.net/.'
-  type: dataset
-  urls:
-  - https://atlas.ripe.net/
 - id: UMich|ZMap
   name: UMich|ZMap
   quotes:
@@ -1457,7 +1442,7 @@ resources:
   - '[77] PTPerf. 2023. DOI of PTPerf. https://zenodo.org/record/8352813. (2023).'
   type: tool
   urls:
-  - https://atlas.ripe.net/
+  - https://github.com/zeya2u9/PTPerf/
 - id: Berkman|URL Test Lists
   name: Berkman Klein Center Website Inaccessibility Test Lists
   quotes:
@@ -1832,21 +1817,6 @@ resources:
   type: dataset
   urls:
   - https://www.caida.org/catalog/datasets/internet-topology-data-kit/
-- id: PTPerf Code Repository
-  name: PTPerf Code Repository
-  quotes:
-  - quote: RIPE Atlas [41] is the largest geographically and topologically distributed
-      public measurement platform providing more than 10K vantage points in 172 different
-      countries, 5 continents, and 3,494 ASes.
-    used_in_paper: true
-  - quote: We use the set of the 723 RIPE Atlas anchors because their geolocation
-      is more accurate that RIPE Atlas probes
-    used_in_paper: true
-  references:
-  - '[41] RIPE NCC. RIPE Atlas, 2019. https://atlas.ripe.net/.'
-  type: tool
-  urls:
-  - https://atlas.ripe.net/
 - id: RIPE|IPMap
   name: RIPE IPMap
   quotes:
@@ -1917,22 +1887,6 @@ resources:
   type: tool
   urls:
   - https://bgpstream.com/
-- id: PTPerf Code Repository
-  name: PTPerf Code Repository
-  quotes:
-  - quote: Second, we use RIPE Atlas probes and choose probes from the 10 ASes that
-      we confirmed their ROV deployment through personal communication [6, 22] or
-      their official announcements [27, 41, 78].
-    used_in_paper: true
-  - quote: To validate the reachability between ASes and tNodes, we utilize RIPE-Atlas
-      [62].
-    used_in_paper: true
-  references:
-  - '[61] RIPE Atlas. https://atlas.ripe.net/.'
-  - '[62] RIPE NCC Annual Report 2015. https://www.ripe.net/publications/docs/ripe-665.'
-  type: dataset
-  urls:
-  - https://atlas.ripe.net/
 - id: RIPE NCC|RIPE RIS
   name: RIPE NCC|RIPE RIS
   quotes:
@@ -2349,23 +2303,6 @@ resources:
   type: dataset
   urls:
   - https://measurementlab.net/tests/ndt
-- id: PTPerf Code Repository
-  name: PTPerf Code Repository
-  quotes:
-  - quote: Open measurement platforms like RIPE Atlas are a great solution, but they
-      also face challenges.
-    used_in_paper: false
-  - quote: We view Tero as complementary to active measurement platforms like RIPE
-      Atlas[51], BISmark [52], Speedchecker14, SamKnows15, and Mlab-hosted projects
-      like NDT [14].
-    used_in_paper: false
-  references:
-  - '[3] RIPE Atlas. [n. d.]. https://atlas.ripe.net/. Accessed: 2023-08-31.'
-  - '[51] RIPE NCC Staff. 2015. Ripe atlas: A global internet measurement network.
-    Internet Protocol Journal 18, 3 (2015).'
-  type: tool
-  urls:
-  - https://atlas.ripe.net/
 - id: ESnet|iperf3
   name: iperf3
   quotes:

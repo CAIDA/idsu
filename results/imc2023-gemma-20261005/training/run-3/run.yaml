@@ -1,0 +1,54 @@
+run: 3
+created: '2026-10-05T16:08:09'
+commit: 3964dfec97361462020a42776dd0d2e2731a5b38
+splits:
+- training
+papers:
+- 2023-sander-quic-ecn.pdf
+- A Longitudinal Study of Vulnerable Client-side Resources and Web Developers' Updating
+  Behaviors.pdf
+- Coarse-grained Inference of BGP Community Intent.pdf
+- Containing the Cambrian Explosion in QUIC Congestion Control.pdf
+- Extended DNS Errors- Unlocking the Full Potential of DNS Troubleshooting.pdf
+- How to Operate a Meta-Telescope in your Spare Time.pdf
+- In the Room Where It Happens- Characterizing Local Communication and Threats in
+  Smart Homes.pdf
+- Inferring Changes in Daily Human Activity from Internet Response.pdf
+- Pushing Alias Resolution to the Limit.pdf
+- Replication- Towards a Publicly Available Internet Scale IP Geolocation Dataset.pdf
+- Wolf in Sheep's Clothing- Evaluating Security Risks of the Undelegated Record on
+  DNS Hosting Services.pdf
+- A First Look at the Privacy Harms of the Public Suffix List.pdf
+- Characterizing and Modeling Session-Level Mobile Traffic Demands from Large-Scale
+  Measurements.pdf
+- I Tag, You Tag, Everybody Tags.pdf
+- On the Similarity of Web Measurements Under Different Experimental Setups.pdf
+- Understanding the Privacy Risks of Popular Search Engine Advertising Systems.pdf
+- An LLM-based Framework for Fingerprinting Internet-connected Devices.pdf
+- BehavIoT Measuring Smart Home IoT Behavior Using Network-Inferred Behavior Models.pdf
+- Demystifying Web-based Mobile Extended Reality Accelerated by WebAssembly.pdf
+- Estimating WebRTC Video QoE Metrics Without Using Application Headers.pdf
+- Ethereum's Proposer-Builder Separation- Promises and Realities.pdf
+- Performance of Cellular Networks on the Wheels.pdf
+- Phishing in the Free Waters- A Study of Phishing Attacks Created using Free Website
+  Building Services.pdf
+- Thou Shalt Not Reject- Analyzing Accept-Or-Pay Cookie Banners on the Web.pdf
+- Tracking, Profiling, and Ad Targeting in the Alexa Echo Smart Speaker Ecosystem.pdf
+extraction:
+  model: gemma
+  temperature: 0
+  max_retries: 5
+  timeout: 600
+  runs: 5
+  shots: 1
+  shot_mode: partial
+  shot_split: training
+  seed: 42
+  workers: 5
+  runs_dir: runs/
+ground_truth: data/imc2023/_metadata/ground-truth-merged.yaml
+target_list: data/imc2023/_metadata/target-list.yaml
+prompts_sha256:
+  extraction-system.prompt: 200db7c88854aa5e0960a6006ed912311725afbca2311b0667315f60d8902df7
+  extraction-target.prompt: c6e46e4b86725f7c3738de6e2144d68de1c175e3ac7a3375de2524b47e1fd187
+dry_run: false

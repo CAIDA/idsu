@@ -60,16 +60,16 @@ resources:
 - Six papers have no target-list resources (`resources: []`); a correct run extracts
   nothing from them.
 
-`ground-truth-merged.yaml` holds 165 resource instances over the 45 papers:
+`ground-truth-merged.yaml` holds 161 resource instances over the 45 papers:
 
 | Split | Papers | Instances | Used | Mentioned only |
 |---|---|---|---|---|
-| Training | 25 | 92 | 69 | 23 |
-| Validation | 10 | 32 | 29 | 3 |
-| Evaluation | 10 | 41 | 34 | 7 |
+| Training | 25 | 91 | 68 | 23 |
+| Validation | 10 | 31 | 28 | 3 |
+| Evaluation | 10 | 39 | 33 | 6 |
 
-`bin/check_quotes.py` looks for every quote in its paper's extracted text: 225 of the 232
-are found, and it lists the 7 that are not, each with its best fuzzy-match score.
+`bin/check_quotes.py` looks for every quote in its paper's extracted text: 218 of the 224
+are found, and it lists the 6 that are not, each with its best fuzzy-match score.
 
 ## Splits and categories
 

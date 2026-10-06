@@ -1,0 +1,260 @@
+{
+  "label": "ground-truth-merged-llm",
+  "n_runs": 5,
+  "primary": "extraction_used",
+  "mean": {
+    "accuracy": 0.8699914651493599,
+    "precision": 0.9187821699277279,
+    "recall": 0.9245901639344263,
+    "f1": 0.9215416563952932
+  },
+  "sd": {
+    "accuracy": 0.01698726642365957,
+    "precision": 0.01478793779859071,
+    "recall": 0.01869140041146126,
+    "f1": 0.011169536099122223
+  },
+  "runs": [
+    {
+      "run": "run-1",
+      "papers": 20,
+      "dropped_malformed": 0,
+      "assumed_in_target_list": 74,
+      "confusion": {
+        "identity": {
+          "tp": 74,
+          "fp": 0,
+          "fn": 2,
+          "tn": 0
+        },
+        "used": {
+          "tp": 58,
+          "fp": 6,
+          "fn": 3,
+          "tn": 7
+        },
+        "extraction_used": {
+          "tp": 58,
+          "fp": 6,
+          "fn": 3,
+          "tn": 9,
+          "fp_extracted_used_not_used_GT": 3,
+          "fp_extracted_not_in_GT": 3
+        }
+      },
+      "metrics": {
+        "identity": {
+          "accuracy": 0.9736842105263158,
+          "precision": 1.0,
+          "recall": 0.9736842105263158,
+          "f1": 0.9866666666666666
+        },
+        "used": {
+          "accuracy": 0.8783783783783784,
+          "precision": 0.90625,
+          "recall": 0.9508196721311475,
+          "f1": 0.9279999999999999
+        },
+        "extraction_used": {
+          "accuracy": 0.881578947368421,
+          "precision": 0.90625,
+          "recall": 0.9508196721311475,
+          "f1": 0.9279999999999999
+        }
+      }
+    },
+    {
+      "run": "run-2",
+      "papers": 20,
+      "dropped_malformed": 0,
+      "assumed_in_target_list": 71,
+      "confusion": {
+        "identity": {
+          "tp": 71,
+          "fp": 0,
+          "fn": 1,
+          "tn": 0
+        },
+        "used": {
+          "tp": 56,
+          "fp": 4,
+          "fn": 5,
+          "tn": 6
+        },
+        "extraction_used": {
+          "tp": 56,
+          "fp": 4,
+          "fn": 5,
+          "tn": 7,
+          "fp_extracted_used_not_used_GT": 3,
+          "fp_extracted_not_in_GT": 1
+        }
+      },
+      "metrics": {
+        "identity": {
+          "accuracy": 0.9861111111111112,
+          "precision": 1.0,
+          "recall": 0.9861111111111112,
+          "f1": 0.993006993006993
+        },
+        "used": {
+          "accuracy": 0.8732394366197183,
+          "precision": 0.9333333333333333,
+          "recall": 0.9180327868852459,
+          "f1": 0.9256198347107439
+        },
+        "extraction_used": {
+          "accuracy": 0.875,
+          "precision": 0.9333333333333333,
+          "recall": 0.9180327868852459,
+          "f1": 0.9256198347107439
+        }
+      }
+    },
+    {
+      "run": "run-3",
+      "papers": 20,
+      "dropped_malformed": 0,
+      "assumed_in_target_list": 69,
+      "confusion": {
+        "identity": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 3,
+          "tn": 0
+        },
+        "used": {
+          "tp": 56,
+          "fp": 4,
+          "fn": 4,
+          "tn": 5
+        },
+        "extraction_used": {
+          "tp": 56,
+          "fp": 4,
+          "fn": 5,
+          "tn": 7,
+          "fp_extracted_used_not_used_GT": 3,
+          "fp_extracted_not_in_GT": 1
+        }
+      },
+      "metrics": {
+        "identity": {
+          "accuracy": 0.9583333333333334,
+          "precision": 1.0,
+          "recall": 0.9583333333333334,
+          "f1": 0.9787234042553191
+        },
+        "used": {
+          "accuracy": 0.8840579710144928,
+          "precision": 0.9333333333333333,
+          "recall": 0.9333333333333333,
+          "f1": 0.9333333333333333
+        },
+        "extraction_used": {
+          "accuracy": 0.875,
+          "precision": 0.9333333333333333,
+          "recall": 0.9180327868852459,
+          "f1": 0.9256198347107439
+        }
+      }
+    },
+    {
+      "run": "run-4",
+      "papers": 20,
+      "dropped_malformed": 0,
+      "assumed_in_target_list": 71,
+      "confusion": {
+        "identity": {
+          "tp": 70,
+          "fp": 1,
+          "fn": 3,
+          "tn": 0
+        },
+        "used": {
+          "tp": 57,
+          "fp": 5,
+          "fn": 4,
+          "tn": 4
+        },
+        "extraction_used": {
+          "tp": 57,
+          "fp": 5,
+          "fn": 4,
+          "tn": 8,
+          "fp_extracted_used_not_used_GT": 3,
+          "fp_extracted_not_in_GT": 2
+        }
+      },
+      "metrics": {
+        "identity": {
+          "accuracy": 0.9459459459459459,
+          "precision": 0.9859154929577465,
+          "recall": 0.958904109589041,
+          "f1": 0.9722222222222222
+        },
+        "used": {
+          "accuracy": 0.8714285714285714,
+          "precision": 0.9193548387096774,
+          "recall": 0.9344262295081968,
+          "f1": 0.9268292682926829
+        },
+        "extraction_used": {
+          "accuracy": 0.8783783783783784,
+          "precision": 0.9193548387096774,
+          "recall": 0.9344262295081968,
+          "f1": 0.9268292682926829
+        }
+      }
+    },
+    {
+      "run": "run-5",
+      "papers": 20,
+      "dropped_malformed": 0,
+      "assumed_in_target_list": 71,
+      "confusion": {
+        "identity": {
+          "tp": 71,
+          "fp": 0,
+          "fn": 4,
+          "tn": 0
+        },
+        "used": {
+          "tp": 55,
+          "fp": 6,
+          "fn": 5,
+          "tn": 5
+        },
+        "extraction_used": {
+          "tp": 55,
+          "fp": 6,
+          "fn": 6,
+          "tn": 8,
+          "fp_extracted_used_not_used_GT": 3,
+          "fp_extracted_not_in_GT": 3
+        }
+      },
+      "metrics": {
+        "identity": {
+          "accuracy": 0.9466666666666667,
+          "precision": 1.0,
+          "recall": 0.9466666666666667,
+          "f1": 0.9726027397260273
+        },
+        "used": {
+          "accuracy": 0.8450704225352113,
+          "precision": 0.9016393442622951,
+          "recall": 0.9166666666666666,
+          "f1": 0.9090909090909091
+        },
+        "extraction_used": {
+          "accuracy": 0.84,
+          "precision": 0.9016393442622951,
+          "recall": 0.9016393442622951,
+          "f1": 0.9016393442622952
+        }
+      }
+    }
+  ],
+  "ground_truth": "data/imc2023/_metadata/ground-truth-merged.yaml"
+}

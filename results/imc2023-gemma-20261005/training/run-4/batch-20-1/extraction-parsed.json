@@ -1,0 +1,17 @@
+{
+    "resources": [
+        {
+            "id": "MLab|NDT",
+            "name": "M-Lab NDT (Network Diagnostic Tool)",
+            "type": "data",
+            "used_in_paper": true,
+            "quotes": [
+                "We emulate dynamic network conditions using thetcp-info stats dataset from the Measurement Lab\u2019s Network Diagnostic Test (NDT), a public dataset containing speed tests taken by real users across the world [2]."
+            ],
+            "references": [
+                "[2] 2022. Measurement Lab \u2013 Network Diagnostic Test (NDT7). https://www.measurementlab.net/tests/ndt/ndt7/"
+            ],
+            "used_in_paper_reasoning": "The authors used the NDT dataset to emulate dynamic network conditions for their in-lab experiments, as described in Section 4.2."
+        }
+    ]
+}

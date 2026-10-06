@@ -1,0 +1,31 @@
+{
+    "resources": [
+        {
+            "id": "MITRE|CVE",
+            "name": "Common Vulnerabilities and Exposures (CVE)",
+            "type": "dataset",
+            "used_in_paper": true,
+            "quotes": [
+                "Mitre maintains arguably the most comprehensive listing of security-critical vulnerabilities through their Common Vulnerabilities and Exposures (CVE) program [15]",
+                "We use the NVD/CVE databases to determine events related to the discovery and mitigation of vulnerabilities."
+            ],
+            "references": [
+                "[15] [n. d.] CVE - CVE. (). https://cve.mitre.org/."
+            ],
+            "used_in_paper_reasoning": "The authors use the CVE program and NVD databases to determine the dates of vulnerability discovery and mitigation events for their lifecycle models."
+        },
+        {
+            "id": "Merit|Orion Network Telescope",
+            "name": "Orion Network Telescope",
+            "type": "tool",
+            "used_in_paper": true,
+            "quotes": [
+                "Our previous work established DScope\u2019s representativity by comparing collected traffic with that of Merit\u2019s ORION [27], a conventional Internet telescope."
+            ],
+            "references": [
+                "[27] [n. d.] The Merit Network, Inc. ORION. en-US. https://www.merit.edu. ()."
+            ],
+            "used_in_paper_reasoning": "The authors compare their DScope traffic with data from Merit's ORION to establish the representativity of their collection."
+        }
+    ]
+}
