@@ -7,23 +7,13 @@ repeat that. Run them from the repository root.
 
 ## 1. Setup
 
-```bash
-cp .env.example .env        # OPENAI_API_KEY and OPENAI_BASE_URL
-uv run bin/fetch_papers.py  # repeat with --import <dir> until it reports all 45 verified
-```
+Complete [README setup](../README.md#1-set-up), including all 45 PDFs. For a
+one-paper trial, see the
+[README walkthrough](../README.md#quick-start). This guide covers the full runs.
 
 The model names in `config.yaml` (`gemma` for extraction, `gpt-oss` for the matching
 judge) are aliases served by the NRP endpoint in `.env.example`. On another endpoint, set
 `extraction.model` and `evaluation.judge_model` to the names it serves.
-
-To check the setup without spending calls:
-
-```bash
-uv run bin/extract.py --split validation --runs 1 --dry-run --out runs/dry
-uv run bin/evaluate.py runs/dry --no-llm
-```
-
-The dry run writes every prompt and an empty extraction, so its scores are all zero.
 
 ## 2. Extraction
 
@@ -42,6 +32,28 @@ the failures.
 Shots are drawn from the training split with a seed derived from `extraction.seed`, the
 run number and the paper, so a rerun gives every paper the same examples.
 
+### Extraction options
+
+Options override `config.yaml` for that command. Defaults below are from the supplied
+config. Every tool also accepts `--help`.
+
+| Option | Value and purpose |
+|---|---|
+| `--split` | `training` (default), `validation`, or `evaluation`. Repeat to combine splits. |
+| `--only` | Exact PDF filename in the selected split, in quotes. Repeat for several papers; omit for all papers in the split. |
+| `--runs` | Number of repetitions, e.g. `--runs 1` for a quick check (default: 5). |
+| `--model` | Model name served by your endpoint (default: `gemma`). |
+| `--shots` | Number of training examples in each prompt: 1, 2, or 3 (default: 1). |
+| `--shot-mode` | `partial` for quotes and references, or `whole` for a worked-example format (default: `partial`). |
+| `--seed` | Integer used to select prompt examples (default: 42). |
+| `--workers` | Number of papers processed at once (default: 5). |
+| `--out` | Output folder. Default: `runs/<timestamp>-<model>-<splits>/`. |
+| `--resume` | No value. Skip completed batches in `--out`; rerun with the same papers and settings to retry failures. |
+| `--dry-run` | No value. Write prompts and empty extractions without calling a model. |
+
+For example, use `--split validation --split evaluation` for the held-out group.
+Paper filenames are listed in `data/imc2023/papers_<split>.yaml`.
+
 ## 3. Scoring
 
 ```bash
@@ -54,6 +66,8 @@ Each writes `summary.md` (mean and SD table, plus per-run counts), `summary.json
 paper's matches to `eval-<ground truth>-<matcher>/` inside the run directory. The third
 command scores the same held-out runs against the earlier ground truth, to show how much
 of the result depends on the corrections.
+
+To view training and held-out scores side by side, use the [summary comparison script](../README.md#reported-results) with these new summary paths.
 
 `evaluate.py` stops, with no summary, if a paper has no ground truth, a run has two batches
 for one paper, or a paper listed in `run.yaml` has no batch. Extracted resources without an

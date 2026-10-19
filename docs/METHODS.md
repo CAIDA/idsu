@@ -142,7 +142,7 @@ release.
 | Repairing the response's JSON with json-repair | `idsu/extract.py` parses every response through `json-repair` |
 | Flagging responses whose sentences or references are not in the paper | Not implemented for model output. `bin/check_quotes.py` does this check for the ground truth |
 | Evaluation against the manually labelled papers | `bin/evaluate.py` and the "extraction + used" metric |
-| LLaMA 3.1-70B on SDSC LLM | The reported results use Gemma on the NRP endpoint; `bin/benchmark_models.py` compares other models |
+| LLaMA 3.1-70B on SDSC LLM | The reported results use Gemma on the NRP endpoint; `bin/benchmark_models.py` compares other models **Explain discrepancy between recommended and used model** |
 | Fine-tuning, and if time allowed, RAG and prompt tuning | Not in this release. The project's history holds no experiments with them |
 | Instructions and code for adaptation by other disciplines | [ADAPTING.md](ADAPTING.md) |
 | Integration into CAIDA's catalog | Not part of this release. `bin/extract.py` runs only on papers that have a ground truth |
