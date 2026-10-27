@@ -94,7 +94,7 @@ uv run bin/compare_summaries.py --training results/imc2023-gemma-20261005/traini
 The Markdown table shows accuracy, precision, recall, and F1 as mean (sample SD)
 for each split. Paths may also point to evaluation directories containing `summary.md`.
 Use `--validation` instead of `--held-out` for a validation split, or supply both
-to compare three splits. Add `--output comparison.md` or the Path to wherever you wish to save the table.
+to compare three splits. Add `--output <path>` to also save the table to a file.
 
 The final configuration is the unified single-pass prompt, run on Gemma at temperature 0,
 scored against the corrected ground truth. `config.yaml` holds its defaults. The metric is
