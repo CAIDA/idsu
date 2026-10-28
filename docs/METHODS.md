@@ -115,10 +115,12 @@ and are not public.
   `token_sort_ratio` on references. At those thresholds, fuzzy and LLM matching (Gemma)
   produced identical confusion matrices on 80 training-set resources (F1 0.9936). The
   pipeline therefore matches fuzzily first and keeps the LLM for what is left.
-- **Number and kind of shots** (Jenny Xu, Qwen3, 25 training papers, an earlier prompt).
+- **Number and kind of shots** (Yunshan Sophia Li, Qwen3, 25 training papers, an earlier prompt).
   More shots did not help: F1 was 0.666 with one partial shot, 0.642 with two and 0.578
-  with three. One whole-paper shot scored 0.671 but used about 63% more prompt tokens than
-  one partial shot. The pipeline uses one partial shot.
+  with three. One whole-paper shot, giving the shot paper's full text, scored 0.671 but used
+  about 63% more prompt tokens than one partial shot. The pipeline uses one partial shot.
+  This release does not implement the whole-paper shot: its `whole` mode gives the same
+  quotes and references as `partial` (see Extraction).
 - **Several model families** (Ryan Ding). A harness ran Gemma, GLM, Kimi and Qwen,
   5 runs each, with its own prompt and matcher. Its numbers are not comparable with the
   ones above, and it is not part of this release. `bin/benchmark_models.py` compares
@@ -134,7 +136,7 @@ release.
 | The proposal | In this release |
 |---|---|
 | A training set of manually labelled resources: URL, type, mentioned or used, the sentences behind the label, and the references those sentences cite | The ground truth: `urls`, `type`, `quotes` with `used_in_paper`, `references` ([data/imc2023/README.md](../data/imc2023/README.md)) |
-| Few-shot examples built from a labelled paper's sentences and nearby references, with the full paper as the ideal but costly alternative | `partial` and `whole` shots (`extraction.shot_mode`) |
+| Few-shot examples built from a labelled paper's sentences and nearby references, with the full paper as the ideal but costly alternative | `partial` shots (`extraction.shot_mode`). The full-paper alternative is not implemented; `whole` gives the same material as `partial` |
 | Negative examples, papers that cite a resource without using it, to limit false positives | A shot's answer includes the resources its paper only mentions, labelled `used_in_paper: false`. With two or more shots, half are papers with no target-list resources at all |
 | Trade-offs between accuracy and cost across numbers of shots | The shot-count study above, and `extraction.shots` (1–3) |
 | Chain-of-thought | The `used_in_paper_reasoning` field, and Gemma's thinking mode |
@@ -142,7 +144,7 @@ release.
 | Repairing the response's JSON with json-repair | `idsu/extract.py` parses every response through `json-repair` |
 | Flagging responses whose sentences or references are not in the paper | Not implemented for model output. `bin/check_quotes.py` does this check for the ground truth |
 | Evaluation against the manually labelled papers | `bin/evaluate.py` and the "extraction + used" metric |
-| LLaMA 3.1-70B on SDSC LLM | The reported results use Gemma on the NRP endpoint; `bin/benchmark_models.py` compares other models |
+| LLaMA 3.1-70B on SDSC LLM | The reported results use Gemma on the NRP endpoint, the `config.yaml` default. NRP adds, changes and removes the models it serves, so the project used several models over its course, and the best choice may change over time; `bin/benchmark_models.py` compares other models |
 | Fine-tuning, and if time allowed, RAG and prompt tuning | Not in this release. The project's history holds no experiments with them |
 | Instructions and code for adaptation by other disciplines | [ADAPTING.md](ADAPTING.md) |
 | Integration into CAIDA's catalog | Not part of this release. `bin/extract.py` runs only on papers that have a ground truth |

@@ -10,8 +10,8 @@ is in CAIDA's internal repository.
 | Mai Nguyen | Co-Principal Investigator |
 | Bradley Huffaker | Co-Principal Investigator |
 | Nick Terrel | The release: one package, tools and documentation |
-| Nathan Man | Final extraction pipeline and unified prompt, scorer, matching study, ground-truth corrections |
+| Nathan Man | Final extraction pipeline and unified prompt, scorer, semi-automated matching program, matching study, ground-truth corrections |
 | Ryan Ding | Multi-model benchmark harness, unified prompt, ground-truth corrections |
-| Jenny Xu | The original extraction code, few-shot study, target-list work |
-| Alex Man | The first semi-automated matching program |
-| Yunshan Sophia Li, Manas Mulpuri, Viroopaksh Chekuri | Earlier extraction prompts, shot selection and metrics (2025) |
+| Jenny Xu | The original extraction and matching code, target-list work, model investigation, original ground-truth |
+| Yunshan Sophia Li | The few-shot study, original ground-truth |
+| Manas Mulpuri, Viroopaksh Chekuri | Earlier extraction prompts, shot selection and metrics (2025) |
